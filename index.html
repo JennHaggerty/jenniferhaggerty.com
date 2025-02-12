@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Jennifer Haggerty</title>
+		<meta
+			name="description"
+			content="I design web environments to enrich lives."
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./stylesheets/styles.css" />
+	</head>
+	<body>
+		<aside>
+			<button onClick="invertColors()">
+				Dark/Light mode
+			</button>
+		</aside>
+		<main class="invert">
+			<div class="outline">
+				<img
+					src="./assets/jennifer_portrait.JPG"
+					alt="Picture of Jennifer"
+				/>
+				<h1>Interface Developer</h1>
+				<p id="introduction">
+					I enjoy creating and maintaining user-centric, ADA compliant
+					web applications. I take a mobile-first code design approach that
+					iOS and Android users may enjoy. My favorite tools are JavaScript,
+					React, Next.js, SCSS, MySQL, Github, and Node.js.
+				</p>
+				<nav id="contact" class="row">
+					<ul>
+						<li>
+							<a
+								class="nav-link"
+								href="mailto:thejenniferhaggerty@gmail.com"
+								aria-label="Email Address"
+							>
+								Email
+							</a>
+						</li>
+						<li>
+							<a
+								class="nav-link"
+								href="./assets/jennifer_haggerty_interface_developer.pdf"
+								target="_blank"
+							>
+								Resume
+							</a>
+						</li>
+						<li>
+							<a
+								class="nav-link"
+								href="https://github.com/JennHaggerty"
+								rel="external"
+								target="_blank"
+							>
+								Github
+							</a>
+						</li>
+						<li>
+							<a
+								class="nav-link"
+								href="https://stackoverflow.com/users/5116212/mezzomix"
+								rel="external"
+								target="_blank"
+							>
+								Stack Overflow
+							</a>
+						</li>
+						<li>
+							<a
+								class="nav-link"
+								href="https://www.linkedin.com/in/jennifer-haggerty-01915556"
+								rel="external"
+								target="_blank"
+							>
+								LinkedIn
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div>
+				<h3>Portfolio & Playground Links</h3>
+				<dl>
+					<dt>
+						Recruiter App 
+						<a
+							class="nav-link"
+							href="https://job-aggregate.vercel.app/"
+							rel="external"
+							target="_blank"
+						>
+							https://job-aggregate.vercel.app/
+						</a>
+					</dt>
+					<dd>
+						Tools: MongoDB, Next.js, HeroUI, TailwindCSS, Typescript, React.js, Firecrawl AI, and Open AI.
+					</dd>
+				</dl>
+			</div>
+		</main>
+
+		<script>
+			const mainEl = document.getElementsByTagName( 'main' )[0];
+
+			const invertColors = () => {
+				mainEl.classList.toggle('invert');
+			}
+
+			const resizeFont = (size) => {
+				mainEl.style.fontSize = size;
+			}
+		</script>
+	</body>
+</html>
