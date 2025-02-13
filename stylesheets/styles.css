@@ -1,5 +1,5 @@
 :root {
-  --light: ghostwhite;
+  --light: #ffffff;
   --dark: #212121;
   --accent: #0071bc;
   --accent-dark: #112e51;
@@ -12,14 +12,14 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background: var(--light);
+  background: ghostwhite;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
 }
