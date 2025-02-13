@@ -109,6 +109,12 @@ dt {
   list-style-type: disc;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #introduction {
   padding: 4px 0 14px;
 }
@@ -133,7 +139,7 @@ dt {
 
 @media (min-width: 991px) {
   main {
-    max-width: 900px;
+    max-width: 1200px;
     padding: 3rem;
     margin: auto;
   }
