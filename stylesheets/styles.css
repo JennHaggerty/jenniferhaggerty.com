@@ -1,150 +1,157 @@
 :root {
-    --light: #FFFFFF;
-    --dark: #212121;
-    --accent: #0071bc;
-    --accent-dark: #112e51;
+  --light: #ffffff;
+  --dark: #212121;
+  --accent: #0071bc;
+  --accent-dark: #112e51;
 }
 
 html {
-    background-color: var(--dark);
+  background-color: var(--dark);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: var(--light);
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: ghostwhite;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
 }
 
-main.invert   {
-    background-color: var(--dark);
-    color: var(--light);
+main.invert {
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 aside {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 aside button {
-    font-size: 16px;
-    margin: 10px 5px;
+  font-size: 16px;
+  margin: 10px 5px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav li {
-    margin: 0 0 20px;
-    text-align: center;
+  margin: 0 0 20px;
+  text-align: center;
 }
 
 nav li a {
-    display: block;
-    border: 1px solid var(--accent-dark);
-    background-color: var(--accent-dark);
-    padding: 1em;
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--light);
+  display: block;
+  border: 1px solid var(--accent-dark);
+  background-color: var(--accent-dark);
+  padding: 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--light);
 }
 
 .invert nav li a {
-    border: 1px solid var(--accent);
-    background-color: var(--accent);
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--light);
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--light);
 }
 
 nav li a:hover {
-    text-decoration: underline;
-    border: 1px solid var(--accent);
-    background-color: var(--accent);
+  text-decoration: underline;
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
 }
 
 .invert nav li a:hover {
-    border: 1px solid var(--accent-dark);
-    background-color: var(--accent-dark);
+  border: 1px solid var(--accent-dark);
+  background-color: var(--accent-dark);
 }
 
 h1 {
-    margin: 0;
-    padding: 20px 0 0;
-    font-size: 28px;
-    text-align: center;
+  margin: 0;
+  padding: 20px 0 0;
+  font-size: 28px;
+  text-align: center;
 }
 
 a {
-    color: var(--accent-dark)
+  color: var(--accent-dark);
 }
 
+body a,
 .invert a {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 img,
 .invert img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
-    border: 2px solid var(--accent);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  border: 2px solid var(--accent);
 }
 
-
 dt {
-    display: list-item;
-    list-style-type: disc;
+  display: list-item;
+  list-style-type: disc;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #introduction {
-    padding: 4px 0 14px;
+  padding: 4px 0 14px;
 }
 
 .outline {
-    border: 2px solid var(--accent);
-    border-radius: 4px;
-    padding: 1em;
+  border: 2px solid var(--accent);
+  border-radius: 4px;
+  padding: 1em;
 }
 
 @media (min-width: 375px) {
-    h1 {
-        font-size: 34px;
-    }
+  h1 {
+    font-size: 34px;
+  }
 }
 
 @media (min-width: 424px) {
-    h1 {
-        font-size: 39px;
-    }
+  h1 {
+    font-size: 39px;
+  }
 }
 
 @media (min-width: 991px) {
-    main {
-        max-width: 900px;
-        padding: 3rem;
-        margin: auto;
-    }
+  main {
+    max-width: 1200px;
+    padding: 3rem;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1024px) {
-    nav ul {
-        display: flex;
-    }
+  nav ul {
+    display: flex;
+  }
 
-    nav li {
-        width: 25%;
-        margin: 0 10px;
-    }
+  nav li {
+    width: 25%;
+    margin: 0 10px;
+  }
 }

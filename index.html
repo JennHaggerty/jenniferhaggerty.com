@@ -11,12 +11,15 @@
 		<link rel="stylesheet" href="./stylesheets/styles.css" />
 	</head>
 	<body>
-		<aside>
-			<button onClick="invertColors()">
-				Dark/Light mode
-			</button>
-		</aside>
-		<main class="invert">
+		<div class="row">
+			<a href="#main">Skip to main content</a>
+			<aside>
+				<button onClick="invertColors()">
+					Invert Color Palette
+				</button>
+			</aside>
+		</div>
+		<main id="main" class="invert">
 			<div class="outline">
 				<img
 					src="./assets/jennifer_portrait.JPG"
@@ -29,7 +32,7 @@
 					iOS and Android users may enjoy. My favorite tools are JavaScript,
 					React, Next.js, SCSS, MySQL, Github, and Node.js.
 				</p>
-				<nav id="contact" class="row">
+				<nav id="contact">
 					<ul>
 						<li>
 							<a
@@ -83,21 +86,22 @@
 				</nav>
 			</div>
 			<div>
-				<h3>Portfolio & Playground Links</h3>
+				<h2>Playground Links</h3>
 				<dl>
 					<dt>
 						Recruiter App 
 						<a
-							class="nav-link"
 							href="https://job-aggregate.vercel.app/"
 							rel="external"
 							target="_blank"
 						>
-							https://job-aggregate.vercel.app/
+							<b>
+								https://job-aggregate.vercel.app/
+							</b>
 						</a>
 					</dt>
 					<dd>
-						Tools: MongoDB, Next.js, HeroUI, TailwindCSS, Typescript, React.js, Firecrawl AI, and Open AI.
+						Tools: MongoDB, Next.js, HeroUI, TailwindCSS, Typescript, React.js, Firecrawl AI, Open AI, and Vercel.
 					</dd>
 				</dl>
 			</div>
@@ -108,10 +112,6 @@
 
 			const invertColors = () => {
 				mainEl.classList.toggle('invert');
-			}
-
-			const resizeFont = (size) => {
-				mainEl.style.fontSize = size;
 			}
 		</script>
 	</body>
