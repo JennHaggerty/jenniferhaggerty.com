@@ -9,9 +9,12 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./stylesheets/styles.css" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+			</style>
 	</head>
 	<body>
-		<div class="row">
+		<div class="top-row row">
 			<a href="#main">Skip to main content</a>
 			<aside>
 				<button onClick="invertColors()">
@@ -25,12 +28,12 @@
 					src="./assets/jennifer_portrait.JPG"
 					alt="Picture of Jennifer"
 				/>
-				<h1>Interface Developer</h1>
+				<h1 class="inter-the-matrix">Interface Developer</h1>
 				<p id="introduction">
 					I enjoy creating and maintaining user-centric, ADA compliant
 					web applications. I take a mobile-first code design approach that
 					iOS and Android users may enjoy. My favorite tools are JavaScript,
-					React, Next.js, SCSS, MySQL, Github, and Node.js.
+					React, Next.js, TypeScript, SASS/SCSS, MySQL, Github.
 				</p>
 				<nav id="contact">
 					<ul>
@@ -65,16 +68,6 @@
 						<li>
 							<a
 								class="nav-link"
-								href="https://stackoverflow.com/users/5116212/mezzomix"
-								rel="external"
-								target="_blank"
-							>
-								Stack Overflow
-							</a>
-						</li>
-						<li>
-							<a
-								class="nav-link"
 								href="https://www.linkedin.com/in/jennifer-haggerty-01915556"
 								rel="external"
 								target="_blank"
@@ -86,10 +79,10 @@
 				</nav>
 			</div>
 			<div>
-				<h2>Playground Links</h3>
+				<h2 class="inter-the-matrix">Playground Links</h3>
 				<dl>
 					<dt>
-						Recruiter App 
+						Your Recruiter,  
 						<a
 							href="https://job-aggregate.vercel.app/"
 							rel="external"
@@ -98,7 +91,8 @@
 							<b>
 								https://job-aggregate.vercel.app/
 							</b>
-						</a>
+						</a>, is the job candidates best friend. A CMS for tracking when, where, and with whom you applied for employment. 
+						AI helps write cover letter templates, and soon ATS ready resumes.
 					</dt>
 					<dd>
 						Tools: MongoDB, Next.js, HeroUI, TailwindCSS, Typescript, React.js, Firecrawl AI, Open AI, and Vercel.
