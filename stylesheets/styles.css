@@ -135,6 +135,15 @@ header h2 {
   text-align: center;
 }
 
+#skills ul,
+#playgrounds ul {
+  list-style: none;
+}
+
+#skills li {
+  padding-bottom: 10px;
+}
+
 @media (min-width: 661px) {
   #work ul {
     flex-direction: row;
