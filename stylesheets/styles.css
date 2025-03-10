@@ -1,18 +1,16 @@
 :root {
-  --light: #00FF41;
-  --dark: #0D0208;
-  --accent: #008F11;
-  --accent-dark: #003B00;
+  --light: #00ff41;
+  --dark: #0d0208;
+  --accent: #008f11;
+  --accent-dark: #003b00;
 }
-
 
 .inter-the-matrix {
   font-family: "Doto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-variation-settings:
-    "ROND" 0;
+  font-variation-settings: "ROND" 0;
 }
 
 html {
@@ -28,10 +26,15 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   background: ghostwhite;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: 20px;
+  }
 }
 
 main.invert {
@@ -62,7 +65,7 @@ nav li a {
   display: block;
   border: 1px solid var(--accent-dark);
   background-color: var(--accent-dark);
-  padding: .75em;
+  padding: 0.75em;
   border-radius: 8px;
   text-decoration: none;
   color: var(--light);
@@ -103,14 +106,54 @@ body a,
   color: var(--accent);
 }
 
-img,
-.invert img {
+header img,
+header .invert img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
   height: 10rem;
   width: 10rem;
+  border: 2px solid var(--accent);
+}
+
+header h2 {
+  text-align: center;
+}
+
+#work ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#work li {
+  text-align: center;
+}
+
+@media (min-width: 661px) {
+  #work ul {
+    flex-direction: row;
+  }
+
+  #work li {
+    width: 48%;
+  }
+}
+
+@media (min-width: 991px) {
+  #work li {
+    width: 23%;
+  }
+}
+
+#work img {
+  display: block;
+  max-width: 100%;
   border: 2px solid var(--accent);
 }
 
@@ -137,10 +180,21 @@ img,
   padding: 4px 0 14px;
 }
 
-.outline {
+section.outline,
+header.outline {
   border: 2px solid var(--accent);
   border-radius: 4px;
   padding: 1em;
+  margin-bottom: 2em;
+}
+
+a.outline {
+  border: 2px solid var(--accent);
+  border-radius: 4px;
+}
+
+a.outline:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 375px) {
