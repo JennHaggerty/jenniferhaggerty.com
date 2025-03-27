@@ -6,11 +6,11 @@
 }
 
 .inter-the-matrix {
-  font-family: "Doto", sans-serif;
+  font-family: 'Doto', sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-variation-settings: "ROND" 0;
+  font-variation-settings: 'ROND' 0;
 }
 
 html {
@@ -69,7 +69,7 @@ nav li a {
   border-radius: 8px;
   text-decoration: none;
   color: var(--light);
-  font-family: "Doto", sans-serif;
+  font-family: 'Doto', sans-serif;
   font-size: 24px;
 }
 
@@ -221,6 +221,10 @@ a.outline {
 
 a.outline:hover {
   cursor: pointer;
+}
+
+video {
+  width: 100%;
 }
 
 @media (min-width: 375px) {
