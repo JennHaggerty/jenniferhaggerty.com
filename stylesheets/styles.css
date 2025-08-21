@@ -1,10 +1,9 @@
 :root {
   --white: white;
-  --light: #46b9ab;
+  --light: goldenrod;
   --dark: #1e1f1f;
-  --accent: #320182;
-  --accent-dark: #1b0047;
-  --link-text: #58e4d3;
+  --accent: #011126;
+  --accent-dark: #050813;
 }
 
 html {
