@@ -1,32 +1,19 @@
 :root {
-  --light: #00ff41;
-  --dark: #0d0208;
-  --accent: #008f11;
-  --accent-dark: #003b00;
-}
-
-.inter-the-matrix {
-  font-family: 'Doto', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings: 'ROND' 0;
+  --white: white;
+  --light: #46b9ab;
+  --dark: #1e1f1f;
+  --accent: #320182;
+  --accent-dark: #1b0047;
+  --link-text: #58e4d3;
 }
 
 html {
-  background-color: var(--dark);
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.25rem;
+  background-color: var(--accent);
 }
 
 main {
   display: flex;
   flex-direction: column;
-  background: ghostwhite;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
 }
@@ -38,8 +25,26 @@ main {
 }
 
 main.invert {
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: var(--accent-dark);
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+nav {
+  font-family: "Mozilla Headline", sans-serif;
+}
+
+main,
+p,
+span,
+footer {
+  font-family: "Mozilla Text", sans-serif;
 }
 
 aside {
@@ -51,59 +56,71 @@ aside button {
   margin: 10px 5px;
 }
 
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 nav ul {
+  display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav li {
-  margin: 0 0 20px;
   text-align: center;
 }
 
 nav li a {
-  display: block;
-  border: 1px solid var(--accent-dark);
-  background-color: var(--accent-dark);
-  padding: 0.75em;
-  border-radius: 8px;
   text-decoration: none;
   color: var(--light);
-  font-family: 'Doto', sans-serif;
-  font-size: 24px;
 }
 
-.invert nav li a {
-  border: 1px solid var(--accent-dark);
-  background-color: var(--accent-dark);
-  border-radius: 4px;
-  text-decoration: none;
-  color: var(--light);
+nav svg {
+  fill: var(--light);
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav svg:hover {
+  transform: scale(1.5);
 }
 
 nav li a:hover {
   text-decoration: underline;
 }
 
-.invert nav li a:hover {
-  border: 1px solid var(--accent-dark);
-  background-color: var(--accent-dark);
+nav#contact,
+nav#contact2 {
+  justify-items: center;
+}
+nav#contact li,
+nav#contact2 li {
+  padding: 10px;
 }
 
 h1 {
   margin: 0;
-  padding: 20px 0 0;
   font-size: 28px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 a {
-  color: var(--accent-dark);
+  color: var(--link-text);
+  text-decoration: none;
 }
 
-body a,
-.invert a {
-  color: var(--accent);
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  padding: 30px 0;
 }
 
 header img,
@@ -121,6 +138,12 @@ header h2 {
   text-align: center;
 }
 
+footer {
+  text-align: center;
+  color: var(--white);
+  padding: 40px;
+}
+
 #work ul {
   list-style: none;
   display: flex;
@@ -132,11 +155,37 @@ header h2 {
 }
 
 #work li {
-  text-align: center;
+  position: relative;
 }
 
-#skills ul,
-#playgrounds ul {
+#work li a {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 101%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+  flex-flow: column;
+  opacity: 0;
+  transition: 0.1s;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+#work li:hover a {
+  opacity: 1;
+  text-decoration: none;
+}
+
+#work li:hover img {
+  filter: blur(3px);
+}
+
+#skills ul {
   list-style: none;
 }
 
@@ -156,7 +205,7 @@ header h2 {
 
 @media (min-width: 991px) {
   #work li {
-    width: 23%;
+    width: 30%;
   }
 }
 
@@ -212,6 +261,8 @@ header.outline {
   border-radius: 4px;
   padding: 1em;
   margin-bottom: 2em;
+  background: var(--dark);
+  box-shadow: 0 0 20px var(--accent);
 }
 
 a.outline {
@@ -240,20 +291,25 @@ video {
 }
 
 @media (min-width: 991px) {
-  main {
+  main,
+  footer {
     max-width: 1024px;
     padding: 3rem;
     margin: auto;
   }
 }
 
-@media (min-width: 1024px) {
-  nav ul {
-    display: flex;
-  }
+.mozilla-headline-400 {
+  font-family: "Mozilla Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
-  nav li {
-    width: 25%;
-    margin: 0 10px;
-  }
+.mozilla-text-400 {
+  font-family: "Mozilla Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
