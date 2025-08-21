@@ -104,8 +104,7 @@ nav#contact2 li {
 }
 
 h1 {
-  margin: 0;
-  font-size: 28px;
+  line-height: 1em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -260,9 +259,12 @@ header.outline {
   border: 2px solid var(--accent);
   border-radius: 4px;
   padding: 1em;
-  margin-bottom: 2em;
   background: var(--dark);
   box-shadow: 0 0 20px var(--accent);
+}
+
+section {
+  margin: 15px;
 }
 
 a.outline {
