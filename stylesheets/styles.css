@@ -257,9 +257,8 @@ footer {
 section.outline,
 header.outline {
   border: 2px solid var(--accent);
-  border-radius: 4px;
-  padding: 1em;
-  background: var(--dark);
+  border-radius: px;
+  padding: 2em;
   box-shadow: 0 0 20px var(--accent);
 }
 
