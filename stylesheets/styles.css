@@ -196,23 +196,19 @@ footer {
   list-style: none;
 }
 
-#skills li {
-  padding-bottom: 10px;
-}
-
 @media (min-width: 661px) {
   #work ul {
     flex-direction: row;
   }
 
   #work li {
-    width: 48%;
+    width: 49%;
   }
 }
 
 @media (min-width: 991px) {
   #work li {
-    width: 30%;
+    width: 32%;
   }
 }
 
@@ -263,7 +259,7 @@ footer {
 }
 
 section.outline {
-  border: 2px solid var(--accent);
+  border: 1px solid var(--accent);
   border-radius: px;
   padding: 2em;
   box-shadow: 0 0 20px var(--accent);
