@@ -1,6 +1,6 @@
 :root {
   --white: white;
-  --light: goldenrod;
+  --light: yellow;
   --dark: #1e1f1f;
   --accent: #011126;
   --accent-dark: #050813;
@@ -36,14 +36,16 @@ h5,
 h6,
 h7,
 nav {
-  font-family: "Mozilla Headline", sans-serif;
+  font-family: "Sintony", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 main,
 p,
 span,
 footer {
-  font-family: "Mozilla Text", sans-serif;
+  font-family: "Poppins", serif;
 }
 
 aside {
@@ -59,6 +61,10 @@ aside button {
   header {
     display: flex;
     justify-content: space-between;
+  }
+
+  header h2 {
+    text-align: left;
   }
 }
 
@@ -76,6 +82,7 @@ nav li {
 nav li a {
   text-decoration: none;
   color: var(--light);
+  font-weight: 400;
 }
 
 nav svg {
@@ -109,7 +116,7 @@ h1 {
 }
 
 a {
-  color: var(--link-text);
+  color: var(--light);
   text-decoration: none;
 }
 
@@ -132,8 +139,10 @@ header .invert img {
   border: 2px solid var(--accent);
 }
 
-header h2 {
-  text-align: center;
+@media (max-width: 1024px) {
+  header h2 {
+    text-align: center;
+  }
 }
 
 footer {
@@ -158,7 +167,7 @@ footer {
 
 #work li a {
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   height: 100%;
   width: 101%;
   top: 0;
@@ -253,8 +262,7 @@ footer {
   padding: 4px 0 14px;
 }
 
-section.outline,
-header.outline {
+section.outline {
   border: 2px solid var(--accent);
   border-radius: px;
   padding: 2em;
@@ -284,12 +292,6 @@ video {
   }
 }
 
-@media (min-width: 424px) {
-  h1 {
-    font-size: 39px;
-  }
-}
-
 @media (min-width: 991px) {
   main,
   footer {
@@ -297,19 +299,4 @@ video {
     padding: 3rem;
     margin: auto;
   }
-}
-
-.mozilla-headline-400 {
-  font-family: "Mozilla Headline", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.mozilla-text-400 {
-  font-family: "Mozilla Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
