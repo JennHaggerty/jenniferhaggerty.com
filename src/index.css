@@ -11,6 +11,11 @@
   --red: #c6031e;
   --blue: #66b3c4;
 
+  --sm: 2px;
+  --md: 4px;
+  --lg: 8px;
+  --xl: 12px;
+
   --brand: var(--yellow);
   --accent: var(--pink);
   --neutral: var(--grey);
@@ -21,9 +26,9 @@
   --dark: var(--black);
   --background: var(--blue);
 
-  --border-sm: 2px;
-  --border-md: 4px;
-  --border-lg: 8px;
+  --border-sm: var(--sm);
+  --border-md: var(--md);
+  --border-lg: var(--lg);
   --border-radius-full: 50%;
 
   --h1-font: "IBMPlexMono";
@@ -35,7 +40,7 @@
   --h1-border: var(--border-sm) solid var(--light);
   --h1-border-radius: var(--border-md) 0 0 0;
   --h1-width: fit-content;
-  --h1-margin: auto;
+  --h1-margin: 5px auto;
   --h1-padding: 0 0.35em;
   --h1-position: inherit;
 
@@ -48,7 +53,7 @@
   --h2-border: var(--border-sm) solid var(--light);
   --h2-border-radius: 0 0 0 0;
   --h2-width: fit-content;
-  --h2-margin: auto;
+  --h2-margin: 10px auto;
   --h2-padding: inherit;
   --h2-position: inherit;
 
@@ -61,7 +66,7 @@
   --h3-border: var(--border-md) solid var(--dark);
   --h3-border-radius: var(--border-sm);
   --h3-width: fit-content;
-  --h3-margin: inherit;
+  --h3-margin: 10px 0;
   --h3-padding: inherit;
   --h3-position: inherit;
 
@@ -74,7 +79,7 @@
   --h4-border: var(--border-md) solid var(--light);
   --h4-border-radius: 0 0 0 var(--border-md);
   --h4-width: fit-content;
-  --h4-margin: auto;
+  --h4-margin: 5px auto;
   --h4-padding: inherit;
   --h4-position: inherit;
 
@@ -87,8 +92,8 @@
   --h5-border: var(--border-sm) solid var(--brand);
   --h5-border-radius: var(--border-radius-full);
   --h5-width: max-content;
-  --h5-margin: auto;
-  --h5-padding: 3px;
+  --h5-margin: 0;
+  --h5-padding: var(--sm);
   --h5-position: inherit;
 
   --h6-font: "MochiyPopPOne";
@@ -100,7 +105,7 @@
   --h6-border: var(--border-sm) solid var(--white);
   --h6-border-radius: 0;
   --h6-width: fit-content;
-  --h6-margin: auto;
+  --h6-margin: 10px auto;
   --h6-padding: inherit;
   --h6-position: inherit;
 
@@ -190,6 +195,7 @@ h5,
 h6,
 .h6 {
   text-align: center;
+  margin: 1em;
 }
 
 h1,
@@ -285,12 +291,13 @@ h6,
   text-transform: var(--h6-text-transform);
   color: var(--h6-color);
   background: var(--h6-bg-color);
-  border: var(--h6-border);
+  stroke: var(--h6-border);
   border-radius: var(--h6-border-radius);
   width: var(--h6-width);
   margin: var(--h6-margin);
   padding: var(--h6-padding);
   position: var(--h6-position);
+  text-shadow: -2px 2px var(--dark), -2px 2px var(--light);
 }
 
 a:not(p a),
@@ -355,11 +362,20 @@ button:hover {
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: var(--border-md) auto -webkit-focus-ring-color;
 }
 
 svg {
   height: 2em;
+}
+
+a svg {
+  will-change: filter;
+  transition: filter 300ms;
+}
+a:hover svg:not(.star) {
+  stroke: var(--dark);
+  stroke-width: var(--lg);
 }
 
 ul {
@@ -433,13 +449,51 @@ p,
 /* end FONT FACES */
 
 /* start CUSTOM STYLES */
-#contact a svg {
+.hidden {
+  display: none;
+}
+
+#contact ul {
+  padding: unset;
+  min-height: 5em;
+}
+#contact li {
+  position: relative;
+  width: 100%;
+}
+#contact li a {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+}
+#contact a svg:not(.star) {
+  position: relative;
   fill: var(--success);
   transition: transform 0.3s ease-in-out;
+  z-index: 98;
+  top: 30px;
+  left: 34px;
 }
-#contact a:hover svg {
+#contact a:hover svg:not(.star) {
   fill: var(--background);
   transform: scale(1.5);
+}
+#contact a:hover .star {
+  display: block;
+}
+
+.star {
+  position: absolute;
+  height: 4em;
+  fill: var(--accent);
+  stroke: var(--brand);
+  stroke-width: var(--xl);
+  animation: svg-spin infinite 8s linear;
+  z-index: 97;
+  top: 11px;
+  left: 15px;
+  display: none;
 }
 
 .styles {
@@ -454,3 +508,14 @@ p,
   }
 }
 /* end CUSTOM STYLES */
+
+/* start ANIMATIONS */
+@keyframes svg-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* end ANIMATIONS */
