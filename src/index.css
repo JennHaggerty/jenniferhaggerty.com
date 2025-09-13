@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   /* primary palette */
   --yellow: #eacb35;
@@ -31,7 +33,7 @@
   --border-lg: var(--lg);
   --border-radius-full: 50%;
 
-  --h1-font: "IBMPlexMono";
+  --h1-font: "IBMPlexMono-SemiBold";
   --h1-font-weight: 400;
   --h1-text-size: 1em;
   --h1-text-transform: lowercase;
@@ -46,7 +48,7 @@
 
   --h2-font: "Karantina";
   --h2-font-weight: 400;
-  --h2-text-size: 2em;
+  --h2-text-size: 3em;
   --h2-text-transform: uppercase;
   --h2-color: var(--light);
   --h2-bg-color: var(--dark);
@@ -54,7 +56,7 @@
   --h2-border-radius: 0 0 0 0;
   --h2-width: fit-content;
   --h2-margin: 10px auto;
-  --h2-padding: inherit;
+  --h2-padding: 0 var(--md);
   --h2-position: inherit;
 
   --h3-font: "CutiveMono";
@@ -66,39 +68,39 @@
   --h3-border: var(--border-md) solid var(--dark);
   --h3-border-radius: var(--border-sm);
   --h3-width: fit-content;
-  --h3-margin: 10px 0;
-  --h3-padding: inherit;
+  --h3-margin: var(--xl) auto 0;
+  --h3-padding: 5px 5px 0 5px;
   --h3-position: inherit;
 
-  --h4-font: "IBMPlexMono";
+  --h4-font: "IBMPlexMono-Bold";
   --h4-font-weight: 400;
-  --h4-text-size: 1em;
+  --h4-text-size: 1.15em;
   --h4-text-transform: lowercase;
   --h4-color: var(--black);
   --h4-bg-color: var(--orange);
   --h4-border: var(--border-md) solid var(--light);
   --h4-border-radius: 0 0 0 var(--border-md);
   --h4-width: fit-content;
-  --h4-margin: 5px auto;
+  --h4-margin: 0 auto;
   --h4-padding: inherit;
   --h4-position: inherit;
 
   --h5-font: "Lacquer";
   --h5-font-weight: 400;
-  --h5-text-size: 1em;
+  --h5-text-size: 2.25em;
   --h5-text-transform: lowercase;
   --h5-color: var(--brand);
   --h5-bg-color: var(--dark);
-  --h5-border: var(--border-sm) solid var(--brand);
+  --h5-border: var(--border-md) solid var(--brand);
   --h5-border-radius: var(--border-radius-full);
   --h5-width: max-content;
-  --h5-margin: 0;
-  --h5-padding: var(--sm);
+  --h5-margin: auto;
+  --h5-padding: var(--lg);
   --h5-position: inherit;
 
   --h6-font: "MochiyPopPOne";
   --h6-font-weight: 400;
-  --h6-text-size: 1em;
+  --h6-text-size: 2em;
   --h6-text-transform: lowercase;
   --h6-color: var(--green);
   --h6-bg-color: "transparent";
@@ -111,7 +113,7 @@
 
   --p-font: "CutiveMono";
   --p-font-weight: 400;
-  --p-text-size: 1em;
+  --p-text-size: 1.5em;
   --p-text-transform: none;
   --p-color: var(--black);
   --p-bg-color: var(--white);
@@ -119,19 +121,19 @@
   --p-border-radius: var(--border-md);
   --p-width: fit-content;
   --p-margin: auto;
-  --p-padding: inherit;
+  --p-padding: var(--xl);
   --p-position: inherit;
 
-  --p-a-font: "IBMPlexMono";
+  --p-a-font: "CutiveMono";
   --p-a-font-weight: 400;
-  --p-a-text-size: 1em;
+  --p-a-text-size: 1.25em;
   --p-a-text-transform: uppercase;
   --p-a-color: var(--dark);
   --p-a-bg-color: var(--success);
   --p-a-border: var(--border-sm) solid var(--black);
   --p-a-border-radius: var(--border-sm);
   --p-a-width: fit-content;
-  --p-a-hover-font: "IBMPlexMono";
+  --p-a-hover-font: "CutiveMono";
   --p-a-hover-font-weight: 400;
   --p-a-hover-text-size: 1em;
   --p-a-hover-text-transform: uppercase;
@@ -141,16 +143,16 @@
   --p-a-hover-border-radius: 0;
   --p-a-hover-width: fit-content;
 
-  --a-font: "IBMPlexMono";
+  --a-font: "IBMPlexMono-SemiBold";
   --a-font-weight: 400;
-  --a-text-size: 1em;
+  --a-text-size: 1.5em;
   --a-text-transform: lowercase;
   --a-color: var(--success);
   --a-bg-color: transparent;
   --a-border: none;
   --a-border-radius: 0;
   --a-width: fit-content;
-  --a-hover-font: "IBMPlexMono";
+  --a-hover-font: "IBMPlexMono-SemiBold";
   --a-hover-font-weight: 400;
   --a-hover-text-size: 1em;
   --a-hover-text-transform: lowercase;
@@ -162,7 +164,7 @@
 
   color-scheme: light dark;
   color: var(--white);
-  background-color: var(--neutral);
+  background-color: var(--dark);
 
   font-size: 20px;
   line-height: 1.5;
@@ -175,11 +177,16 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+section {
+  background: var(--neutral);
+  padding: var(--xl);
 }
 
 h1,
@@ -200,9 +207,11 @@ h6,
 
 h1,
 .h1 {
+  font-size: var(--h1-text-size);
   font-family: var(--h1-font);
   font-weight: var(--h1-font-weight);
   text-transform: var(--h1-text-transform);
+  font-size: var(--h1-text-size);
   color: var(--h1-color);
   background: var(--h1-bg-color);
   border: var(--h1-border);
@@ -217,6 +226,7 @@ h1,
 
 h2,
 .h2 {
+  font-size: var(--h2-text-size);
   font-family: var(--h2-font);
   font-weight: var(--h2-font-weight);
   text-transform: var(--h2-text-transform);
@@ -231,10 +241,12 @@ h2,
   position: var(--h2-position);
 
   outline: var(--border-sm) solid var(--dark);
+  letter-spacing: var(--lg);
 }
 
 h3,
 .h3 {
+  font-size: var(--h3-text-size);
   font-family: var(--h3-font);
   font-weight: var(--h3-font-weight);
   text-transform: var(--h3-text-transform);
@@ -249,8 +261,9 @@ h3,
   position: var(--h3-position);
 }
 
-h4,
+h4:not(.p),
 .h4 {
+  font-size: var(--h4-text-size);
   font-family: var(--h4-font);
   font-weight: var(--h4-font-weight);
   text-transform: var(--h4-text-transform);
@@ -266,8 +279,9 @@ h4,
   outline: var(--border-sm) solid var(--dark);
 }
 
-h5,
+h5:not(.h6):not(.h4),
 .h5 {
+  font-size: var(--h5-text-size);
   font-family: var(--h5-font);
   font-weight: var(--h5-font-weight);
   text-transform: var(--h5-text-transform);
@@ -278,14 +292,27 @@ h5,
   width: var(--h5-width);
   margin: var(--h5-margin);
   padding: var(--h5-padding);
-  position: var(--h5-position);
+  //position: var(--h5-position);
 
-  //border-top: thin;
   outline: var(--border-sm) solid var(--dark);
+  transform: rotate(-7deg);
+}
+
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+h5:not(.h6):not(.h4):hover,
+.h5:hover {
+  --_i: 100%;
+  transition: 0.3s, background-size 0.3s 0.3s;
 }
 
 h6,
 .h6 {
+  font-size: var(--h6-text-size);
   font-family: var(--h6-font);
   font-weight: var(--h6-font-weight);
   text-transform: var(--h6-text-transform);
@@ -297,11 +324,15 @@ h6,
   margin: var(--h6-margin);
   padding: var(--h6-padding);
   position: var(--h6-position);
-  text-shadow: -2px 2px var(--dark), -2px 2px var(--light);
+
+  text-shadow: -5px 5px var(--dark), -6px 6px var(--light);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
 a:not(p a),
 .a {
+  font-size: var(--a-text-size);
   font-family: var(--a-font);
   font-weight: var(--a-font-weight);
   text-transform: var(--a-text-transform);
@@ -321,10 +352,15 @@ a:hover {
   background: var(--a-hover-bg-color);
   border: var(--a-hover-border);
   border-radius: var(--a-hover-border-radius);
+
+  cursor: pointer;
 }
 
+h3 .p a,
 p a,
-.p a {
+.p a,
+button {
+  font-size: var(--p-a-text-size);
   font-family: var(--p-a-font);
   font-weight: var(--p-a-font-weight);
   text-transform: var(--p-a-text-transform);
@@ -332,10 +368,13 @@ p a,
   background: var(--p-a-bg-color);
   border: var(--p-a-border);
   border-radius: var(--p-a-border-radius);
+  padding: var(--md) var(--md) 0;
 
   text-decoration: none;
 }
-p a:hover {
+.p a:hover,
+p a:hover,
+button:hover {
   font-family: var(--p-a-hover-font);
   font-weight: var(--p-a-hover-font-weight);
   text-transform: var(--p-a-hover-text-transform);
@@ -345,24 +384,15 @@ p a:hover {
   border-radius: var(--p-a-hover-border-radius);
 }
 
-button {
-  color: var(--dark);
-  border: unset;
-  border-radius: 0;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--success);
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  background: var(--background);
-}
-button:focus,
-button:focus-visible {
-  outline: var(--border-md) auto -webkit-focus-ring-color;
+p {
+  font-size: var(--p-text-size);
+  font-family: var(--p-font);
+  font-weight: var(--p-font-weight);
+  text-transform: var(--p-text-transform);
+  color: var(--p-color);
+  background: var(--p-bg-color);
+  border: var(--p-border);
+  border-radius: var(--p-border-radius);
 }
 
 svg {
@@ -402,6 +432,10 @@ p,
   position: var(--p-position);
 }
 
+section {
+  background: var(--neutral);
+}
+
 /* START media */
 /*
 @media (prefers-color-scheme: light) {
@@ -426,9 +460,14 @@ p,
 }
 
 @font-face {
-  font-family: "IBMPlexMono";
+  font-family: "IBMPlexMono-SemiBold";
   src: local("IBMPlexMono-SemiBold"),
     url("./assets/fonts/IBMPlexMono-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "IBMPlexMono-Bold";
+  src: local("IBMPlexMono-Bold"), url("./assets/fonts/IBMPlexMono-Bold.ttf");
 }
 
 @font-face {
@@ -470,7 +509,7 @@ p,
 #contact a svg:not(.star) {
   position: relative;
   fill: var(--success);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-out;
   z-index: 98;
   top: 30px;
   left: 34px;
@@ -491,8 +530,8 @@ p,
   stroke-width: var(--xl);
   animation: svg-spin infinite 8s linear;
   z-index: 97;
-  top: 11px;
-  left: 15px;
+  top: 0;
+  left: 3px;
   display: none;
 }
 
@@ -500,6 +539,18 @@ p,
   display: flex;
   flex-direction: column;
   gap: 2em;
+}
+
+.experience .header {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  @apply lg:w-1/2;
+}
+
+.experience ul {
+  list-style: katakana inside;
 }
 
 @media (min-width: 768px) {
@@ -510,6 +561,18 @@ p,
 /* end CUSTOM STYLES */
 
 /* start ANIMATIONS */
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 2px 3px rgba(40, 76, 82, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 5px 3px rgba(40, 76, 82, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 3px 3px rgba(40, 76, 82, 0.5);
+  }
+}
+
 @keyframes svg-spin {
   from {
     transform: rotate(0deg);

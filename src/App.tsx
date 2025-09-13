@@ -14,18 +14,18 @@ const App = () => {
     <main>
       <section>
         <h1>Style Guide</h1>
-        <div className="styles">
+        <div className="flex justify-around">
           <div>
             <div>
               <h2>Typography</h2>
             </div>
             <div>
-              <h1>Headline h1</h1>
-              <h2>Headline h2</h2>
-              <h3>Headline h3</h3>
-              <h4>Headline h4</h4>
-              <h5>Headline h5</h5>
-              <h6>Headline h6</h6>
+              <div className="h1">Headline h1</div>
+              <div className="h2">Headline h2</div>
+              <div className="h3">Headline h3</div>
+              <div className="h4">Headline h4</div>
+              <div className="h5">h5</div>
+              <div className="h6">Headline h6</div>
               <div>
                 <a href="#">Link</a>
               </div>
@@ -43,105 +43,114 @@ const App = () => {
               <h2>Typography --Reference</h2>
             </div>
             <div>
-              <h1>Universal Studios</h1>
-              <h2>Halloween</h2>
+              <div className="h1">Universal Studios</div>
+              <div className="h2">Halloween</div>
+              <div className="h5">'24</div>
+              <div className="h6">こんにちは世界</div>
               <p>
                 HORR
                 <a href="">O</a>R
               </p>
-              <h5>'24</h5>
-              <h4>Nights</h4>
-              <h6>こんにちは世界</h6>
+              <div className="h4">Nights</div>
             </div>
           </div>
-
+        </div>
+      </section>
+      <section>
+        <div className="w-full">
           <div>
-            <div>
-              <h2>Typography --Example</h2>
-            </div>
-            <div>
-              <header>
-                <div>
-                  <h1>Jennifer Haggerty</h1>
-                  <h2>Frontend / Interface Developer</h2>
-                </div>
-                <nav id="contact">
-                  <ul>
-                    <li>
-                      <a
-                        href="mailto:thejenniferhaggerty@gmail.com"
-                        aria-label="Email Jennifer"
-                      >
-                        <EmailIcon className="icon-link" />
-
-                        <StarIcon className="star" />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="./assets/jennifer_haggerty_interface_developer.pdf"
-                        aria-label="Download Jennifer's resume"
-                        target="_blank"
-                      >
-                        <ResumeIcon className="icon-link" />
-
-                        <StarIcon className="star" />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://github.com/JennHaggerty"
-                        aria-label="Github"
-                        rel="external"
-                        target="_blank"
-                      >
-                        <GithubIcon className="icon-link" />
-
-                        <StarIcon className="star" />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://jennhaggerty.github.io"
-                        aria-label="Follow the blog"
-                        rel="external"
-                        target="_blank"
-                      >
-                        <RssIcon className="icon-link" />
-
-                        <StarIcon className="star" />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/in/jennifer-haggerty-01915556"
-                        aria-label="LinkedIn"
-                        rel="external"
-                        target="_blank"
-                      >
-                        <LinkedInIcon className="icon-link" />
-
-                        <StarIcon className="star" />
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </header>
+            <h2>Typography --Example</h2>
+          </div>
+          <div>
+            <header>
               <div>
-                <h3>Summary</h3>
-                <p>
-                  I have enjoyed creating and maintaining user-centric, ADA
-                  compliant web applications for 10+ years. I take a
-                  mobile-first code design approach that iOS and Android users
-                  may enjoy. My favorite tools are JavaScript, <a>React</a>,
-                  Next.js, TypeScript, SASS/SCSS, MySQL, and Github but you
-                  could drop me into any stack.
-                </p>
+                <div className="h1">Jennifer Haggerty</div>
+                <div className="h2">Frontend / Interface Developer</div>
               </div>
-              <div className="experience">
+              <nav id="contact">
+                <ul>
+                  <li>
+                    <a
+                      href="mailto:thejenniferhaggerty@gmail.com"
+                      aria-label="Email Jennifer"
+                    >
+                      <EmailIcon className="icon-link" />
+
+                      <StarIcon className="star" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./assets/jennifer_haggerty_interface_developer.pdf"
+                      aria-label="Download Jennifer's resume"
+                      target="_blank"
+                    >
+                      <ResumeIcon className="icon-link" />
+
+                      <StarIcon className="star" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/JennHaggerty"
+                      aria-label="Github"
+                      rel="external"
+                      target="_blank"
+                    >
+                      <GithubIcon className="icon-link" />
+
+                      <StarIcon className="star" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://jennhaggerty.github.io"
+                      aria-label="Follow the blog"
+                      rel="external"
+                      target="_blank"
+                    >
+                      <RssIcon className="icon-link" />
+
+                      <StarIcon className="star" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/jennifer-haggerty-01915556"
+                      aria-label="LinkedIn"
+                      rel="external"
+                      target="_blank"
+                    >
+                      <LinkedInIcon className="icon-link" />
+
+                      <StarIcon className="star" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+            <div>
+              <h3>Summary</h3>
+              <p>
+                I have enjoyed creating and maintaining user-centric, ADA
+                compliant web applications for 10+ years. I take a mobile-first
+                code design approach that iOS and Android users may enjoy. My
+                favorite tools are JavaScript, <a>React</a>, Next.js,
+                TypeScript, SASS/SCSS, MySQL, and Github but you could drop me
+                into any stack.
+              </p>
+            </div>
+            <div className="experience">
+              <h3>Experience</h3>
+              <div>
                 <div className="header">
-                  <h4>Interface Developer at CQL via Remote</h4>
-                  <h5>1'23-12'24</h5>
+                  <div>
+                    <h4>Interface Developer at CQL Corp</h4>
+                    <h5>1'23-12'24</h5>
+                  </div>
+                  <div>
+                    <h6>リモート</h6>
+                  </div>
                 </div>
                 <p>
                   <ul>
