@@ -100,15 +100,15 @@
 
   --h6-font: "MochiyPopPOne";
   --h6-font-weight: 400;
-  --h6-text-size: 2em;
+  --h6-text-size: 26px;
   --h6-text-transform: lowercase;
   --h6-color: var(--green);
   --h6-bg-color: "transparent";
   --h6-border: var(--border-sm) solid var(--white);
   --h6-border-radius: 0;
   --h6-width: fit-content;
-  --h6-margin: 10px auto;
-  --h6-padding: inherit;
+  --h6-margin: auto;
+  --h6-padding: 0;
   --h6-position: inherit;
 
   --p-font: "CutiveMono";
@@ -165,8 +165,15 @@
   color-scheme: light dark;
   color: var(--white);
   background-color: var(--dark);
+  background: repeating-radial-gradient(
+    circle at center,
+    var(--dark),
+    var(--dark) 2em,
+    var(--red) 2em,
+    var(--red) 3em
+  );
 
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
 
@@ -174,6 +181,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
 }
 
 body {
@@ -187,6 +199,7 @@ body {
 section {
   background: var(--neutral);
   padding: var(--xl);
+  margin: 0 0 var(--xl);
 }
 
 h1,
@@ -325,7 +338,7 @@ h6,
   padding: var(--h6-padding);
   position: var(--h6-position);
 
-  text-shadow: -5px 5px var(--dark), -6px 6px var(--light);
+  text-shadow: -3px 3px var(--dark), -4px 4px var(--light);
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
@@ -493,7 +506,6 @@ section {
 }
 
 #contact ul {
-  padding: unset;
   min-height: 5em;
 }
 #contact li {
@@ -505,12 +517,17 @@ section {
   z-index: 99;
   height: 100%;
   width: 100%;
+  text-align: center;
+  text-align: -webkit-center;
 }
 #contact a svg:not(.star) {
   position: relative;
   fill: var(--success);
   transition: transform 0.3s ease-out;
   z-index: 98;
+  top: 30px;
+}
+@media (min-width: 768px) {
   top: 30px;
   left: 34px;
 }
@@ -531,8 +548,14 @@ section {
   animation: svg-spin infinite 8s linear;
   z-index: 97;
   top: 0;
-  left: 3px;
+  left: -1em;
   display: none;
+}
+@media (min-width: 525px) {
+  .star {
+    left: unset;
+    justify-self: anchor-center;
+  }
 }
 
 .styles {
