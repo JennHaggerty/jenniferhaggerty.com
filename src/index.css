@@ -107,7 +107,7 @@
   --h6-border: var(--border-sm) solid var(--white);
   --h6-border-radius: 0;
   --h6-width: fit-content;
-  --h6-margin: auto;
+  --h6-margin: 0;
   --h6-padding: 0;
   --h6-position: inherit;
 
@@ -172,6 +172,7 @@
     var(--red) 2em,
     var(--red) 3em
   );
+  background-attachment: fixed;
 
   font-size: 16px;
   line-height: 1.5;
@@ -564,7 +565,7 @@ section {
   gap: 2em;
 }
 
-.experience .header {
+.portfolio .header {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -572,7 +573,7 @@ section {
   @apply lg:w-1/2;
 }
 
-.experience ul {
+.portfolio ul {
   list-style: katakana inside;
 }
 

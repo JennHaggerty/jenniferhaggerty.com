@@ -148,36 +148,26 @@ const App = () => {
               </p>
             </div>
             <div className="experience">
-              <h3>Experience</h3>
+              <h3>Portfolio</h3>
               <div>
                 <div className="header">
                   <div>
-                    <h4>Interface Developer at CQL Corp</h4>
-                    <h5>1'23-12'24</h5>
+                    <h4>Paula's Choice</h4>
+                    <h5>'23-'24</h5>
                   </div>
-                  <h6>remote</h6>
+                  <h6>SFCC</h6>
                 </div>
                 <p>
                   <ul>
+                    <li>I did a thing.</li>
+                    <li>I built this thing specifically (or the proto)</li>
+                    <li>Loved working with React/TS on this component.</li>
                     <li>
-                      Built bespoke React component libraries with TypeScript
-                      using Salesforce to serve world-wide loyalty programs.
+                      Participated in the tech meetings mostly, some business.
                     </li>
                     <li>
-                      Customized Shopify Liquid themes with designer provided
-                      Figma comps to ensure brand cohesion.
-                    </li>
-                    <li>
-                      Integrated Google A/B tests with Salesforce promotions and
-                      customer segments.
-                    </li>
-                    <li>
-                      Established a turn-key solution using XML markup to
-                      support automated import into the Salesforce ecosystem.
-                    </li>
-                    <li>
-                      Addressed critical ADA Compliance HTML/CSS3 elements on
-                      web and mobile design
+                      Addressed critical ADA Compliance elements on web and
+                      mobile design
                     </li>
                   </ul>
                 </p>
