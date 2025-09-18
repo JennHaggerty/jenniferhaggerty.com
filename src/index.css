@@ -197,10 +197,12 @@ body {
   min-height: 100vh;
 }
 
-section {
+section,
+.section {
   background: var(--neutral);
   padding: var(--xl);
   margin: 0 0 var(--xl);
+  border: var(--lg) dotted;
 }
 
 h1,
@@ -506,14 +508,14 @@ section {
   display: none;
 }
 
-#contact ul {
+header nav ul {
   min-height: 5em;
 }
-#contact li {
+header nav li {
   position: relative;
   width: 100%;
 }
-#contact li a {
+header nav li a {
   position: absolute;
   z-index: 99;
   height: 100%;
@@ -521,7 +523,7 @@ section {
   text-align: center;
   text-align: -webkit-center;
 }
-#contact a svg:not(.star) {
+header nav a svg:not(.star) {
   position: relative;
   fill: var(--success);
   transition: transform 0.3s ease-out;
@@ -532,11 +534,11 @@ section {
   top: 30px;
   left: 34px;
 }
-#contact a:hover svg:not(.star) {
+header nav a:hover svg:not(.star) {
   fill: var(--background);
   transform: scale(1.5);
 }
-#contact a:hover .star {
+header nav a:hover .star {
   display: block;
 }
 
@@ -569,8 +571,6 @@ section {
   display: flex;
   justify-content: center;
   margin: auto;
-
-  @apply lg:w-1/2;
 }
 
 .portfolio ul {
