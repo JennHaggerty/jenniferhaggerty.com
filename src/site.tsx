@@ -10,10 +10,10 @@ export const site = {
   tagline: "Frontend / Interface Developer",
   description: (
     <>
-      I continue to enjoy creating and maintaining user-centric, ADA compliant
-      web applications for over 10+ years. My favorite tools are React,
+      I enjoy creating and maintaining user-centric, ADA compliant web
+      applications and have for over 10+ years. My favorite tools are React,
       TypeScript, Node.js, TailwindCSS, SASS/SCSS, and{" "}
-      <a href="https://jennhaggerty.github.io">Github</a>. When I'm not at the
+      <a href="https://github.com/JennHaggerty">Github</a>. When I'm not at the
       computer deconstructing artworks into websites I'm outside in the garden
       with my dogs.
     </>
@@ -36,7 +36,7 @@ export const site = {
         },
         {
           ariaLabel: "Download her resume.",
-          href: "./assets/jennifer_haggerty_interface_developer.pdf",
+          href: "jennifer_haggerty_interface_developer.pdf",
           content: (
             <>
               <ResumeIcon className="icon-link" />
@@ -48,7 +48,7 @@ export const site = {
         },
         {
           ariaLabel: "Check out her Github.",
-          href: "https://jennhaggerty.github.io",
+          href: "https://github.com/JennHaggerty",
           content: (
             <>
               <GithubIcon className="icon-link" />
@@ -87,76 +87,24 @@ export const site = {
         },
       ],
     },
-    {
-      id: "footer-navigation",
-      location: "footer",
-      items: [
-        {
-          ariaLabel: "Email Address",
-          href: "mailto:thejenniferhaggerty@gmail.com",
-          content: (
-            <>
-              <EmailIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
-        },
-        {
-          ariaLabel: "Download Jennifer's resume",
-          href: "./assets/jennifer_haggerty_interface_developer.pdf",
-          content: (
-            <>
-              <ResumeIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
-          target: "_blank",
-        },
-        {
-          ariaLabel: "Github",
-          href: "https://jennhaggerty.github.io",
-          content: (
-            <>
-              <GithubIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
-          rel: "rel",
-          target: "_blank",
-        },
-        {
-          ariaLabel: "Follow the blog",
-          href: "https://jennhaggerty.github.io",
-          content: (
-            <>
-              <RssIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
-          rel: "rel",
-          target: "_blank",
-        },
-        {
-          ariaLabel: "LinkedIn",
-          href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
-          content: (
-            <>
-              <LinkedInIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
-          rel: "rel",
-          target: "_blank",
-        },
-      ],
-    },
   ],
   skills: [
+    {
+      title: "Front End",
+      content: "HTML, CSS, JavaScript, React, Webpack, Material UI, Bootstrap",
+    },
+    {
+      title: "Back End",
+      content: "Node, Java, ASP.NET, C#",
+    },
+    {
+      title: "Database",
+      content: "MySQL, MongoDB, GraphQL",
+    },
+    {
+      title: "Mobile",
+      content: "React Native, Ionic, Java, SDK, Swift",
+    },
     {
       title: "Languages",
       content: "HTML, CSS/SCSS, JavaScript, TypeScript, Java, C#, PHP",
