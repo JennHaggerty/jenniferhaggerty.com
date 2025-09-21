@@ -87,7 +87,7 @@
 
   --h5-font: "Lacquer";
   --h5-font-weight: 400;
-  --h5-text-size: 2.25em;
+  --h5-text-size: 2em;
   --h5-text-transform: lowercase;
   --h5-color: var(--brand);
   --h5-bg-color: var(--dark);
@@ -100,7 +100,7 @@
 
   --h6-font: "MochiyPopPOne";
   --h6-font-weight: 400;
-  --h6-text-size: 26px;
+  --h6-text-size: 2.25em;
   --h6-text-transform: lowercase;
   --h6-color: var(--green);
   --h6-bg-color: "transparent";
@@ -330,12 +330,6 @@ h5:not(.h6):not(.h4),
   transform: rotate(-7deg);
 }
 
-@keyframes drawCircle {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 h5:not(.h6):not(.h4):hover,
 .h5:hover {
   --_i: 100%;
@@ -376,7 +370,7 @@ a:not(p a):not(a.card),
   text-shadow: -2px 2px var(--dark), -2px 2px var(--light);
   text-decoration: none;
 }
-a:hover:not(a.card) {
+a:hover:not(p a):not(a.card) {
   font-family: var(--a-hover-font);
   font-weight: var(--a-hover-font-weight);
   text-transform: var(--a-hover-text-transform);
@@ -500,6 +494,26 @@ ul.p {
 /* end FONT FACES */
 
 /* start CUSTOM STYLES */
+.bw-image {
+  filter: grayscale(1);
+}
+.card-image {
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  margin-top: -8em;
+  z-index: 0;
+}
+.card-title,
+.card-tagline,
+.card-badge {
+  z-index: 1;
+}
+.card-badge {
+  position: absolute;
+  top: 3em;
+}
+
 ul.grid-list {
   gap: var(--sm);
   display: grid;
@@ -527,12 +541,6 @@ ul.grid-list {
   width: 100%;
   opacity: 0;
   background: var(--neutral);
-}
-.card-image {
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  filter: grayscale(1);
 }
 .grid-list .card .section:hover img {
   -webkit-transform: scale(0.85) rotate(0.01deg);
