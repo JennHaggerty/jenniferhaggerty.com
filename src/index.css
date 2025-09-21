@@ -44,7 +44,7 @@
   --h1-width: fit-content;
   --h1-margin: 5px auto;
   --h1-padding: 0 0.35em;
-  --h1-position: inherit;
+  --h1-position: relative;
 
   --h2-font: "Karantina";
   --h2-font-weight: 400;
@@ -57,7 +57,7 @@
   --h2-width: fit-content;
   --h2-margin: 10px auto;
   --h2-padding: 0 var(--md);
-  --h2-position: inherit;
+  --h2-position: relative;
 
   --h3-font: "CutiveMono";
   --h3-font-weight: bold;
@@ -70,7 +70,7 @@
   --h3-width: fit-content;
   --h3-margin: var(--xl) auto 0;
   --h3-padding: 5px 5px 0 5px;
-  --h3-position: inherit;
+  --h3-position: relative;
 
   --h4-font: "IBMPlexMono-Bold";
   --h4-font-weight: 400;
@@ -81,9 +81,9 @@
   --h4-border: var(--border-md) solid var(--light);
   --h4-border-radius: 0 0 0 var(--border-md);
   --h4-width: fit-content;
-  --h4-margin: 0 auto;
+  --h4-margin: -1.25em auto 0;
   --h4-padding: inherit;
-  --h4-position: inherit;
+  --h4-position: relative;
 
   --h5-font: "Lacquer";
   --h5-font-weight: 400;
@@ -96,7 +96,7 @@
   --h5-width: max-content;
   --h5-margin: auto;
   --h5-padding: var(--lg);
-  --h5-position: inherit;
+  --h5-position: relative;
 
   --h6-font: "MochiyPopPOne";
   --h6-font-weight: 400;
@@ -109,11 +109,11 @@
   --h6-width: fit-content;
   --h6-margin: 0;
   --h6-padding: 0;
-  --h6-position: inherit;
+  --h6-position: relative;
 
   --p-font: "CutiveMono";
   --p-font-weight: 400;
-  --p-text-size: 1.5em;
+  --p-text-size: 1.25em;
   --p-text-transform: none;
   --p-color: var(--black);
   --p-bg-color: var(--white);
@@ -162,6 +162,9 @@
   --a-hover-border-radius: 0;
   --a-width: fit-content;
 
+  --animation-speed-normal: 8s;
+  --animation-speed-reduced: 15s;
+
   color-scheme: light dark;
   color: var(--white);
   background-color: var(--dark);
@@ -199,10 +202,23 @@ body {
 
 section,
 .section {
-  background: var(--neutral);
   padding: var(--xl);
   margin: 0 0 var(--xl);
-  border: var(--lg) dotted;
+  background-color: var(--neutral);
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+section::before,
+.section::before {
+  margin: var(--lg);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border: 10px dotted var(--light);
+  filter: drop-shadow(0 0 3px var(--light));
 }
 
 h1,
@@ -346,7 +362,7 @@ h6,
   text-orientation: upright;
 }
 
-a:not(p a),
+a:not(p a):not(a.card),
 .a {
   font-size: var(--a-text-size);
   font-family: var(--a-font);
@@ -360,7 +376,7 @@ a:not(p a),
   text-shadow: -2px 2px var(--dark), -2px 2px var(--light);
   text-decoration: none;
 }
-a:hover {
+a:hover:not(a.card) {
   font-family: var(--a-hover-font);
   font-weight: var(--a-hover-font-weight);
   text-transform: var(--a-hover-text-transform);
@@ -411,6 +427,20 @@ p {
   border-radius: var(--p-border-radius);
 }
 
+p,
+.p {
+  font-family: var(--p-font);
+  text-transform: var(--p-text-transform);
+  color: var(--p-color);
+  background: var(--p-bg-color);
+  border: var(--p-border);
+  border-radius: var(--p-border-radius);
+  width: var(--p-width);
+  margin: var(--p-margin);
+  padding: var(--p-padding);
+  position: var(--p-position);
+}
+
 svg {
   height: 2em;
 }
@@ -429,45 +459,11 @@ ul {
   display: flex;
   justify-content: space-around;
 }
-
-p ul {
+p ul,
+ul.p {
+  font-size: var(--p-text-size);
   flex-direction: column;
 }
-
-p,
-.p {
-  font-family: var(--p-font);
-  text-transform: var(--p-text-transform);
-  color: var(--p-color);
-  background: var(--p-bg-color);
-  border: var(--p-border);
-  border-radius: var(--p-border-radius);
-  width: var(--p-width);
-  margin: var(--p-margin);
-  padding: var(--p-padding);
-  position: var(--p-position);
-}
-
-section {
-  background: var(--neutral);
-}
-
-/* START media */
-/*
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-  */
-/* END media */
 
 /* start FONT FACES */
 @font-face {
@@ -504,6 +500,56 @@ section {
 /* end FONT FACES */
 
 /* start CUSTOM STYLES */
+ul.grid-list {
+  gap: var(--sm);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  ul.grid-list {
+    gap: var(--xl);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  ul.grid-list {
+    gap: var(--lg);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid-list .card {
+  position: relative;
+}
+.grid-list .card .section {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: var(--neutral);
+}
+.card-image {
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  filter: grayscale(1);
+}
+.grid-list .card .section:hover img {
+  -webkit-transform: scale(0.85) rotate(0.01deg);
+  transform: scale(0.85) rotate(0.01deg);
+  filter: grayscale(0);
+}
+.grid-list .card .section:hover {
+  opacity: 1;
+}
+
+.badge {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  z-index: 999;
+}
+
 .hidden {
   display: none;
 }
@@ -542,13 +588,24 @@ header nav a:hover .star {
   display: block;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.header h5 {
+  font-size: 1.5em !important;
+}
+.header div {
+  margin: auto 0;
+}
+
 .star {
   position: absolute;
   height: 4em;
   fill: var(--accent);
   stroke: var(--brand);
   stroke-width: var(--xl);
-  animation: svg-spin infinite 8s linear;
   z-index: 97;
   top: 0;
   left: -1em;
@@ -567,13 +624,7 @@ header nav a:hover .star {
   gap: 2em;
 }
 
-.portfolio .header {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.portfolio ul {
+ul:not(nav ul):not(.grid-list) {
   list-style: katakana inside;
 }
 
@@ -585,6 +636,17 @@ header nav a:hover .star {
 /* end CUSTOM STYLES */
 
 /* start ANIMATIONS */
+@media (prefers-reduced-motion: no-preference) {
+  .star {
+    animation: svg-spin infinite var(--animation-speed-normal) linear;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .star {
+    animation: svg-spin infinite var(--animation-speed-reduced) linear;
+  }
+}
+
 @keyframes glow-pulse {
   0% {
     box-shadow: 0 0 2px 3px rgba(40, 76, 82, 0.5);

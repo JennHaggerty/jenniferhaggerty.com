@@ -8,15 +8,23 @@ import StarIcon from "./assets/svgs/star";
 export const site = {
   name: "Jennifer Haggerty",
   tagline: "Frontend / Interface Developer",
-  description:
-    "I have enjoyed creating and maintaining user-centric, ADA compliant web applications for 10+ years.  I take a mobile-first code design approach that iOS and Android users may enjoy. My favorite tools are JavaScript, React, Next.js, TypeScript, SASS/SCSS, MySQL, and Github.",
+  description: (
+    <>
+      I continue to enjoy creating and maintaining user-centric, ADA compliant
+      web applications for over 10+ years. My favorite tools are React,
+      TypeScript, Node.js, TailwindCSS, SASS/SCSS, and{" "}
+      <a href="https://jennhaggerty.github.io">Github</a>. When I'm not at the
+      computer deconstructing artworks into websites I'm outside in the garden
+      with my dogs.
+    </>
+  ),
   menus: [
     {
       id: "main-navigation",
       location: "header",
       items: [
         {
-          ariaLabel: "Email Address",
+          ariaLabel: "Email Jennifer.",
           href: "mailto:thejenniferhaggerty@gmail.com",
           content: (
             <>
@@ -27,7 +35,7 @@ export const site = {
           ),
         },
         {
-          ariaLabel: "Download Jennifer's resume",
+          ariaLabel: "Download her resume.",
           href: "./assets/jennifer_haggerty_interface_developer.pdf",
           content: (
             <>
@@ -39,7 +47,7 @@ export const site = {
           target: "_blank",
         },
         {
-          ariaLabel: "Github",
+          ariaLabel: "Check out her Github.",
           href: "https://jennhaggerty.github.io",
           content: (
             <>
@@ -48,7 +56,7 @@ export const site = {
               <StarIcon className="star" />
             </>
           ),
-          rel: "external",
+          rel: "rel",
           target: "_blank",
         },
         {
@@ -61,11 +69,11 @@ export const site = {
               <StarIcon className="star" />
             </>
           ),
-          rel: "external",
+          rel: "rel",
           target: "_blank",
         },
         {
-          ariaLabel: "LinkedIn",
+          ariaLabel: "Jennifer's LinkedIn.",
           href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
           content: (
             <>
@@ -74,7 +82,7 @@ export const site = {
               <StarIcon className="star" />
             </>
           ),
-          rel: "external",
+          rel: "rel",
           target: "_blank",
         },
       ],
@@ -116,7 +124,7 @@ export const site = {
               <StarIcon className="star" />
             </>
           ),
-          rel: "external",
+          rel: "rel",
           target: "_blank",
         },
         {
@@ -129,7 +137,7 @@ export const site = {
               <StarIcon className="star" />
             </>
           ),
-          rel: "external",
+          rel: "rel",
           target: "_blank",
         },
         {
@@ -142,7 +150,7 @@ export const site = {
               <StarIcon className="star" />
             </>
           ),
-          rel: "external",
+          rel: "rel",
           target: "_blank",
         },
       ],
@@ -182,10 +190,10 @@ export const site = {
   ],
   portfolio: [
     {
-      "image-src": "./assets/thumbnails/paulaschoice.png",
+      "image-src": "thumbnails/paulaschoice.png",
       "image-alt": "Paula's Choice",
       href: "https://www.denon.com/en-us/",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "Paula's Choice",
       date: "'23-'24",
@@ -193,10 +201,10 @@ export const site = {
       items: ["I did a thing", "I did another thing"],
     },
     {
-      "image-src": "./assets/thumbnails/denon.png",
+      "image-src": "thumbnails/denon.png",
       "image-alt": "Denon Premium Sound",
       href: "https://www.myjobquest.io",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "Denon",
       date: "'23",
@@ -204,21 +212,21 @@ export const site = {
       items: ["I did a thing", "I did another thing"],
     },
     {
-      "image-src": "./assets/thumbnails/myjobquest.png",
+      "image-src": "thumbnails/myjobquest.png",
       "image-alt": "MyJobQuest.io",
       href: "https://www.paulaschoice.com",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "MyJobQuest.io",
       date: "'23-'24",
-      tagline: "Shopify",
+      tagline: "react",
       items: ["I did a thing", "I did another thing"],
     },
     {
-      "image-src": "./assets/thumbnails/masimo.png",
+      "image-src": "thumbnails/masimo.png",
       "image-alt": "Masimo Personal and Professional Health",
       href: "https://www.masimo.com",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "Masimo",
       date: "'23",
@@ -226,10 +234,10 @@ export const site = {
       items: ["I did a thing", "I did another thing"],
     },
     {
-      "image-src": "./assets/thumbnails/onesource.png",
+      "image-src": "thumbnails/onesource.png",
       "image-alt": "OneSource Supply",
       href: "https://www.onesourcesupplyco.com",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "OneSource",
       date: "'24",
@@ -237,21 +245,21 @@ export const site = {
       items: ["I did a thing", "I did another thing"],
     },
     {
-      "image-src": "./assets/thumbnails/taxslayer.png",
+      "image-src": "thumbnails/taxslayer.png",
       "image-alt": "TaxSlayer",
       href: "https://www.taxslayer.com",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "TaxSlayer",
       date: "'21-'22",
-      tagline: "React/MVC",
+      tagline: "React",
       items: ["I did a thing", "I did another thing"],
     },
     {
-      "image-src": "./assets/thumbnails/psychedelicart.png",
+      "image-src": "thumbnails/psychedelicart.png",
       "image-alt": "Psychedelic Art Exchange",
       href: "https://www.concertpostergallery.com",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "Psychedelic Art Exchange",
       date: "'19",
@@ -259,21 +267,21 @@ export const site = {
       items: ["I did a thing", "I did another thing"],
     },
     {
-      "image-src": "./assets/thumbnails/gocollect.png",
+      "image-src": "thumbnails/gocollect.png",
       "image-alt": "GoCollect",
       href: "https://www.gocollect.com",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "GoCollect",
       date: "'19-'20",
-      tagline: "Symfony/PHP",
+      tagline: "PHP",
       items: ["I did a thing", "I did another thing"],
     },
     {
-      "image-src": "./assets/thumbnails/fastgrowingtrees.png",
+      "image-src": "thumbnails/fastgrowingtrees.png",
       "image-alt": "Fast Growing Trees",
       href: "https://www.fast-growing-trees.com",
-      external: false,
+      rel: "external",
       target: "_blank",
       title: "Fast Growing Trees",
       date: "'18-'19",

@@ -99,20 +99,16 @@ const StyleguideExample = () => {
               </div>
               <h6>SFCC</h6>
             </div>
-            <p>
-              <ul>
-                <li>I did a thing.</li>
-                <li>I built this thing specifically (or the proto)</li>
-                <li>Loved working with React/TS on this component.</li>
-                <li>
-                  Participated in the tech meetings mostly, some business.
-                </li>
-                <li>
-                  Addressed critical ADA Compliance elements on web and mobile
-                  design
-                </li>
-              </ul>
-            </p>
+            <ul className="p">
+              <li>I did a thing.</li>
+              <li>I built this thing specifically (or the proto)</li>
+              <li>Loved working with React/TS on this component.</li>
+              <li>Participated in the tech meetings mostly, some business.</li>
+              <li>
+                Addressed critical ADA Compliance elements on web and mobile
+                design
+              </li>
+            </ul>
           </div>
         </div>
       </div>
