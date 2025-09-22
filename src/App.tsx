@@ -1,10 +1,17 @@
+import { useEffect } from "react";
 import "./App.css";
+import BlurIcon from "./assets/svgs/blur";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import Portfolio from "./components/Portfolio/Portfolio";
 import { site } from "./site";
+import { renderDrip } from "./function";
 
 const App = () => {
+  useEffect(() => {
+    renderDrip();
+  }, []);
+
   return (
     <main>
       <Header>
@@ -20,6 +27,7 @@ const App = () => {
         />
       </Header>
       <Portfolio />
+      <BlurIcon />
     </main>
   );
 };
