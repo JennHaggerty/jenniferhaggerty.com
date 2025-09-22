@@ -6,7 +6,7 @@ const BlurIcon = (props: Props) => {
   const { className } = props;
 
   return (
-    <svg className={className ? className : ""}>
+    <svg aria-hidden="true" className={className ? className : ""}>
       <defs>
         <filter id="liquid">
           <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />

@@ -6,8 +6,8 @@
   --pink: #cc003c;
   --green: #90bc0b;
   /* supporting palette */
-  --black: #0a0a0a;
-  //--black: black;
+  //--black: #0a0a0a;
+  --black: black;
   --white: #e3dad3;
   --grey: #433f3c;
   --orange: #ee670c;
@@ -495,14 +495,18 @@ ul.p {
 /* start CUSTOM STYLES */
 .cont {
   width: 100%;
-  height: 100vh;
-  position: relative;
+  height: 102vh;
+  position: absolute;
   overflow: hidden;
   border-top: 15px solid var(--dark);
   border-bottom: 15px solid var(--dark);
+  margin: -15px 0 0;
   border-radius: 10px;
   filter: url("#liquid");
   transform: rotate(180deg);
+  position: fixed;
+  top: 0;
+  z-index: -1;
 }
 
 .cont .drip {
@@ -512,7 +516,7 @@ ul.p {
   background: var(--dark);
   position: absolute;
   top: -100%;
-  animation: falling 5s linear infinite;
+  animation: falling 10s linear infinite;
   border-color: var(--dark);
   background: var(--dark);
 }
