@@ -331,7 +331,7 @@ h5:not(.h6):not(.h4),
 
 h5:not(.h6):not(.h4):hover,
 .h5:hover {
-  --_i: 100%;
+  //--_i: 100%;
   transition: 0.3s, background-size 0.3s 0.3s;
 }
 
