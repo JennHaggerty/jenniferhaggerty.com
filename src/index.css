@@ -7,6 +7,7 @@
   --green: #90bc0b;
   /* supporting palette */
   --black: #0a0a0a;
+  //--black: black;
   --white: #e3dad3;
   --grey: #433f3c;
   --orange: #ee670c;
@@ -87,7 +88,7 @@
 
   --h5-font: "Lacquer";
   --h5-font-weight: 400;
-  --h5-text-size: 2em;
+  --h5-text-size: 1.5em;
   --h5-text-transform: lowercase;
   --h5-color: var(--brand);
   --h5-bg-color: var(--dark);
@@ -200,7 +201,6 @@ body {
   min-height: 100vh;
 }
 
-section,
 .section {
   padding: var(--xl);
   margin: 0 0 var(--xl);
@@ -210,7 +210,6 @@ section,
   z-index: 0;
 }
 
-section::before,
 .section::before {
   margin: var(--lg);
   content: "";
@@ -494,8 +493,34 @@ ul.p {
 /* end FONT FACES */
 
 /* start CUSTOM STYLES */
+.cont {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border-top: 15px solid var(--dark);
+  border-bottom: 15px solid var(--dark);
+  border-radius: 10px;
+  filter: url("#liquid");
+  transform: rotate(180deg);
+}
+
+.cont .drip {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--dark);
+  position: absolute;
+  top: -100%;
+  animation: falling 5s linear infinite;
+  border-color: var(--dark);
+  background: var(--dark);
+}
+
 .bw-image {
   filter: grayscale(1);
+  height: 100%;
+  outline: var(--sm) solid var(--dark);
 }
 .card-image {
   height: 100%;
@@ -503,6 +528,8 @@ ul.p {
   transition: transform 0.4s;
   margin-top: -8em;
   z-index: 0;
+  border: var(--sm) solid var(--light);
+  outline: var(--sm) solid var(--dark);
 }
 .card-title,
 .card-tagline,
@@ -511,7 +538,7 @@ ul.p {
 }
 .card-badge {
   position: absolute;
-  top: 3em;
+  top: 4em;
 }
 
 ul.grid-list {
@@ -673,6 +700,21 @@ ul:not(nav ul):not(.grid-list) {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes falling {
+  0% {
+    top: -100%;
+  }
+  50% {
+    top: 0%;
+  }
+  80% {
+    top: 80%;
+  }
+  100% {
+    top: 100%;
   }
 }
 /* end ANIMATIONS */
