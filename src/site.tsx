@@ -140,7 +140,7 @@ export const site = {
     {
       "image-src": "thumbnails/myjobquest.png",
       "image-alt": "MyJobQuest.io",
-      href: "https://www.paulaschoice.com",
+      href: "https://www.myjobquest.io",
       rel: "external",
       target: "_blank",
       title: "MyJobQuest.io",
@@ -165,7 +165,7 @@ export const site = {
     {
       "image-src": "thumbnails/paulaschoice.png",
       "image-alt": "Paula's Choice",
-      href: "https://www.denon.com/en-us/",
+      href: "https://www.paulaschoice.com",
       rel: "external",
       target: "_blank",
       title: "Paula's Choice",
@@ -177,7 +177,7 @@ export const site = {
     {
       "image-src": "thumbnails/denon.png",
       "image-alt": "Denon Premium Sound",
-      href: "https://www.myjobquest.io",
+      href: "https://www.denon.com/en-us/",
       rel: "external",
       target: "_blank",
       title: "Denon",
