@@ -305,7 +305,8 @@ h4:not(.p),
   outline: var(--border-sm) solid var(--dark);
 }
 
-h5:not(.h6):not(.h4),
+h5:not(.h6),
+h5:not(.h4),
 .h5 {
   font-size: var(--h5-text-size);
   font-family: var(--h5-font);
@@ -318,15 +319,14 @@ h5:not(.h6):not(.h4),
   width: var(--h5-width);
   margin: var(--h5-margin);
   padding: var(--h5-padding);
-  //position: var(--h5-position);
 
   outline: var(--border-sm) solid var(--dark);
   transform: rotate(-7deg);
 }
 
-h5:not(.h6):not(.h4):hover,
+h5:not(.h6),
+h5:not(.h4):hover,
 .h5:hover {
-  //--_i: 100%;
   transition: 0.3s, background-size 0.3s 0.3s;
 }
 
