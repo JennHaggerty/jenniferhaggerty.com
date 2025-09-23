@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
+//--black: #0a0a0a;
+
 :root {
-  --yellow: #eacb35;
-  --pink: #cc003c;
-  --green: #90bc0b;
-  //--black: #0a0a0a;
   --black: black;
   --white: #e3dad3;
   --grey: #433f3c;
   --orange: #ee670c;
   --red: #c6031e;
   --blue: #66b3c4;
+  --yellow: #eacb35;
+  --pink: #cc003c;
+  --green: #90bc0b;
 
   --sm: 2px;
   --md: 4px;
