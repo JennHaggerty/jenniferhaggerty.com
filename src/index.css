@@ -288,7 +288,7 @@ h3,
 }
 
 h4:not(.p),
-.h4 {
+.h4:not(.p) {
   font-size: var(--h4-text-size);
   font-family: var(--h4-font);
   font-weight: var(--h4-font-weight);
@@ -592,12 +592,13 @@ header nav ul {
   min-height: 5em;
 }
 header nav li {
-  position: relative;
-  width: 100%;
+  //position: relative;
+  //width: 100%;
 }
 header nav li a {
-  position: absolute;
-  z-index: 99;
+  //position: absolute;
+  position: relative;
+  //z-index: 99;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -609,10 +610,6 @@ header nav a svg:not(.star) {
   transition: transform 0.3s ease-out;
   z-index: 98;
   top: 30px;
-}
-@media (min-width: 768px) {
-  top: 30px;
-  left: 34px;
 }
 header nav a:hover svg:not(.star) {
   fill: var(--background);
@@ -626,12 +623,6 @@ header nav a:hover .star {
   display: flex;
   justify-content: center;
   height: 100%;
-}
-.header h5 {
-  font-size: 1.5em !important;
-}
-.header div {
-  margin: auto 0;
 }
 
 .star {
@@ -647,26 +638,15 @@ header nav a:hover .star {
 }
 @media (min-width: 525px) {
   .star {
-    left: unset;
+    //left: unset;
     justify-self: anchor-center;
   }
-}
-
-.styles {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
 }
 
 ul:not(nav ul):not(.grid-list) {
   list-style: katakana inside;
 }
 
-@media (min-width: 768px) {
-  .styles {
-    flex-direction: row;
-  }
-}
 /* end CUSTOM STYLES */
 
 /* start ANIMATIONS */
