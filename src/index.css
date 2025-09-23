@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  /* primary palette */
   --yellow: #eacb35;
   --pink: #cc003c;
   --green: #90bc0b;
-  /* supporting palette */
   //--black: #0a0a0a;
   --black: black;
   --white: #e3dad3;
@@ -263,7 +261,6 @@ h2,
   text-transform: var(--h2-text-transform);
   color: var(--h2-color);
   background: var(--h2-bg-color);
-  /* TODO: want square border around each letter */
   border: var(--h2-border);
   border-radius: var(--h2-border-radius);
   width: var(--h2-width);
@@ -283,7 +280,6 @@ h3,
   text-transform: var(--h3-text-transform);
   color: var(--h3-color);
   background: var(--h3-bg-color);
-  /* TODO: want square border around each letter (?) */
   border: var(--h3-border);
   border-radius: var(--h3-border-radius);
   width: var(--h3-width);
