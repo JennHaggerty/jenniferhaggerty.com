@@ -521,32 +521,27 @@ ul.p {
   filter: grayscale(1);
   height: 100%;
   outline: var(--sm) solid var(--dark);
-}
-.card-image {
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  margin-top: -8em;
-  z-index: 0;
-  border: var(--sm) solid var(--light);
-  outline: var(--sm) solid var(--dark);
-}
-.card-title,
-.card-tagline,
-.card-badge {
+  opacity: 1;
+  position: absolute;
   z-index: 1;
 }
-.card-badge {
-  position: absolute;
-  top: 4em;
+.bw-image:hover {
+  opacity: 0;
 }
-
+@media (max-width: 768px) {
+  .bw-image {
+    opacity: 0;
+  }
+  .card-image {
+    transform: scale(0.9);
+  }
+}
 ul.grid-list {
-  gap: var(--sm);
+  gap: var(--lg);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
-@media (min-width: 768px) {
+@media (min-width: 666px) {
   ul.grid-list {
     gap: var(--xl);
     grid-template-columns: repeat(2, 1fr);
@@ -558,24 +553,41 @@ ul.grid-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.grid-list .card {
+.card {
   position: relative;
-}
-.grid-list .card .section {
-  position: absolute;
-  top: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  display: inline-block;
+  object-fit: cover;
+}
+.card .section {
+  height: 100%;
+  width: 100%;
   background: var(--neutral);
 }
-.grid-list .card .section:hover img {
+.card:hover .card-image {
   -webkit-transform: scale(0.85) rotate(0.01deg);
-  transform: scale(0.85) rotate(0.01deg);
-  filter: grayscale(0);
+  transform: scale(0.85);
 }
-.grid-list .card .section:hover {
-  opacity: 1;
+
+.card-image {
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  margin-top: -8em;
+  z-index: 0;
+  border: var(--sm) solid var(--light);
+  outline: var(--sm) solid var(--dark);
+  object-fit: cover;
+}
+.card-title,
+.card-tagline,
+.card-badge {
+  z-index: 1;
+}
+.card-badge {
+  position: absolute;
+  top: 4em;
 }
 
 .badge {
