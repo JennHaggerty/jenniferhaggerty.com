@@ -373,6 +373,7 @@ a:hover:not(p a):not(a.card) {
   border: var(--a-hover-border);
   border-radius: var(--a-hover-border-radius);
 
+  position: relative;
   cursor: pointer;
 }
 
