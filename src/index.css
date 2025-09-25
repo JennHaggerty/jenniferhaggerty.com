@@ -537,13 +537,12 @@ ul.p {
   }
 }
 ul.grid-list {
-  gap: var(--lg);
+  gap: var(--xl);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 @media (min-width: 666px) {
   ul.grid-list {
-    gap: var(--xl);
     grid-template-columns: repeat(2, 1fr);
   }
 }
