@@ -603,14 +603,8 @@ ul.grid-list {
 header nav ul {
   min-height: 5em;
 }
-header nav li {
-  //position: relative;
-  //width: 100%;
-}
 header nav li a {
-  //position: absolute;
   position: relative;
-  //z-index: 99;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -650,7 +644,6 @@ header nav a:hover .star {
 }
 @media (min-width: 525px) {
   .star {
-    //left: unset;
     justify-self: anchor-center;
   }
 }
