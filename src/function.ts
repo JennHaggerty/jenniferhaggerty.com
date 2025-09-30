@@ -7,7 +7,7 @@ export const renderDrip = () => {
 
   for (let i = 0; i <= dripCount; i++) {
     const dimension = getRandomInt(30, 500);
-    const delay = getRandomInt(1, 7);
+    const delay = getRandomInt(1, 12);
     const left = getRandomInt(-2, 90);
     const drop = document.createElement("div");
 
