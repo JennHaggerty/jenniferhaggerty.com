@@ -454,6 +454,10 @@ ul.p {
   flex-direction: column;
 }
 
+footer {
+  margin: 2em 0 0;
+}
+
 /* start FONT FACES */
 @font-face {
   font-family: "CutiveMono";

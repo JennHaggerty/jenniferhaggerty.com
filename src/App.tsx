@@ -6,6 +6,7 @@ import Nav from "./components/Nav/Nav";
 import Portfolio from "./components/Portfolio/Portfolio";
 import { site } from "./site";
 import { renderDrip } from "./function";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const App = () => {
       </Header>
       <Portfolio />
       <BlurIcon />
+      <Footer />
     </main>
   );
 };
