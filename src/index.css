@@ -636,14 +636,14 @@ header nav a:hover .star {
 
 .star {
   position: absolute;
-  height: 4em;
   fill: var(--accent);
   stroke: var(--brand);
   stroke-width: var(--xl);
   z-index: 97;
-  top: 0;
-  left: -1em;
   display: none;
+  height: 5em;
+  left: -1.5em;
+  top: -0.5em;
 }
 @media (min-width: 525px) {
   .star {
