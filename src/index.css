@@ -516,7 +516,6 @@ footer {
   background: var(--dark);
   position: absolute;
   top: -100%;
-  animation: falling 10s linear infinite;
   border-color: var(--dark);
   background: var(--dark);
 }

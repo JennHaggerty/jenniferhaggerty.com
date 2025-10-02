@@ -8,6 +8,7 @@ export const renderDrip = () => {
   for (let i = 0; i <= dripCount; i++) {
     const dimension = getRandomInt(30, 500);
     const delay = getRandomInt(1, 12);
+    const speed = getRandomInt(10, 32);
     const left = getRandomInt(-2, 90);
     const drop = document.createElement("div");
 
@@ -16,6 +17,7 @@ export const renderDrip = () => {
     drop.style.width = dimension.toString() + "px";
     drop.style.left = left.toString() + "%";
     drop.style.animationDelay = delay.toString() + "s";
+    drop.style.animation = `falling ${speed}s linear infinite`;
 
     container.appendChild(drop);
   }
