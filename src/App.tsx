@@ -29,7 +29,6 @@ const App = () => {
       </Header>
       <Portfolio />
       <BlurIcon />
-      <Footer />
     </main>
   );
 };
