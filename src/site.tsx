@@ -12,7 +12,7 @@ export const site = {
     <>
       I enjoy creating and maintaining user-centric, ADA compliant web
       applications and have for over 20+ years. My favorite tools are React,
-      TypeScript, Node.js, TailwindCSS, SASS/SCSS, and{" "}
+      TypeScript, Next.js, TailwindCSS, and{" "}
       <a href="https://github.com/JennHaggerty">Github</a>. When I'm not at the
       computer deconstructing artworks into websites I'm outside in the garden
       with my dogs.
