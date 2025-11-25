@@ -16,7 +16,7 @@ const Portfolio = () => (
             <img
               className="bw-image"
               src={item["image-src"]}
-              alt={item["image-alt"]}
+              alt={item["image-alt"] + "-bw"}
             />
             <div className="section card-content">
               <div className="card-title h1">{item.title}</div>
