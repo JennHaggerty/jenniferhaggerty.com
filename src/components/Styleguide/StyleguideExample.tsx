@@ -83,7 +83,7 @@ const StyleguideExample = () => {
           <h3>Summary</h3>
           <p>
             I have enjoyed creating and maintaining user-centric, ADA compliant
-            web applications for 10+ years. I take a mobile-first code design
+            web applications for 20+ years. I take a mobile-first code design
             approach that iOS and Android users may enjoy. My favorite tools are
             JavaScript, <a>React</a>, Next.js, TypeScript, SASS/SCSS, MySQL, and
             Github but you could drop me into any stack.

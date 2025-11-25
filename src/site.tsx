@@ -11,7 +11,7 @@ export const site = {
   description: (
     <>
       I enjoy creating and maintaining user-centric, ADA compliant web
-      applications and have for over 10+ years. My favorite tools are React,
+      applications and have for over 20+ years. My favorite tools are React,
       TypeScript, Node.js, TailwindCSS, SASS/SCSS, and{" "}
       <a href="https://github.com/JennHaggerty">Github</a>. When I'm not at the
       computer deconstructing artworks into websites I'm outside in the garden
