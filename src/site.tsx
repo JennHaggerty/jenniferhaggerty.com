@@ -6,16 +6,14 @@ import RssIcon from "./assets/svgs/rss";
 import StarIcon from "./assets/svgs/star";
 
 export const site = {
-  name: "Jennifer Haggerty",
+  name: "J. Haggerty",
   tagline: "Frontend / Interface Developer",
   description: (
     <>
       I enjoy creating and maintaining user-centric, ADA compliant web
       applications and have for over 20+ years. My favorite tools are React,
       TypeScript, Next.js, TailwindCSS, and{" "}
-      <a href="https://github.com/JennHaggerty">Github</a>. When I'm not at the
-      computer deconstructing artworks into websites I'm outside in the garden
-      with my dogs.
+      <a href="https://github.com/JennHaggerty">Github</a>.
     </>
   ),
   menus: [
@@ -24,8 +22,8 @@ export const site = {
       location: "header",
       items: [
         {
-          ariaLabel: "Email Jennifer.",
-          href: "mailto:thejenniferhaggerty@gmail.com",
+          ariaLabel: "Email.",
+          href: "mailto:haggertyj@protonmail.com",
           content: (
             <>
               <EmailIcon className="icon-link" />
@@ -35,8 +33,8 @@ export const site = {
           ),
         },
         {
-          ariaLabel: "Download her resume.",
-          href: "jennifer_haggerty_interface_developer.pdf",
+          ariaLabel: "Download resume.",
+          href: "jhaggerty_resume.pdf",
           content: (
             <>
               <ResumeIcon className="icon-link" />
@@ -73,7 +71,7 @@ export const site = {
           target: "_blank",
         },
         {
-          ariaLabel: "Jennifer's LinkedIn.",
+          ariaLabel: "LinkedIn.",
           href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
           content: (
             <>
@@ -247,5 +245,5 @@ export const site = {
       location: "Fort Mill, SC",
     },
   ],
-  copyright: "Copyright © {{year}}. Jennifer Haggerty. All rights reserved.",
+  copyright: "Copyright © {{year}}. J. Haggerty. All rights reserved.",
 };
