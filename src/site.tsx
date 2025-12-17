@@ -6,12 +6,12 @@ import RssIcon from "./assets/svgs/rss";
 import StarIcon from "./assets/svgs/star";
 
 export const site = {
-  name: "J. Haggerty",
-  tagline: "Frontend / Interface Developer",
+  name: "Jennifer Haggerty",
+  tagline: "Full-stack Developer",
   description: (
     <>
       I enjoy creating and maintaining user-centric, ADA compliant web
-      applications and have for over 20+ years. My favorite tools are React,
+      applications - 21 years and counting! My favorite tools are React,
       TypeScript, Next.js, TailwindCSS, and{" "}
       <a href="https://github.com/JennHaggerty">Github</a>.
     </>
@@ -34,7 +34,7 @@ export const site = {
         },
         {
           ariaLabel: "Download resume.",
-          href: "jhaggerty_resume.pdf",
+          href: "jenniferhaggerty_resume.pdf",
           content: (
             <>
               <ResumeIcon className="icon-link" />
@@ -143,7 +143,7 @@ export const site = {
       target: "_blank",
       title: "MyJobQuest.io",
       date: "'25",
-      tagline: "react",
+      tagline: "Next.js, React.js w/TypeScript",
       items: ["I did a thing", "I did another thing"],
       location: "Augusta, GA",
       isPersonalProject: true,
@@ -168,7 +168,7 @@ export const site = {
       target: "_blank",
       title: "Paula's Choice",
       date: "'23-'24",
-      tagline: "SFCC",
+      tagline: "SFCC, React.js",
       items: ["I did a thing", "I did another thing"],
       location: "Remote",
     },
@@ -204,9 +204,21 @@ export const site = {
       target: "_blank",
       title: "TaxSlayer",
       date: "'21-'22",
-      tagline: "React",
+      tagline: "C#/ASP.NET, React.js",
       items: ["I did a thing", "I did another thing"],
       location: "Augusta, GA",
+    },
+    {
+      "image-src": "thumbnails/psychedelicart.png",
+      "image-alt": "Psychedelic Art Exchange",
+      href: "https://www.concertpostergallery.com",
+      rel: "external",
+      target: "_blank",
+      title: "Psychedelic Art",
+      date: "'19-'20",
+      tagline: "Shopify",
+      items: ["I did a thing", "I did another thing"],
+      location: "Remote",
     },
     {
       "image-src": "thumbnails/gocollect.png",
@@ -216,21 +228,9 @@ export const site = {
       target: "_blank",
       title: "GoCollect",
       date: "'19-'20",
-      tagline: "PHP",
+      tagline: "PHP/Symfony",
       items: ["I did a thing", "I did another thing"],
       location: "Charlotte, NC",
-    },
-    {
-      "image-src": "thumbnails/psychedelicart.png",
-      "image-alt": "Psychedelic Art Exchange",
-      href: "https://www.concertpostergallery.com",
-      rel: "external",
-      target: "_blank",
-      title: "Psychedelic Art Exchange",
-      date: "'19-'20",
-      tagline: "Shopify",
-      items: ["I did a thing", "I did another thing"],
-      location: "Remote",
     },
     {
       "image-src": "thumbnails/fastgrowingtrees.png",
