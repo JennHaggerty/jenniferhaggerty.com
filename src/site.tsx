@@ -23,7 +23,7 @@ export const site = {
       items: [
         {
           ariaLabel: "Email.",
-          href: "mailto:haggertyj@protonmail.com",
+          href: "mailto:thejenniferhaggerty@gmail.com",
           content: (
             <>
               <EmailIcon className="icon-link" />
