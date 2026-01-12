@@ -194,10 +194,6 @@ body {
   min-width: 320px;
 }
 
-main {
-  height: 100vh;
-}
-
 .section {
   padding: var(--xl);
   margin: 0 0 var(--xl);
