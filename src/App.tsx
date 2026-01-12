@@ -56,7 +56,6 @@ const App = () => {
           <div>{site.description}</div>
         </div>
         <Portfolio />
-        <Footer />
       </main>
       <BlurIcon />
     </>
