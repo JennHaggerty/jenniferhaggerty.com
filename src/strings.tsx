@@ -2,6 +2,5 @@ export const strings = {
   summary: "Summary",
   portfolio: "Portfolio",
   personProject: "Personal project",
-  copyright: "Designed and developed by J.",
-  yearEdited: "'25",
+  copyright: "© {year} Jennifer Haggerty. All rights reserved.",
 };

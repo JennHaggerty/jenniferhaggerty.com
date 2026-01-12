@@ -8,18 +8,56 @@ import StarIcon from "./assets/svgs/star";
 export const site = {
   name: "Jennifer Haggerty",
   tagline: "Full-stack Developer",
+  location: "Augusta, GA",
+  copyright: "Copyright © {{year}} Jennifer Haggerty.",
   description: (
-    <>
+    <p>
       I enjoy creating and maintaining user-centric, ADA compliant web
-      applications - 21 years and counting! My favorite tools are React,
-      TypeScript, Next.js, TailwindCSS, and{" "}
-      <a href="https://github.com/JennHaggerty">Github</a>.
-    </>
+      applications --20 years and counting! My favorite tools are React,
+      TypeScript, MongoDB, Next.js, TailwindCSS, and{" "}
+      <a href="https://github.com/JennHaggerty">Github.</a>
+      <br />
+      <br />
+      When not at the computer I'm in the garden, spinning fire, or at the park.
+    </p>
   ),
   menus: [
     {
-      id: "main-navigation",
-      location: "header",
+      id: "text-nav",
+      customClass: "text-nav",
+      items: [
+        {
+          href: "mailto:thejenniferhaggerty@gmail.com",
+          content: "Email",
+        },
+        {
+          href: "jenniferhaggerty_resume.pdf",
+          content: "Resume",
+          target: "_blank",
+        },
+        {
+          href: "https://github.com/JennHaggerty",
+          content: "Github",
+          rel: "rel",
+          target: "_blank",
+        },
+        {
+          href: "https://jennhaggerty.github.io",
+          content: "Blog",
+          rel: "rel",
+          target: "_blank",
+        },
+        {
+          href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
+          content: "LinkedIn",
+          rel: "rel",
+          target: "_blank",
+        },
+      ],
+    },
+    {
+      id: "icon-nav",
+      customClass: "icon-nav",
       items: [
         {
           ariaLabel: "Email.",
@@ -245,5 +283,4 @@ export const site = {
       location: "Fort Mill, SC",
     },
   ],
-  copyright: "Copyright © {{year}}. J. Haggerty. All rights reserved.",
 };

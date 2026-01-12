@@ -1,21 +1,25 @@
 interface Item {
   content: React.ReactNode;
   ariaLabel?: string;
+  ariaLive?: "off" | "assertive" | "polite" | undefined;
   rel?: string;
   target?: string;
   href?: string;
+  iconOnly?: boolean;
   onClick?: () => void;
 }
 
 interface Props {
   items?: Item[];
   ariaLabel?: string;
+  ariaLive?: "off" | "assertive" | "polite" | undefined;
+  iconOnly?: boolean;
   customClassname?: string;
   id?: string;
 }
 
 const Nav = (props: Props) => {
-  const { items, id, customClassname, ariaLabel } = props;
+  const { items, id, customClassname, ariaLabel, iconOnly, ariaLive } = props;
 
   const renderNavItems = () => {
     if (!items) return;
@@ -23,7 +27,13 @@ const Nav = (props: Props) => {
     return items.map((item, i) => (
       <li key={id + "-" + i}>
         {item.onClick && (
-          <button aria-label={item.ariaLabel} onClick={item.onClick}>
+          <button
+            className={`rounded-none ${
+              iconOnly || item.iconOnly ? "icon" : ""
+            }`}
+            aria-label={item.ariaLabel}
+            onClick={item.onClick}
+          >
             {item.content}
           </button>
         )}
@@ -33,6 +43,7 @@ const Nav = (props: Props) => {
             aria-label={item.ariaLabel}
             rel={item.rel}
             target={item.target}
+            className={iconOnly || item.iconOnly ? "icon" : ""}
           >
             {item.content}
           </a>
@@ -42,8 +53,8 @@ const Nav = (props: Props) => {
   };
 
   return (
-    <nav aria-labelledby={id} className={customClassname}>
-      <ul id={id} aria-label={ariaLabel}>
+    <nav aria-labelledby={id} aria-live={ariaLive}>
+      <ul id={id} aria-label={ariaLabel} className={customClassname}>
         {renderNavItems()}
       </ul>
     </nav>

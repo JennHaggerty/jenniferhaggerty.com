@@ -1,9 +1,14 @@
-import { strings } from "../../strings";
+import { site } from "../../site";
 
 const Footer = () => {
   return (
     <footer>
-      <p className="h4">{strings.copyright}</p>
+      <p className="h4 mt-5!">
+        {site.copyright.replace(
+          "{{year}}",
+          new Date().getFullYear().toString(),
+        )}
+      </p>
     </footer>
   );
 };
