@@ -5,7 +5,12 @@ interface Props {
 const Arrow = (props: Props) => {
   const { className } = props;
   return (
-    <svg fill="currentColor" viewBox="0 0 24 24" className={className}>
+    <svg
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      className={className}
+      aria-hidden="true"
+    >
       <path
         d="M3,12H21m-3,3,3-3L18,9"
         fill="none"

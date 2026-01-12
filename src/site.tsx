@@ -175,7 +175,7 @@ export const site = {
   portfolio: [
     {
       "image-src": "thumbnails/myjobquest.png",
-      "image-alt": "MyJobQuest.io",
+      "image-alt": "",
       href: "https://www.myjobquest.io",
       rel: "external",
       target: "_blank",
@@ -188,7 +188,7 @@ export const site = {
     },
     {
       "image-src": "thumbnails/onesource.png",
-      "image-alt": "OneSource Supply",
+      "image-alt": "",
       href: "https://www.onesourcesupplyco.com",
       rel: "external",
       target: "_blank",
@@ -200,7 +200,7 @@ export const site = {
     },
     {
       "image-src": "thumbnails/paulaschoice.png",
-      "image-alt": "Paula's Choice",
+      "image-alt": "",
       href: "https://www.paulaschoice.com",
       rel: "external",
       target: "_blank",
@@ -212,7 +212,7 @@ export const site = {
     },
     {
       "image-src": "thumbnails/denon.png",
-      "image-alt": "Denon Premium Sound",
+      "image-alt": "",
       href: "https://www.denon.com/en-us/",
       rel: "external",
       target: "_blank",
@@ -224,7 +224,7 @@ export const site = {
     },
     {
       "image-src": "thumbnails/masimo.png",
-      "image-alt": "Masimo Personal and Professional Health",
+      "image-alt": "",
       href: "https://www.masimo.com",
       rel: "external",
       target: "_blank",
@@ -236,7 +236,7 @@ export const site = {
     },
     {
       "image-src": "thumbnails/taxslayer.png",
-      "image-alt": "TaxSlayer",
+      "image-alt": "",
       href: "https://www.taxslayer.com",
       rel: "external",
       target: "_blank",
@@ -248,7 +248,7 @@ export const site = {
     },
     {
       "image-src": "thumbnails/psychedelicart.png",
-      "image-alt": "Psychedelic Art Exchange",
+      "image-alt": "",
       href: "https://www.concertpostergallery.com",
       rel: "external",
       target: "_blank",
@@ -260,7 +260,7 @@ export const site = {
     },
     {
       "image-src": "thumbnails/gocollect.png",
-      "image-alt": "GoCollect",
+      "image-alt": "",
       href: "https://www.gocollect.com",
       rel: "external",
       target: "_blank",
@@ -272,7 +272,7 @@ export const site = {
     },
     {
       "image-src": "thumbnails/fastgrowingtrees.png",
-      "image-alt": "Fast Growing Trees",
+      "image-alt": "",
       href: "https://www.fast-growing-trees.com",
       rel: "external",
       target: "_blank",

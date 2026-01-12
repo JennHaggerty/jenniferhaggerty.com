@@ -14,7 +14,7 @@ const Portfolio = () => (
           rel={item.rel}
         >
           <div className="card h-full">
-            <span className="card-title h1 w-max!">{item.title}</span>
+            <div className="card-title h1 w-max!">{item.title}</div>
             <img
               className="card-image"
               src={item["image-src"]}
