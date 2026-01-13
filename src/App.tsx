@@ -47,12 +47,12 @@ const App = () => {
         </div>
       </Header>
       <main>
-        <div className="lg:grid lg:grid-cols-2 mt-8 mb-20 md:my-20 gap-8">
+        <div className="grid lg:grid-cols-2 my-20 md:my-40 gap-3 md:gap-8">
           <div className="m-auto w-full">
             <h2 className="w-full!">{site.tagline}</h2>
             <h3 className="h4">{site.location}</h3>
           </div>
-          <div>{site.description}</div>
+          <div className="m-auto">{site.description}</div>
         </div>
         <Portfolio />
       </main>
