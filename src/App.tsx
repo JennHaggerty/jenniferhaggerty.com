@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import BlurIcon from "./assets/svgs/blur";
-import Header from "./components/Header/Header";
-import Nav from "./components/Nav/Nav";
-import Portfolio from "./components/Portfolio/Portfolio";
+import BlurIcon from "./components/Svgs/blur";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Portfolio from "./components/Portfolio";
 import { site } from "./site";
 import { renderDrip } from "./function";
 
@@ -14,19 +14,21 @@ const App = () => {
   }, []);
 
   const textMenu = site.menus.find((x) => x.id === "text-nav");
+  const iconMenu = site.menus.find((x) => x.id === "icon-nav");
 
   return (
     <>
       <Header>
         <div>
-          <div className="flex justify-between min-md:mb-1 mt-0!">
-            <h1 className="m-0!">{site.name}</h1>
-            <p className="align-center max-sm:hidden h4 m-0! align-middle">
-              Available for hire
-            </p>
+          <Nav
+            id={textMenu?.id}
+            items={textMenu?.items}
+            customClassname={`max-md:hidden! ${textMenu?.customClass}`}
+          />
+          <div className="w-full m-auto">
             <button
               onClick={() => setShowMenu(!showMenu)}
-              className={`min-md:hidden ${showMenu ? "active" : ""}`}
+              className={`min-md:hidden flex m-auto p-2! rounded-sm! text-xl! ${showMenu ? "active" : ""}`}
             >
               Menu
             </button>
@@ -39,22 +41,27 @@ const App = () => {
               customClassname={`flex flex-col gap-2 py-3 ${textMenu?.customClass}`}
             />
           )}
-          <Nav
-            id={textMenu?.id}
-            items={textMenu?.items}
-            customClassname={`max-md:hidden! ${textMenu?.customClass}`}
-          />
         </div>
       </Header>
       <main>
         <div className="grid lg:grid-cols-2 my-20 md:my-40 gap-3 md:gap-8">
           <div className="m-auto w-full">
+            <h1>{site.name}</h1>
             <h2 className="w-full!">{site.tagline}</h2>
-            <h3 className="h4">{site.location}</h3>
           </div>
           <div className="m-auto">{site.description}</div>
         </div>
-        <Portfolio />
+        <div className="py-[40px] md:py-[60px]">
+          <Portfolio />
+        </div>
+        <div className="py-[40px] md:py-[60px]">
+          <h3 className="h2 w-full! mb-0! flex justify-center">Learn More</h3>
+          <Nav
+            id={iconMenu?.id}
+            items={iconMenu?.items}
+            customClassname={`${iconMenu?.customClass}`}
+          />
+        </div>
       </main>
       <BlurIcon />
     </>

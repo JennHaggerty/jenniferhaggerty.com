@@ -1,6 +1,6 @@
-import Arrow from "../../assets/svgs/arrow";
-import { site } from "../../site";
-import { strings } from "../../strings";
+import Arrow from "./Svgs/arrow";
+import { site } from "../site";
+import { strings } from "../strings";
 
 const Portfolio = () => (
   <div>
@@ -14,13 +14,13 @@ const Portfolio = () => (
           rel={item.rel}
         >
           <div className="card h-full">
-            <div className="card-title h1 w-max!">{item.title}</div>
+            <div className="card-title h1 w-max! text-xl!">{item.title}</div>
             <img
               className="card-image"
               src={item["image-src"]}
               alt={item["image-alt"]}
             />
-            <div className="card-footer items-center w-full! flex bg-white/[90%] px-5">
+            <div className="card-footer items-center w-full! flex bg-white/[90%] px-5 font-bold text-lg">
               Learn more <Arrow className="m-0 p-0" />
             </div>
           </div>

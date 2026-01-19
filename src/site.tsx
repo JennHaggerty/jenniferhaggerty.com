@@ -1,25 +1,27 @@
-import EmailIcon from "./assets/svgs/email";
-import GithubIcon from "./assets/svgs/github";
-import LinkedInIcon from "./assets/svgs/linkedin";
-import ResumeIcon from "./assets/svgs/resume";
-import RssIcon from "./assets/svgs/rss";
-import StarIcon from "./assets/svgs/star";
+import EmailIcon from "./components/Svgs/email";
+import GithubIcon from "./components/Svgs/github";
+import LinkedInIcon from "./components/Svgs/linkedin";
+import ResumeIcon from "./components/Svgs/resume";
+import RssIcon from "./components/Svgs/rss";
 
 export const site = {
   name: "Jennifer Haggerty",
   tagline: "Full-stack Developer",
   location: "Augusta, GA",
   copyright: "Copyright © {{year}} Jennifer Haggerty.",
+  font: "https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap",
   description: (
-    <p>
-      I enjoy creating and maintaining user-centric, ADA compliant web
-      applications --20 years and counting! My favorite tools are React,
-      TypeScript, MongoDB, Next.js, TailwindCSS, and{" "}
-      <a href="https://github.com/JennHaggerty">Github.</a>
-      <br />
-      <br />
-      When not at the computer I'm in the garden, spinning fire, or at the park.
-    </p>
+    <div className="p">
+      <p className="pb-3">
+        I enjoy creating and maintaining user-centric, ADA compliant web
+        applications. My favorite tools are React, TypeScript, MongoDB, Next.js,
+        TailwindCSS, and <a href="https://github.com/JennHaggerty">Github.</a>
+      </p>
+      <p>
+        When not at the computer I'm in the garden, spinning fire, or at the
+        park with my dogs.
+      </p>
+    </div>
   ),
   menus: [
     {
@@ -62,62 +64,32 @@ export const site = {
         {
           ariaLabel: "Email.",
           href: "mailto:thejenniferhaggerty@gmail.com",
-          content: (
-            <>
-              <EmailIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
+          content: <EmailIcon className="icon-link" />,
         },
         {
           ariaLabel: "Download resume.",
           href: "jenniferhaggerty_resume.pdf",
-          content: (
-            <>
-              <ResumeIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
+          content: <ResumeIcon className="icon-link" />,
           target: "_blank",
         },
         {
           ariaLabel: "Check out her Github.",
           href: "https://github.com/JennHaggerty",
-          content: (
-            <>
-              <GithubIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
+          content: <GithubIcon className="icon-link" />,
           rel: "rel",
           target: "_blank",
         },
         {
           ariaLabel: "Follow the blog",
           href: "https://jennhaggerty.github.io",
-          content: (
-            <>
-              <RssIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
+          content: <RssIcon className="icon-link" />,
           rel: "rel",
           target: "_blank",
         },
         {
           ariaLabel: "LinkedIn.",
           href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
-          content: (
-            <>
-              <LinkedInIcon className="icon-link" />
-
-              <StarIcon className="star" />
-            </>
-          ),
+          content: <LinkedInIcon className="icon-link" />,
           rel: "rel",
           target: "_blank",
         },

@@ -43,7 +43,7 @@ const Nav = (props: Props) => {
             aria-label={item.ariaLabel}
             rel={item.rel}
             target={item.target}
-            className={iconOnly || item.iconOnly ? "icon" : ""}
+            className={`${iconOnly || item.iconOnly ? "icon" : "text-xl! "}`}
           >
             {item.content}
           </a>
