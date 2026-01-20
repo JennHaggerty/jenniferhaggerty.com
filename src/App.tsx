@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import BlurIcon from "./components/Svgs/blur";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
@@ -32,7 +31,7 @@ const App = () => {
             onClick={() => setShowMenu(!showMenu)}
             className={`min-md:hidden w-full py-3! text-xl! ${showMenu ? "active" : ""}`}
           >
-            Menu
+            {showMenu ? "Close Menu" : "Menu"}
           </button>
         </div>
         {showMenu && (

@@ -29,7 +29,7 @@ const Nav = (props: Props) => {
         {item.onClick && (
           <button
             className={`rounded-none ${
-              iconOnly || item.iconOnly ? "icon" : ""
+              iconOnly || item.iconOnly ? "icon" : " py-3!"
             }`}
             aria-label={item.ariaLabel}
             onClick={item.onClick}
@@ -43,7 +43,7 @@ const Nav = (props: Props) => {
             aria-label={item.ariaLabel}
             rel={item.rel}
             target={item.target}
-            className={`${iconOnly || item.iconOnly ? "icon" : "text-xl! "}`}
+            className={`${iconOnly || item.iconOnly ? "icon" : "text-xl! py-3!"}`}
           >
             {item.content}
           </a>

@@ -1,14 +1,14 @@
 interface Props {
-  className?: string;
+  customClass?: string;
 }
 
 const Arrow = (props: Props) => {
-  const { className } = props;
+  const { customClass } = props;
   return (
     <svg
       fill="currentColor"
       viewBox="0 0 24 24"
-      className={className}
+      className={customClass}
       aria-hidden="true"
     >
       <path
@@ -18,7 +18,6 @@ const Arrow = (props: Props) => {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        className={className}
       />
     </svg>
   );
