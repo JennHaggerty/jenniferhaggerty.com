@@ -1,20 +1,15 @@
-import { useEffect, useState } from "react";
-import BlurIcon from "./components/Svgs/blur";
+import { useState } from "react";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import { site } from "./site";
-import { renderDrip } from "./function";
 import Section from "./components/Section";
 
 const App = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  useEffect(() => {
-    renderDrip();
-  }, []);
 
   const textMenu = site.menus.find((x) => x.id === "text-nav");
   const iconMenu = site.menus.find((x) => x.id === "icon-nav");
-  const maxWidthCSS = "1299px";
+  const maxWidthCSS = "max-w-[1299px]";
 
   return (
     <>
@@ -23,7 +18,7 @@ const App = () => {
           <Nav
             id={textMenu?.id}
             items={textMenu?.items}
-            customClassname={`max-md:hidden! max-w-[${maxWidthCSS}] m-auto ${textMenu?.customClass}`}
+            customClassname={`max-md:hidden! ${maxWidthCSS} m-auto ${textMenu?.customClass}`}
           />
         </div>
         <div className="w-full m-auto">
@@ -44,7 +39,7 @@ const App = () => {
         )}
       </header>
 
-      <main className={`max-w-[${maxWidthCSS}] m-auto p-3`}>
+      <main className={`${maxWidthCSS} m-auto p-3`}>
         <div className="grid lg:grid-cols-2 my-20 md:my-40 gap-3 md:gap-8">
           <div className="m-auto w-full">
             <h1>{site.name}</h1>
@@ -64,11 +59,10 @@ const App = () => {
           <Nav
             id={iconMenu?.id}
             items={iconMenu?.items}
-            customClassname={`max-w-[${maxWidthCSS}] m-auto ${iconMenu?.customClass}`}
+            customClassname={`${maxWidthCSS} m-auto ${iconMenu?.customClass}`}
           />
         </div>
       </footer>
-      <BlurIcon />
     </>
   );
 };
