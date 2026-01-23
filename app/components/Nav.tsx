@@ -1,4 +1,6 @@
-interface Item {
+import { site } from "@/src/site.js";
+
+interface MenuItem {
   content: React.ReactNode;
   ariaLabel?: string;
   ariaLive?: "off" | "assertive" | "polite" | undefined;
@@ -10,7 +12,7 @@ interface Item {
 }
 
 interface Props {
-  items?: Item[];
+  items?: MenuItem[];
   ariaLabel?: string;
   ariaLive?: "off" | "assertive" | "polite" | undefined;
   iconOnly?: boolean;
@@ -43,7 +45,7 @@ const Nav = (props: Props) => {
             aria-label={item.ariaLabel}
             rel={item.rel}
             target={item.target}
-            className={`${iconOnly || item.iconOnly ? "icon" : "text-xl! py-3!"}`}
+            className={`${iconOnly || item.iconOnly ? "icon m-auto" : "text-xl! py-3!"}`}
           >
             {item.content}
           </a>
@@ -53,8 +55,12 @@ const Nav = (props: Props) => {
   };
 
   return (
-    <nav aria-labelledby={id} aria-live={ariaLive}>
-      <ul id={id} aria-label={ariaLabel} className={customClassname}>
+    <nav aria-labelledby={id} aria-live={ariaLive} className="bg-(--green)">
+      <ul
+        id={id}
+        aria-label={ariaLabel}
+        className={`${customClassname} ${site.maxWidthClassname}`}
+      >
         {renderNavItems()}
       </ul>
     </nav>

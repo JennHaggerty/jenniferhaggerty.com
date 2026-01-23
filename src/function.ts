@@ -31,3 +31,8 @@ const getRandomInt = (min: number, max: number) => {
   const maxFloored = Math.floor(max);
   return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
 };
+
+export const getSlugFromTitle = (title: string) => {
+  const slugRegex = /[ _.,!"'\/$]*/gm;
+  return title.toLowerCase().replace(slugRegex, "");
+};

@@ -23,6 +23,7 @@
   --success: var(--green);
   --error: var(--red);
   --warning: var(--orange);
+  --lightest: white;
   --light: var(--white);
   --darkest: var(--black);
   --darker: var(--black-111);
@@ -132,27 +133,27 @@
   --a-hover-text-transform: uppercase;
   --a-hover-color: var(--darkest);
   --a-hover-bg-color: var(--blue);
-  --a-hover-border: var(--border-sm) solid var(--black);
+  --a-hover-border: var(--border-sm) solid var(--blue);
   --a-hover-border-radius: 0;
 
   --p-a-font: var(--default-font);
-  --p-a-font-weight: 400;
+  --p-a-font-weight: 700;
   --p-a-text-size: var(--default-text-size);
   --p-a-text-transform: uppercase;
   --p-a-color: var(--darkest);
   --p-a-bg-color: var(--success);
-  --p-a-border: var(--border-sm) solid var(--black);
+  --p-a-border: none;
   --p-a-border-radius: var(--border-sm);
   --p-a-width: fit-content;
   --p-a-padding: 0 0.25em;
 
   --p-a-hover-font: var(--default-font);
-  --p-a-hover-font-weight: 400;
+  --p-a-hover-font-weight: 700;
   --p-a-hover-text-size: var(--default-text-size);
   --p-a-hover-text-transform: uppercase;
   --p-a-hover-color: var(--darkest);
   --p-a-hover-bg-color: var(--background);
-  --p-a-hover-border: var(--border-sm) solid var(--black);
+  --p-a-hover-border: none;
   --p-a-hover-border-radius: 0;
   --p-a-hover-width: fit-content;
 
@@ -161,12 +162,12 @@
   --p-text-size: var(--default-text-size);
   --p-text-transform: none;
   --p-color: var(--black);
-  --p-bg-color: var(--white);
+  --p-bg-color: var(--lightest);
   --p-border: none;
   --p-border-radius: var(--border-md);
   --p-width: fit-content;
   --p-margin: auto;
-  --p-padding: var(--xl);
+  --p-padding: var(--lg);
   --p-position: inherit;
 
   --animation-speed-normal: 8s;
@@ -380,6 +381,7 @@ button {
   }
 }
 
+p,
 .p {
   font-size: var(--p-text-size);
   font-family: var(--p-font);
