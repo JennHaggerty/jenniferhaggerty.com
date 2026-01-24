@@ -1,7 +1,7 @@
-import { getSlugFromTitle } from "@/src/function.ts";
-import { site } from "@/src/site.js";
-import CTA from "@/app/components/CTA.tsx";
-import Arrow from "@/app/components/svgs/Arrow.tsx";
+import { getSlugFromTitle } from "@/src/function";
+import { site } from "@/src/site";
+import CTA from "@/app/components/CTA";
+import Arrow from "@/app/components/svgs/Arrow";
 import { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -47,7 +47,7 @@ export default async function Page({
           />
         </div>
 
-        <div className="p-8">
+        <div className="px-8 py-12">
           <div className="md:hidden">
             <h1 className="mx-0!">{item.title}</h1>
             <h2 className="mx-0!">{item.tagline}</h2>
@@ -87,13 +87,13 @@ export default async function Page({
           </div>
         </div>
 
-        <div className="my-[60px]">
+        <div className="mx-8 my-12">
           <CTA />
         </div>
 
-        <div className="w-full pt-2 bg-[var(--accent)]">
+        <div className="w-full py-8 bg-[var(--accent)]">
           <h3>More Stories</h3>
-          <div className="flex  p-5 flex-col md:flex-row gap-3">
+          <div className="flex  p-8 flex-col md:flex-row gap-3">
             {previousItem === undefined ? (
               <div className="md:w-1/2"></div>
             ) : (

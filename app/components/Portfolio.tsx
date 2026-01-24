@@ -1,7 +1,7 @@
-import { site } from "@/src/site.js";
-import { strings } from "@/src/strings.js";
-import Arrow from "./svgs/Arrow.tsx";
-import { getSlugFromTitle } from "@/src/function.ts";
+import { site } from "@/src/site";
+import { strings } from "@/src/strings";
+import Arrow from "./svgs/Arrow";
+import { getSlugFromTitle } from "@/src/function";
 
 interface Props {
   heading?: React.ReactElement;

@@ -1,7 +1,7 @@
-import { site } from "../../src/site.js";
-import Section from "../components/Section.tsx";
-import { getSlugFromTitle } from "../../src/function.ts";
-import { strings } from "../../src/strings.js";
+import { site } from "../../src/site";
+import Section from "../components/Section";
+import { getSlugFromTitle } from "../../src/function";
+import { strings } from "../../src/strings";
 
 export default function Page() {
   const textMenu = site.menus.find((x) => x.id === "links");

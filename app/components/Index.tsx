@@ -1,9 +1,9 @@
 "use client";
 
-import { site } from "@/src/site.js";
-import Section from "./Section.tsx";
-import Portfolio from "./Portfolio.tsx";
-import { strings } from "@/src/strings.js";
+import { site } from "@/src/site";
+import Section from "./Section";
+import Portfolio from "./Portfolio";
+import { strings } from "@/src/strings";
 
 const Index = () => {
   return (

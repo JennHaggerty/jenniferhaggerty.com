@@ -1,8 +1,8 @@
-import EmailIcon from "../app/components/svgs/email.js";
-import ResumeIcon from "../app/components/svgs/resume.js";
-import GithubIcon from "../app/components/svgs/github.js";
-import RssIcon from "../app/components/svgs/rss.js";
-import LinkedInIcon from "../app/components/svgs/linkedin.js";
+import EmailIcon from "../app/components/svgs/email";
+import ResumeIcon from "../app/components/svgs/resume";
+import GithubIcon from "../app/components/svgs/github";
+import RssIcon from "../app/components/svgs/rss";
+import LinkedInIcon from "../app/components/svgs/linkedin";
 
 export const site = {
   maxWidthClassname: "max-w-[1299px] mx-auto",

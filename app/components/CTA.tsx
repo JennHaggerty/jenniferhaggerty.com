@@ -1,4 +1,4 @@
-import { site } from "../../src/site.js";
+import { site } from "../../src/site";
 
 const CTA = () => {
   return (

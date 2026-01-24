@@ -1,7 +1,12 @@
-import { site } from "@/src/site.js";
+import { site } from "@/src/site";
 import "./index.css";
 import { Metadata } from "next";
-import Nav from "./components/Nav.tsx";
+import { Exo_2 } from "next/font/google";
+import Nav from "./components/Nav";
+
+const exo2 = Exo_2({
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: site.name,
@@ -18,7 +23,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`${exo2.variable} antialiased`}>
         {menu && <Nav items={menu.items} />}
 
         <main

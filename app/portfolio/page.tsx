@@ -1,5 +1,5 @@
-import { strings } from "@/src/strings.js";
-import Portfolio from "../components/Portfolio.tsx";
+import { strings } from "@/src/strings";
+import Portfolio from "../components/Portfolio";
 
 export default function Page(props: PageProps<"/">) {
   return (
