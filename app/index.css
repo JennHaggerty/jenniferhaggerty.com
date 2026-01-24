@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --yellow: #eacb35;
+  --yellow: #fafa33;
   --pink: #cc003c;
   --green: #90bc0b;
   --black: #000000;
@@ -121,8 +121,8 @@
   --a-text-size: var(--default-text-size);
   --a-text-transform: uppercase;
   --a-color: var(--darkest);
-  --a-bg-color: var(--success);
-  --a-border: var(--border-sm) solid var(--success);
+  --a-bg-color: var(--brand);
+  --a-border: var(--border-sm) solid var(--brand);
   --a-border-radius: 0;
   --a-width: fit-content;
   --a-padding: 0;
@@ -131,9 +131,9 @@
   --a-hover-font-weight: 600;
   --a-hover-text-size: var(--default-text-size);
   --a-hover-text-transform: uppercase;
-  --a-hover-color: var(--darkest);
-  --a-hover-bg-color: var(--blue);
-  --a-hover-border: var(--border-sm) solid var(--blue);
+  --a-hover-color: var(--lightest);
+  --a-hover-bg-color: var(--accent);
+  --a-hover-border: var(--border-sm) solid var(--accent);
   --a-hover-border-radius: 0;
 
   --p-a-font: var(--default-font);
@@ -141,7 +141,7 @@
   --p-a-text-size: var(--default-text-size);
   --p-a-text-transform: uppercase;
   --p-a-color: var(--darkest);
-  --p-a-bg-color: var(--success);
+  --p-a-bg-color: var(--brand);
   --p-a-border: none;
   --p-a-border-radius: var(--border-sm);
   --p-a-width: fit-content;
@@ -151,8 +151,8 @@
   --p-a-hover-font-weight: 700;
   --p-a-hover-text-size: var(--default-text-size);
   --p-a-hover-text-transform: uppercase;
-  --p-a-hover-color: var(--darkest);
-  --p-a-hover-bg-color: var(--background);
+  --p-a-hover-color: var(--lightest);
+  --p-a-hover-bg-color: var(--accent);
   --p-a-hover-border: none;
   --p-a-hover-border-radius: 0;
   --p-a-hover-width: fit-content;
@@ -426,10 +426,14 @@ nav li {
 nav li a {
   width: 100%;
   display: block;
-}
 
-.icon-nav li a svg {
-  margin: auto;
+  svg {
+    margin: auto;
+  }
+
+  &:hover svg {
+    fill: var(--a-hover-color);
+  }
 }
 
 .cont {

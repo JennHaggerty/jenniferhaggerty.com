@@ -53,7 +53,11 @@ const Nav = (props: Props) => {
   };
 
   return (
-    <nav aria-labelledby={id} aria-live={ariaLive} className="bg-(--green)">
+    <nav
+      aria-labelledby={id}
+      aria-live={ariaLive}
+      className="bg-[var(--brand)]"
+    >
       <ul
         id={id}
         aria-label={ariaLabel}

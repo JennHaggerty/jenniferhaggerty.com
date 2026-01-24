@@ -27,7 +27,7 @@ const Portfolio = (props: Props) => {
                 src={item.thumbnailImg}
                 alt={item.imageAlt}
               />
-              <div className="card-footer items-center w-full! flex bg-white/[90%] px-5 font-bold text-lg">
+              <div className="card-footer items-center w-full! flex bg-black/[95%] px-5 text-lg">
                 Learn more <Arrow customClass="m-0 p-0" />
               </div>
             </div>

@@ -247,7 +247,12 @@ export const site = {
       date: "2024",
       tagline: "Shopify",
       tools: ["Shopify"],
-      content: "",
+      content: (<div>
+        <blockquote cite="https://www.linkedin.com/company/one-source-supply-llc/about/">
+          <p>One Source Supply supplies Electrical Supplies, Paint Supplies, Paint Sundries , Seasonal Supplies, Janitorial Supplies, Plastic Bags, Plumbing, Hardware supplies and many Specialty Items. We have an extensive list of suppliers and we have access to the best equipment at extremely competitive prices.  For anything you need for your building maintenance and supply, One Source Supply is the business partner for you to ensure that you get exactly what you need when you need it.</p>
+        </blockquote>
+        <p>—One Source Supply LLC</p>
+      </div>),
       location: "Remote",
     },
     {
@@ -261,7 +266,12 @@ export const site = {
       date: "2021-2022",
       tagline: "C#/ASP.NET, React.js",
       tools: [".NET", "C#", "React"],
-      content: "",
+      content: (<div>
+        <blockquote cite="https://www.linkedin.com/company/taxslayerllc/">
+          <p>For 60 years, TaxSlayer has been empowering Americans to take control of their taxes with easy-to-use, reliable software backed by U.S.-based support. Whether you're filing a simple return or managing self-employed income, TaxSlayer empowers you with the tools to file confidently and get your maximum refund guaranteed.</p>
+        </blockquote>
+        <p>—TaxSlayer</p>
+      </div>),
       location: "Augusta, GA",
     },
     {
@@ -275,7 +285,12 @@ export const site = {
       date: "'19-'20",
       tagline: "Shopify",
       tools: ["Shopify", "PHP", "Liquid"],
-      content: "",
+      content: (<div>
+        <blockquote cite="https://concertpostergallery.com/pages/about-pae">
+          <p>Psychedelic Art Exchange is the premier source to buy, sell, and learn about vintage concert posters. We are a full service organization that provides sophisticated collectors like yourself with everything you need to take maximum advantage of what a growing number of people believe is the most lucrative collectibles opportunity in the world today.</p>
+        </blockquote>
+        <p>—Psychedelic Art Exchange</p>
+      </div>),
       location: "Remote",
     },
     {
@@ -289,7 +304,12 @@ export const site = {
       date: "'19-'20",
       tagline: "PHP/Symfony",
       tools: ["PHP", "Symfony", "Shopify"],
-      content: "",
+      content: (<div>
+        <blockquote cite="https://www.linkedin.com/company/gocollect/">
+          <p>GoCollect equips collectors with the tools they need to make sound buying and selling decisions in an ever-changing market. We monitor, organize and report on thousands of daily comic book sales across various online marketplaces; tracking values using several factors including condition, grading types, variants, printings and more. Just launched - concert poster price guide. This initial preview will monitor the sales of CGC-graded concert posters from select partners</p>
+        </blockquote>
+        <p>—GoCollect</p>
+      </div>),
       location: "Charlotte, NC",
     },
     {
@@ -303,7 +323,13 @@ export const site = {
       date: "2018-2019",
       tagline: "Shopify",
       tools: ["Shopify", "React", "PHP", "Jira", "Bitbucket", "Trello", "Wordpress"],
-      content: "",
+      content: (<div>
+        <blockquote cite="https://www.linkedin.com/company/fastgrowingtrees/">
+          <p>Fast Growing Trees is America’s local nursery. We deliver outdoor plants guaranteed to thrive, for everyone who wants a better yard. </p>
+          <p>Our plants are sourced from the best growers across the country, cared for by our in-house Plant Experts and shipped straight to you. This means you're shopping straight from the source and guaranteed (yes, we guarantee them!) fresh, thriving plants. Forget the leftovers—with us, you get first dibs on the biggest, freshest selection of privacy trees, shrubs, shade trees, fruits, flowering trees, house plants, perennials, tropicals and more, all from the comfort of your home.</p>
+        </blockquote>
+        <p>—Fast Growing Trees</p>
+      </div>),
       location: "Fort Mill, SC",
     },
     {
@@ -315,9 +341,15 @@ export const site = {
       target: "_blank",
       title: "Studio von Jenn",
       date: "'25",
-      tagline: "Fine Art Portrait Photographer in Augusta, GA",
+      tagline: "Fine Art Portrait Photographer",
       tools: ["NextJS", "NoSQL", "React", "Typescript", "TailwindCSS"],
-      content: "",
+      content: (<div>
+        <blockquote cite="https://www.studiovonjenn.com/">
+          <p>Jennifer has been obsessed with light, color, and painting since 1997. She began photographing portraits in 2003. When she's not at the computer she's working on something creative or is out in the garden with her partner and their dogs.</p>
+        </blockquote>
+        <p>—Jennifer</p>
+        <p>One of my original websites. When I was studying art over 20 years ago I knew how important a web prescence would be. With my finances tight, I learned to make my own self-hosted LAMP stack and have been using it as a testing grounds for new ideas and frameworks.</p>
+      </div>),
       location: "Augusta, GA",
       isPersonalProject: true,
     },

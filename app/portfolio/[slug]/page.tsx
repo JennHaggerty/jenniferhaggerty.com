@@ -2,12 +2,18 @@ import { getSlugFromTitle } from "@/src/function.ts";
 import { site } from "@/src/site.js";
 import CTA from "@/app/components/CTA.tsx";
 import Arrow from "@/app/components/svgs/Arrow.tsx";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   return site.portfolio.map((item) => ({
     slug: getSlugFromTitle(item.title),
   }));
 }
+
+export const metadata: Metadata = {
+  title: site.name,
+  description: "A case study on web development",
+};
 
 export default async function Page({
   params,
@@ -58,7 +64,9 @@ export default async function Page({
                   <>
                     <dt className="uppercase">Website</dt>
                     <dd className="break-all">
-                      <a href={item.href}>{item.href}</a>
+                      <a href={item.href} target="_blank">
+                        {item.href}
+                      </a>
                     </dd>
                   </>
                 )}
@@ -103,7 +111,7 @@ export default async function Page({
                     src={`/${previousItem.thumbnailImg}`}
                     alt={previousItem.imageAlt}
                   />
-                  <div className="card-footer items-center w-full! flex bg-white/[90%] px-5 font-bold text-lg">
+                  <div className="card-footer items-center w-full! flex bg-black/[95%] px-5 text-lg">
                     <Arrow customClass="m-0 p-0 rotate-180" /> Previous
                   </div>
                 </div>
@@ -126,7 +134,7 @@ export default async function Page({
                     src={`/${nextItem.thumbnailImg}`}
                     alt={nextItem.imageAlt}
                   />
-                  <div className="card-footer items-center w-full! flex bg-white/[90%] px-5 font-bold text-lg justify-end">
+                  <div className="card-footer items-center w-full! flex bg-black/[95%] px-5 text-lg justify-end">
                     Next <Arrow customClass="m-0 p-0" />
                   </div>
                 </div>
