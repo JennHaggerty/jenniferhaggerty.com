@@ -8,12 +8,14 @@ import { strings } from "@/src/strings.js";
 const Index = () => {
   return (
     <>
-      <div className="grid lg:grid-cols-2 my-20 md:my-40 gap-3 md:gap-8">
-        <div className="m-auto w-full">
-          <p className="h1">{site.name}</p>
-          <h1 className="h2 w-full!">{site.tagline}</h1>
+      <div className="flex h-[50vh]">
+        <div className="flex flex-col md:flex-row gap-0 md:gap-5 lg:gap-8 m-auto">
+          <div className="md:m-auto w-full">
+            <p className="h1">{site.name}</p>
+            <h1 className="h2 w-full!">{site.tagline}</h1>
+          </div>
+          <div className="md:m-auto">{site.homepageHeader}</div>
         </div>
-        <div className="m-auto">{site.homepageHeader}</div>
       </div>
       <Section>
         <Portfolio

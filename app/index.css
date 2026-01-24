@@ -61,7 +61,7 @@
   --h2-border-radius: 0;
   --h2-width: fit-content;
   --h2-margin: 10px auto;
-  --h2-padding: 0 0 var(--lg);
+  --h2-padding: var(--lg);
   --h2-position: relative;
 
   --h3-font: var(--default-font);
