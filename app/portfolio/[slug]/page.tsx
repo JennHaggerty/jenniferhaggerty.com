@@ -111,7 +111,7 @@ export default async function Page({
                     src={`/${previousItem.thumbnailImg}`}
                     alt={previousItem.imageAlt}
                   />
-                  <div className="card-footer items-center w-full! flex bg-black/[95%] px-5 text-lg">
+                  <div className="card-footer items-center w-full! flex bg-black/[95%] text-white! px-5 text-lg">
                     <Arrow customClass="m-0 p-0 rotate-180" /> Previous
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default async function Page({
                     src={`/${nextItem.thumbnailImg}`}
                     alt={nextItem.imageAlt}
                   />
-                  <div className="card-footer items-center w-full! flex bg-black/[95%] px-5 text-lg justify-end">
+                  <div className="card-footer items-center w-full! flex bg-black/[95%] text-white! px-5 text-lg justify-end">
                     Next <Arrow customClass="m-0 p-0" />
                   </div>
                 </div>

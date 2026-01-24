@@ -341,14 +341,15 @@ export const site = {
       target: "_blank",
       title: "Studio von Jenn",
       date: "'25",
-      tagline: "Fine Art Portrait Photographer",
+      tagline: "Fine Art Portraiture",
       tools: ["NextJS", "NoSQL", "React", "Typescript", "TailwindCSS"],
       content: (<div>
+        <p>One of my original websites. When I was studying art over 20 years ago I knew how important a web prescence would be. With my finances tight, I learned to make my own self-hosted LAMP stack and have been using it as a testing grounds for new ideas and frameworks.</p>
+      
         <blockquote cite="https://www.studiovonjenn.com/">
           <p>Jennifer has been obsessed with light, color, and painting since 1997. She began photographing portraits in 2003. When she's not at the computer she's working on something creative or is out in the garden with her partner and their dogs.</p>
         </blockquote>
         <p>—Jennifer</p>
-        <p>One of my original websites. When I was studying art over 20 years ago I knew how important a web prescence would be. With my finances tight, I learned to make my own self-hosted LAMP stack and have been using it as a testing grounds for new ideas and frameworks.</p>
       </div>),
       location: "Augusta, GA",
       isPersonalProject: true,
