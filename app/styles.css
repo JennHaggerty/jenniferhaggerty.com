@@ -381,6 +381,10 @@ footer {
 
 .more-stories {
   @apply flex gap-3 p-3 max-h-[50vh];
+
+  img {
+    @apply h-full;
+  }
 }
 /* END custom styles */
 /* START animations */
