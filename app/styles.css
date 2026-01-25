@@ -251,10 +251,11 @@ footer {
 
   .card-image {
     filter: grayscale(1);
+    object-fit: cover;
   }
 
   .card-footer {
-    @apply items-center w-full! flex bg-black/[95%] text-white! px-5 text-lg;
+    @apply absolute bottom-0 items-center w-full! flex bg-black/[95%] text-white! px-5 text-lg;
 
     svg {
       margin: 0;
@@ -268,8 +269,8 @@ footer {
       z-index: 1;
       border: var(--sm) solid var(--light-000);
       outline: var(--sm) solid var(--dark-000);
-      object-fit: cover;
       height: 100%;
+      width: 100%;
     }
     .card-footer {
       position: absolute;
@@ -316,7 +317,7 @@ footer {
 }
 
 .cta {
-  @apply w-full! m-0! py-25;
+  @apply w-full! m-0!;
 
   a {
     @apply block! text-2xl! text-center m-auto;
@@ -374,12 +375,12 @@ footer {
   }
 
   .footer {
-    @apply bg-[var(--secondary)] hidden lg:block;
+    @apply bg-[var(--secondary)];
   }
 }
 
 .more-stories {
-  @apply flex flex-col md:flex-row gap-3;
+  @apply flex gap-3 p-3 max-h-[50vh];
 }
 /* END custom styles */
 /* START animations */

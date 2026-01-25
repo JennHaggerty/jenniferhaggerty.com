@@ -90,20 +90,18 @@ export default async function Page({
 
       <div className="footer">
         <h3 className={horizontalPadding}>More Stories</h3>
-        <div className={`more-stories ${padding}`}>
-          {previousItem === undefined ? (
-            <div className="md:w-1/2"></div>
-          ) : (
+        <div className={`more-stories`}>
+          {previousItem && (
             <a
               href={`/portfolio/${getSlugFromTitle(previousItem.title)}`}
               rel={previousItem.rel}
-              className="md:w-1/2"
+              className={nextItem ? "w-1/2" : "w-full"}
             >
               <div className="card">
                 <div className="card-title h1">{previousItem.title}</div>
                 <img
                   className="card-image"
-                  src={`/${previousItem.thumbnailImg}`}
+                  src={`/${previousItem.featuredImg}`}
                   alt={previousItem.imageAlt}
                 />
                 <div className="card-footer">
@@ -112,19 +110,17 @@ export default async function Page({
               </div>
             </a>
           )}
-          {nextItem === undefined ? (
-            <div className="md:w-1/2"></div>
-          ) : (
+          {nextItem && (
             <a
               href={`/portfolio/${getSlugFromTitle(nextItem.title)}`}
               rel={nextItem.rel}
-              className="md:w-1/2"
+              className={previousItem ? "w-1/2" : "w-full"}
             >
               <div className="card">
                 <div className="card-title h1">{nextItem.title}</div>
                 <img
                   className="card-image"
-                  src={`/${nextItem.thumbnailImg}`}
+                  src={`/${nextItem.featuredImg}`}
                   alt={nextItem.imageAlt}
                 />
                 <div className="card-footer justify-end">
