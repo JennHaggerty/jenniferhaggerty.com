@@ -15,7 +15,7 @@ export const site = {
   description: "Interface and front end developer.",
   homepageHeader: (
     <div className="p">
-      <p className="pb-3">
+      <p>
         I enjoy creating and maintaining user-centric, ADA compliant web
         applications. My favorite tools are React, TypeScript, MongoDB, Next.js,
         TailwindCSS, and <a href="https://github.com/JennHaggerty">Github.</a>

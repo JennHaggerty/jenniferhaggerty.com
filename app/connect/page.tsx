@@ -5,12 +5,11 @@ import { strings } from "../../src/strings";
 
 export default function Page() {
   const textMenu = site.menus.find((x) => x.id === "links");
-  const menu = site.menus.find((x) => x.id === "portfolio");
 
   if (!textMenu) return;
 
   return (
-    <Section customClass="m-auto">
+    <Section>
       <h1 className="h2 w-full! mb-5!">{strings.links}</h1>
       <ul className="flex flex-col gap-5">
         {textMenu.items.map((item, i) => (
@@ -22,7 +21,7 @@ export default function Page() {
               href={item.href}
               rel={item.rel}
               target={item.target}
-              className="h-[75px] w-full text-center align-center m-auto"
+              className="h-[75px] w-full text-center content-center m-auto"
             >
               {item.content}
             </a>

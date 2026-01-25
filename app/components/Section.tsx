@@ -6,9 +6,9 @@ interface Props {
 const Section = (props: Props) => {
   const { children, customClass } = props;
 
-  const fullClass = `py-[40px] md:py-[60px]${customClass ? ` ${customClass}` : ""}`;
+  const fullClass = `my-[var(--section-vertical-margin)] ${customClass ? customClass : ""}`;
 
-  return <div className={fullClass}>{children}</div>;
+  return <section className={fullClass}>{children}</section>;
 };
 
 export default Section;

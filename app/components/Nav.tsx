@@ -56,12 +56,12 @@ const Nav = (props: Props) => {
     <nav
       aria-labelledby={id}
       aria-live={ariaLive}
-      className="bg-[var(--brand)] w-full"
+      className="bg-[var(--primary)] w-full"
     >
       <ul
         id={id}
         aria-label={ariaLabel}
-        className={`${customClassname} ${site.maxWidthClassname}`}
+        className={`flex flex-row ${customClassname} ${site.maxWidthClassname}`}
       >
         {renderNavItems()}
       </ul>

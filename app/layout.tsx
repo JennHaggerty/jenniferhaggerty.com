@@ -34,7 +34,7 @@ export default function RootLayout({
         </main>
 
         <footer className="mt-[60px]">
-          <h2 className="h2 w-full! mb-0! flex justify-center">Learn More</h2>
+          <h2 className="w-full!">Learn More</h2>
 
           {iconMenu && (
             <Nav
