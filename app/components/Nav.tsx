@@ -29,11 +29,7 @@ const Nav = (props: Props) => {
     return items.map((item, i) => (
       <li key={id + "-" + i}>
         {item.onClick && (
-          <button
-            className={`rounded-none py-3!`}
-            aria-label={item.ariaLabel}
-            onClick={item.onClick}
-          >
+          <button aria-label={item.ariaLabel} onClick={item.onClick}>
             {item.content}
           </button>
         )}
@@ -43,7 +39,6 @@ const Nav = (props: Props) => {
             aria-label={item.ariaLabel}
             rel={item.rel}
             target={item.target}
-            className={`py-3! m-auto`}
           >
             {item.content}
           </a>
@@ -53,15 +48,11 @@ const Nav = (props: Props) => {
   };
 
   return (
-    <nav
-      aria-labelledby={id}
-      aria-live={ariaLive}
-      className="bg-[var(--primary)] w-full"
-    >
+    <nav aria-labelledby={id} aria-live={ariaLive}>
       <ul
         id={id}
         aria-label={ariaLabel}
-        className={`flex flex-row ${customClassname} ${site.maxWidthClassname}`}
+        className={`${customClassname} ${site.maxWidthClassname}`}
       >
         {renderNavItems()}
       </ul>

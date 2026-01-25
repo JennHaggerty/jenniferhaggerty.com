@@ -2,13 +2,10 @@ import { site } from "../../src/site";
 
 const CTA = () => {
   return (
-    <div className="h2 w-full! m-0! align-center">
+    <div className="cta h2">
       <span>Ready to get connected?</span>
-      <a
-        href={`mailto:${site.adminEmail}`}
-        className=" block! text-2xl! text-center align-center m-auto"
-      >
-        <span className=" tracking-normal">Let's go!</span>
+      <a href={`mailto:${site.adminEmail}`}>
+        <span>Let's go!</span>
       </a>
     </div>
   );

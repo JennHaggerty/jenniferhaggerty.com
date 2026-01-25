@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <Section>
       <h1 className="h2 w-full! mb-5!">{strings.links}</h1>
-      <ul className="flex flex-col gap-5">
+      <ul>
         {textMenu.items.map((item, i) => (
           <li
             className="flex w-full"

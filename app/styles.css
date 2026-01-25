@@ -182,32 +182,109 @@ p,
   position: var(--p-position);
 }
 
-footer {
+nav {
   width: 100%;
+  background: var(--primary);
+
+  &.text-nav ul {
+    display: flex;
+  }
+
+  ul {
+    @apply flex flex-row;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+
+    a,
+    button {
+      @apply w-full block py-3;
+
+      svg {
+        margin: auto;
+      }
+
+      &:hover svg {
+        fill: var(--a-hover-color);
+      }
+    }
+  }
+}
+
+section {
+  @apply my-[var(--section-vertical-margin)];
+}
+
+ul {
+  @apply flex flex-col gap-3;
 }
 
 svg {
   height: var(--default-svg-size);
 }
 
-/* start CUSTOM STYLES */
-.text-nav ul {
-  display: flex;
-}
-nav li {
+footer {
   width: 100%;
-  text-align: center;
 }
-nav li a {
-  width: 100%;
-  display: block;
+/* END elements */
+/* START custom styles */
+.card {
+  height: 100%;
 
-  svg {
-    margin: auto;
+  &,
+  .card-content {
+    position: relative;
   }
 
-  &:hover svg {
-    fill: var(--a-hover-color);
+  .card-title {
+    @apply w-max! text-xl!;
+
+    position: absolute;
+    z-index: 2;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+  }
+
+  .card-image {
+    filter: grayscale(1);
+  }
+
+  .card-footer {
+    @apply items-center w-full! flex bg-black/[95%] text-white! px-5 text-lg;
+
+    svg {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .card-image {
+      transition: filter 0.4s;
+      z-index: 1;
+      border: var(--sm) solid var(--light-000);
+      outline: var(--sm) solid var(--dark-000);
+      object-fit: cover;
+      height: 100%;
+    }
+    .card-footer {
+      position: absolute;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    &:hover .card-footer {
+      opacity: 1;
+      transition: opacity 0.4s;
+    }
+    &:hover .card-image {
+      filter: none;
+      transition: filter 0.4s;
+    }
   }
 }
 
@@ -238,46 +315,74 @@ nav li a {
   }
 }
 
-.card,
-.card-content {
-  position: relative;
-}
-.card-title {
-  position: absolute;
-  z-index: 2;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1em;
-}
-@media (min-width: 769px) {
-  .card-image {
-    filter: grayscale(1);
-    transition: filter 0.4s;
-    z-index: 1;
-    border: var(--sm) solid var(--light-000);
-    outline: var(--sm) solid var(--dark-000);
-    object-fit: cover;
-    height: 100%;
-  }
-  .card-footer {
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s;
-  }
-  .card:hover .card-footer {
-    opacity: 1;
-    transition: opacity 0.4s;
-  }
-  .card:hover .card-image {
-    filter: none;
-    transition: filter 0.4s;
-  }
-}
-/* end CUSTOM STYLES */
+.cta {
+  @apply w-full! m-0! py-25;
 
-/* start ANIMATIONS */
+  a {
+    @apply block! text-2xl! text-center m-auto;
+
+    span {
+      @apply tracking-normal;
+    }
+  }
+}
+
+.portfolio {
+  .title {
+    @apply w-full! mb-2!;
+  }
+
+  .portfolio-gallery {
+    @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-2;
+  }
+}
+
+.portfolio-page {
+  background: var(--white);
+
+  .header {
+    position: relative;
+
+    img {
+      @apply max-md:max-h-[250px] md:max-h-[350px] lg:max-h-[550px] w-full object-cover md:grayscale;
+    }
+  }
+
+  .desktop-title {
+    @apply max-md:hidden absolute top-1/2 left-1/2 -translate-1/2 z-1;
+  }
+
+  .mobile-title {
+    @apply md:hidden;
+
+    h1,
+    h2 {
+      @apply mx-0!;
+    }
+  }
+
+  .content {
+    @apply md:flex gap-10;
+
+    .left-column {
+      @apply text-black my-5 md:w-2/3;
+    }
+
+    .right-column {
+      @apply text-black my-5 md:w-1/3;
+    }
+  }
+
+  .footer {
+    @apply bg-[var(--secondary)] hidden lg:block;
+  }
+}
+
+.more-stories {
+  @apply flex flex-col md:flex-row gap-3;
+}
+/* END custom styles */
+/* START animations */
 @keyframes glow-pulse {
   0% {
     box-shadow: 0 0 2px 3px rgba(40, 76, 82, 0.5);
@@ -313,4 +418,4 @@ nav li a {
     top: 100%;
   }
 }
-/* end ANIMATIONS */
+/* END animations */

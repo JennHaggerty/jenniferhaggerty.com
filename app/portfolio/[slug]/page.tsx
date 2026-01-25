@@ -30,38 +30,36 @@ export default async function Page({
   const previousItem = items[itemIndex - 1];
   const nextItem = items[itemIndex + 1];
 
+  const horizontalPadding = "px-3! lg:px-8!";
+  const verticalPadding = "py-12!";
+  const padding = horizontalPadding + " " + verticalPadding;
+
   if (!item) return;
 
   return (
-    <div className="bg-white">
-      <div className="relative">
-        <div className="max-md:hidden absolute top-1/2 left-1/2 -translate-1/2 z-1">
+    <div className="portfolio-page">
+      <div className="header">
+        <div className="desktop-title">
           <h1>{item.title}</h1>
           <h2>{item.tagline}</h2>
         </div>
-        <img
-          className="max-md:max-h-[250px] md:max-h-[350px] lg:max-h-[550px] w-full object-cover md:grayscale"
-          src={`/${item.featuredImg}`}
-          alt={item.imageAlt}
-        />
+        <img src={`/${item.featuredImg}`} alt={item.imageAlt} />
       </div>
 
-      <div className="px-8 py-12">
-        <div className="md:hidden">
-          <h1 className="mx-0!">{item.title}</h1>
-          <h2 className="mx-0!">{item.tagline}</h2>
+      <div className={padding}>
+        <div className="mobile-title">
+          <h1>{item.title}</h1>
+          <h2>{item.tagline}</h2>
         </div>
 
-        <div className="md:flex gap-10">
-          <div className="text-black my-5 md:w-2/3">{item.content}</div>
+        <div className="content">
+          <div className="left-column">{item.content}</div>
 
-          <hr className="md:hidden" />
-
-          <div className="text-black my-5 md:w-1/3">
-            <dl className="flex flex-col gap-3">
+          <div className="right-column">
+            <dl className="flex flex-col gap-2">
               {item.href && (
                 <>
-                  <dt className="uppercase">Website</dt>
+                  <dt className="font-bold">Website</dt>
                   <dd className="break-all">
                     <a href={item.href} target="_blank">
                       {item.href}
@@ -71,9 +69,9 @@ export default async function Page({
               )}
               {item.tools && (
                 <>
-                  <dt className="uppercase">Tools</dt>
+                  <dt className="font-bold">Tools</dt>
                   <dd>
-                    <ul className="flex flex-col">
+                    <ul>
                       {item.tools.map((tool, i) => (
                         <li key={`${slug}-tool-${i}`}>{tool}</li>
                       ))}
@@ -86,13 +84,13 @@ export default async function Page({
         </div>
       </div>
 
-      <div className="mx-8 my-12">
+      <div className={padding}>
         <CTA />
       </div>
 
-      <div className="w-full py-8 bg-[var(--secondary)]">
-        <h3>More Stories</h3>
-        <div className="flex  p-8 flex-col md:flex-row gap-3">
+      <div className="footer">
+        <h3 className={horizontalPadding}>More Stories</h3>
+        <div className={`more-stories ${padding}`}>
           {previousItem === undefined ? (
             <div className="md:w-1/2"></div>
           ) : (
@@ -101,17 +99,15 @@ export default async function Page({
               rel={previousItem.rel}
               className="md:w-1/2"
             >
-              <div className="card h-full">
-                <div className="card-title h1 w-max! text-xl!">
-                  {previousItem.title}
-                </div>
+              <div className="card">
+                <div className="card-title h1">{previousItem.title}</div>
                 <img
-                  className="card-image h-full!"
+                  className="card-image"
                   src={`/${previousItem.thumbnailImg}`}
                   alt={previousItem.imageAlt}
                 />
-                <div className="card-footer items-center w-full! flex bg-black/[95%] text-white! px-5 text-lg">
-                  <Arrow customClass="m-0 p-0 rotate-180" /> Previous
+                <div className="card-footer">
+                  <Arrow customClass="rotate-180" /> Previous
                 </div>
               </div>
             </a>
@@ -124,17 +120,15 @@ export default async function Page({
               rel={nextItem.rel}
               className="md:w-1/2"
             >
-              <div className="card h-full">
-                <div className="card-title h1 w-max! text-xl!">
-                  {nextItem.title}
-                </div>
+              <div className="card">
+                <div className="card-title h1">{nextItem.title}</div>
                 <img
-                  className="card-image h-full!"
+                  className="card-image"
                   src={`/${nextItem.thumbnailImg}`}
                   alt={nextItem.imageAlt}
                 />
-                <div className="card-footer items-center w-full! flex bg-black/[95%] text-white! px-5 text-lg justify-end">
-                  Next <Arrow customClass="m-0 p-0" />
+                <div className="card-footer justify-end">
+                  Next <Arrow />
                 </div>
               </div>
             </a>

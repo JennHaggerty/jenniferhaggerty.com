@@ -82,7 +82,7 @@
   --h2-bg-color: var(--dark-000);
   --h2-border: var(--border-sm) solid var(--light-000);
   --h2-border-radius: 0;
-  --h2-letter-spacing: var(--lg);
+  --h2-letter-spacing: var(--md);
   --h2-width: 100%;
   --h2-margin: auto;
   --h2-outline: var(--border-sm) solid var(--dark-000);
@@ -95,10 +95,10 @@
   --h3-text-transform: uppercase;
   --h3-color: var(--dark-000);
   --h3-bg-color: var(--light-000);
-  --h3-border: var(--border-md) solid var(--dark-000);
+  --h3-border: none;
   --h3-border-radius: var(--border-sm);
-  --h3-width: fit-content;
-  --h3-margin: var(--xl) auto 0;
+  --h3-width: 100%;
+  --h3-margin: 0;
   --h3-padding: 5px 5px 0 5px;
   --h3-position: relative;
 

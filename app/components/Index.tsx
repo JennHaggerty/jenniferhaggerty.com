@@ -18,9 +18,7 @@ const Index = () => {
         </div>
       </Section>
       <Section>
-        <Portfolio
-          heading={<h2 className="w-full! mb-2!">{strings.portfolio}</h2>}
-        />
+        <Portfolio />
       </Section>
     </>
   );
