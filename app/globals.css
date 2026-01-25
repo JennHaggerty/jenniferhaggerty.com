@@ -1,0 +1,173 @@
+:root {
+  --yellow: #fafa33;
+  --pink: #cc003c;
+  --green: #90bc0b;
+  --black: #000000;
+  --black-111: #111;
+  --white: #e3dad3;
+  --grey: #433f3c;
+  --orange: #ee670c;
+  --red: #c6031e;
+  --blue: #66b3c4;
+
+  --sm: 2px;
+  --md: 4px;
+  --lg: 8px;
+  --xl: 16px;
+
+  --brand: var(--yellow);
+  --accent: var(--pink);
+  --neutral: var(--grey);
+  --success: var(--green);
+  --error: var(--red);
+  --warning: var(--orange);
+  --lightest: white;
+  --light: var(--white);
+  --darkest: var(--black);
+  --darker: var(--black-111);
+  --background: var(--blue);
+
+  --border-sm: var(--sm);
+  --border-md: var(--md);
+  --border-lg: var(--lg);
+  --border-radius-full: 50%;
+
+  --svg-default-size: 3em;
+  --default-font: "Exo 2", sans-serif;
+  --default-text-size: 1em;
+
+  --h1-font: var(--default-font);
+  --h1-font-weight: 400;
+  --h1-text-size: 1.25em;
+  --h1-text-transform: none;
+  --h1-color: var(--brand);
+  --h1-bg-color: var(--darkest);
+  --h1-border: var(--border-sm) solid var(--light);
+  --h1-border-radius: 0;
+  --h1-width: fit-content;
+  --h1-margin: 5px auto;
+  --h1-padding: 0.25em 0.5em;
+  --h1-position: relative;
+
+  --h2-font: var(--default-font);
+  --h2-font-weight: 400;
+  --h2-text-size: 2em;
+  --h2-text-transform: uppercase;
+  --h2-color: var(--light);
+  --h2-bg-color: var(--darkest);
+  --h2-border: var(--border-sm) solid var(--light);
+  --h2-border-radius: 0;
+  --h2-width: fit-content;
+  --h2-margin: 10px auto;
+  --h2-padding: var(--lg);
+  --h2-position: relative;
+
+  --h3-font: var(--default-font);
+  --h3-font-weight: bold;
+  --h3-text-size: 2em;
+  --h3-text-transform: uppercase;
+  --h3-color: var(--darkest);
+  --h3-bg-color: var(--light);
+  --h3-border: var(--border-md) solid var(--darkest);
+  --h3-border-radius: var(--border-sm);
+  --h3-width: fit-content;
+  --h3-margin: var(--xl) auto 0;
+  --h3-padding: 5px 5px 0 5px;
+  --h3-position: relative;
+
+  --h4-font: var(--default-font);
+  --h4-font-weight: 400;
+  --h4-text-size: 1.15em;
+  --h4-text-transform: none;
+  --h4-color: var(--black);
+  --h4-bg-color: var(--orange);
+  --h4-border: var(--border-md) solid var(--light);
+  --h4-border-radius: 0;
+  --h4-width: fit-content;
+  --h4-margin: -1em auto 0;
+  --h4-padding: 0 0.25em;
+  --h4-position: relative;
+
+  --h5-font: var(--default-font);
+  --h5-font-weight: 400;
+  --h5-text-size: 1.5em;
+  --h5-text-transform: none;
+  --h5-color: var(--brand);
+  --h5-bg-color: var(--darkest);
+  --h5-border: var(--border-md) solid var(--brand);
+  --h5-border-radius: var(--border-radius-full);
+  --h5-width: max-content;
+  --h5-margin: auto;
+  --h5-padding: var(--lg);
+  --h5-position: relative;
+
+  --h6-font: var(--default-font);
+  --h6-font-weight: 400;
+  --h6-text-size: 2.25em;
+  --h6-text-transform: lowercase;
+  --h6-color: var(--green);
+  --h6-bg-color: "transparent";
+  --h6-border: var(--border-sm) solid var(--white);
+  --h6-border-radius: 0;
+  --h6-width: fit-content;
+  --h6-margin: 0;
+  --h6-padding: 0;
+  --h6-position: relative;
+
+  --a-font: var(--default-font);
+  --a-font-weight: 600;
+  --a-text-size: var(--default-text-size);
+  --a-text-transform: uppercase;
+  --a-color: var(--darkest);
+  --a-bg-color: var(--brand);
+  --a-border: var(--border-sm) solid var(--brand);
+  --a-border-radius: 0;
+  --a-width: fit-content;
+  --a-padding: 0;
+
+  --a-hover-font: var(--default-font);
+  --a-hover-font-weight: 600;
+  --a-hover-text-size: var(--default-text-size);
+  --a-hover-text-transform: uppercase;
+  --a-hover-color: var(--lightest);
+  --a-hover-bg-color: var(--accent);
+  --a-hover-border: var(--border-sm) solid var(--accent);
+  --a-hover-border-radius: 0;
+
+  --p-a-font: var(--default-font);
+  --p-a-font-weight: 700;
+  --p-a-text-size: var(--default-text-size);
+  --p-a-text-transform: uppercase;
+  --p-a-color: var(--darkest);
+  --p-a-bg-color: var(--brand);
+  --p-a-border: none;
+  --p-a-border-radius: var(--border-sm);
+  --p-a-width: fit-content;
+  --p-a-padding: 0 0.25em;
+
+  --p-a-hover-font: var(--default-font);
+  --p-a-hover-font-weight: 700;
+  --p-a-hover-text-size: var(--default-text-size);
+  --p-a-hover-text-transform: uppercase;
+  --p-a-hover-color: var(--lightest);
+  --p-a-hover-bg-color: var(--accent);
+  --p-a-hover-border: none;
+  --p-a-hover-border-radius: 0;
+  --p-a-hover-width: fit-content;
+
+  --p-font: var(--default-font);
+  --p-font-weight: 400;
+  --p-text-size: var(--default-text-size);
+  --p-text-transform: none;
+  --p-color: var(--black);
+  --p-bg-color: var(--lightest);
+  --p-border: none;
+  --p-border-radius: var(--border-md);
+  --p-width: fit-content;
+  --p-margin: auto;
+  --p-padding: var(--lg);
+  --p-position: inherit;
+
+  --animation-speed-normal: 8s;
+  --animation-speed-reduced: 15s;
+}

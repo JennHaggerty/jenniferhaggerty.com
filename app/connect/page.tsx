@@ -10,7 +10,7 @@ export default function Page() {
   if (!textMenu) return;
 
   return (
-    <Section customClass={`${site.maxWidthClassname}`}>
+    <Section customClass="m-auto">
       <h1 className="h2 w-full! mb-5!">{strings.links}</h1>
       <ul className="flex flex-col gap-5">
         {textMenu.items.map((item, i) => (

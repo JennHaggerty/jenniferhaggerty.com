@@ -1,5 +1,6 @@
 import { site } from "@/src/site";
-import "./index.css";
+import "./globals.css";
+import "./styles.css";
 import { Metadata } from "next";
 import { Exo_2 } from "next/font/google";
 import Nav from "./components/Nav";
@@ -27,7 +28,7 @@ export default function RootLayout({
         {menu && <Nav items={menu.items} />}
 
         <main
-          className={`${site.maxWidthClassname} m-auto px-3 min-h-screen align-center`}
+          className={`${site.maxWidthClassname} w-full m-auto px-3 min-h-screen align-center`}
         >
           {children}
         </main>
