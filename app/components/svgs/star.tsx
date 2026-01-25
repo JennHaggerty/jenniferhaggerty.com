@@ -1,15 +1,11 @@
 interface Props {
-  className?: string;
+  customClass?: string;
 }
 
 const StarIcon = (props: Props) => {
-  const { className } = props;
+  const { customClass } = props;
   return (
-    <svg
-      className={className ? className : ""}
-      viewBox="0 0 512 512"
-      aria-hidden="true"
-    >
+    <svg className={customClass} viewBox="0 0 512 512" aria-hidden="true">
       <g>
         <polygon
           points="512,255.996 448.702,204.365 477.704,128.003 397.063,114.933 384,34.3 307.639,63.302 256,0.003 

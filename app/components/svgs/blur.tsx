@@ -1,12 +1,12 @@
 interface Props {
-  className?: string;
+  customClass?: string;
 }
 
 const BlurIcon = (props: Props) => {
-  const { className } = props;
+  const { customClass } = props;
 
   return (
-    <svg aria-hidden="true" className={className ? className : ""}>
+    <svg aria-hidden="true" className={customClass}>
       <defs>
         <filter id="liquid">
           <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
