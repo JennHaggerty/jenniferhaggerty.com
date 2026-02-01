@@ -179,10 +179,16 @@ export const site = {
       results: ["53.6% Conversion Rate Increase", "7.8% Reduced Abandoned Carts", "62.5% Reduced Abandoned Checkouts"],
       tools: [(<a href="https://www.salesforce.com/commerce/" target="_blank" rel="external">Salesforce Commerce Cloud</a>), "React", "Headless CMS", "Typescript"],
       content: (<div>
+        <h3>About the client</h3>
+
+        <p>Paula's Choice has been dominating the skincare space since 1995. I found out about the company in 2010 on a Reddit forum raving about their <a href="https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201.html">BHA Liquid Exfoliant</a>.</p>
+
         <blockquote cite="https://www.paulaschoice.com/who-we-are/about-us">
           <p>The beauty industry is dominated by misinformation--we cut through the noise & explain the research, empowering you to make educated skin care decisions.</p>
         </blockquote>
         <p>—Paula's Choice, <cite>About Us</cite></p>
+
+        <h3>Our Work</h3>
         <p>Supplmenting the Paula's Choice development team, we built branded interfaces and admin dashboards on a headless commerce/content management system with <a href="https://www.salesforce.com/commerce/" target="_blank" rel="external">Salesforce Commerce Cloud</a>.</p>
      
         <blockquote cite="https://www.cqlcorp.com/work/paulas-choice/">

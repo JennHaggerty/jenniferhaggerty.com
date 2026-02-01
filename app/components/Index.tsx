@@ -3,11 +3,12 @@
 import { site } from "@/src/site";
 import Section from "./Section";
 import Portfolio from "./Portfolio";
-import { strings } from "@/src/strings";
 
 const Index = () => {
   return (
-    <>
+    <div
+      className={`${site.maxWidthClassname} w-full m-auto md:px-3 min-h-screen align-center`}
+    >
       <Section customClass="flex bg-white p-8">
         <div className="flex flex-col lg:flex-row gap-0 lg:gap-8 m-auto">
           <div className="mb-3! md:mb-0 md:m-auto w-full">
@@ -20,7 +21,7 @@ const Index = () => {
       <Section>
         <Portfolio />
       </Section>
-    </>
+    </div>
   );
 };
 

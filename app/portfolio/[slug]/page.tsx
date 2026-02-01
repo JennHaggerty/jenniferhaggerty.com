@@ -37,7 +37,7 @@ export default async function Page({
   if (!item) return;
 
   return (
-    <div className="portfolio-page">
+    <div className="portfolio-page mt-[-15%]">
       <div className="header">
         <div className="desktop-title">
           <h1>{item.title}</h1>
