@@ -26,59 +26,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.8,
     },
-    {
-      url: "https://studiovonjenn.com/portfolio/denon",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
-    {
-      url: "https://studiovonjenn.com/portfolio/masimo",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
-    {
-      url: "https://studiovonjenn.com/portfolio/onesource",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
-    {
-      url: "https://studiovonjenn.com/portfolio/taxslayer",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
-    {
-      url: "https://studiovonjenn.com/portfolio/psychedelicart",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
-    {
-      url: "https://studiovonjenn.com/portfolio/gocollect",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
-    {
-      url: "https://studiovonjenn.com/portfolio/fastgrowingtrees",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
-    {
-      url: "https://studiovonjenn.com/portfolio/studiovonjenn",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
-    {
-      url: "https://studiovonjenn.com/portfolio/paulaschoice",
-      lastModified: new Date(),
-      changeFrequency: "never",
-      priority: 0.5,
-    },
   ];
 }
