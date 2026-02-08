@@ -54,7 +54,7 @@ export const site = {
           content: "Email",
         },
         {
-          href: "jenniferhaggerty_resume.pdf",
+          href: "/resume/jenniferhaggerty_resume.pdf",
           content: "Resume",
           target: "_blank",
         },
@@ -89,7 +89,7 @@ export const site = {
         },
         {
           ariaLabel: "Download resume.",
-          href: "jenniferhaggerty_resume.pdf",
+          href: "/resume/jenniferhaggerty_resume.pdf",
           content: <ResumeIcon className="icon-link" />,
           target: "_blank",
         },

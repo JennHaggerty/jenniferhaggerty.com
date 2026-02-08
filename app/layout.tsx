@@ -28,7 +28,7 @@ export default function RootLayout({
         {menu && <Nav items={menu.items} />}
 
         <main
-          className={`${site.maxWidthClassname} w-full m-auto md:px-3 min-h-screen align-center`}
+          className={`${site.maxWidthClassname} w-full m-auto px-3 md:px-0 min-h-screen align-center`}
         >
           {children}
         </main>

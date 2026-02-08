@@ -7,7 +7,7 @@ import Portfolio from "./Portfolio";
 const Index = () => {
   return (
     <div
-      className={`${site.maxWidthClassname} w-full m-auto md:px-3 min-h-screen align-center`}
+      className={`${site.maxWidthClassname} w-full m-auto px-3 md:px-0 min-h-screen align-center`}
     >
       <Section customClass="flex bg-white p-8">
         <div className="flex flex-col lg:flex-row gap-0 lg:gap-8 m-auto">
