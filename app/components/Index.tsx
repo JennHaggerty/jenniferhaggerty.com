@@ -91,10 +91,11 @@ const Index = () => {
             <h3>Experience</h3>
             <div>
               <p>
-                Web Developer and Administration{" "}
-                <span className="font-bold">@ Freelance</span>
+                <span className="font-bold">
+                  Web Developer and Administration @ Freelance
+                </span>
                 <br />
-                <span className="text-xs!">January 2024 – Current</span>
+                <span className="text-sm!">January 2024 – Current</span>
                 <br />
                 Currently I generate e-commerce experiences for B2C vendors in
                 Shopify, WordPress with WooCommerce, and SquareSpace in the arts
@@ -107,10 +108,11 @@ const Index = () => {
                 instructions.
               </p>
               <p>
-                Interface Developer{" "}
-                <span className="font-bold">@ CQL Corp</span>
+                <span className="font-bold">
+                  Interface Developer @ CQL Corp
+                </span>
                 <br />
-                <span className="text-xs!">January 2023 – December 2024</span>
+                <span className="text-sm!">January 2023 – December 2024</span>
                 <br />
                 Developed custom React component libraries with TypeScript in a
                 headless CMS. Leveraged Salesforce to enhance global loyalty
@@ -122,10 +124,11 @@ const Index = () => {
                 critical ADA compliance issues in HTML and CSS3.
               </p>
               <p>
-                Front End Engineer{" "}
-                <span className="font-bold">@ TaxSlayer</span>
+                <span className="font-bold">
+                  Front End Engineer @ TaxSlayer
+                </span>
                 <br />
-                <span className="text-xs!">September 2021 – December 2022</span>
+                <span className="text-sm!">September 2021 – December 2022</span>
                 <br />
                 Ensured seamless functionality across individual and
                 professional financial tax preparation applications. Modified
@@ -137,10 +140,11 @@ const Index = () => {
                 sessions.
               </p>
               <p>
-                Platform Specialist{" "}
-                <span className="font-bold">@ GoCollect LLC</span>
+                <span className="font-bold">
+                  Platform Specialist @ GoCollect LLC
+                </span>
                 <br />
-                <span className="text-xs!">March 2019 – April 2020</span>
+                <span className="text-sm!">March 2019 – April 2020</span>
                 <br />
                 Developed and tested API integrations using PHP’s Symfony and
                 GraphQL, ensuring robust and scalable solutions. Automated
@@ -155,10 +159,11 @@ const Index = () => {
                 to support the team.
               </p>
               <p>
-                Software Engineer{" "}
-                <span className="font-bold">@ Fast Growing Trees</span>
+                <span className="font-bold">
+                  Software Engineer @ Fast Growing Trees
+                </span>
                 <br />
-                <span className="text-xs!">January 2018 – February 2019</span>
+                <span className="text-sm!">January 2018 – February 2019</span>
                 <br />
                 Unified disparate PHP modules into a single cohesive system,
                 improving maintainability and reducing complexity. Optimized
@@ -171,10 +176,11 @@ const Index = () => {
                 for Shopify’s platform.
               </p>
               <p>
-                Web Design and Administration{" "}
-                <span className="font-bold">@ Digital Derm Inc.</span>
+                <span className="font-bold">
+                  Web Design and Administration @ Digital Derm Inc.
+                </span>
                 <br />
-                <span className="text-xs!">November 2015 – December 2017</span>
+                <span className="text-sm!">November 2015 – December 2017</span>
                 <br />
                 Migrated hosting services from GoDaddy to AWS, achieving
                 significant cost savings and improved scalability. Converted
