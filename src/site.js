@@ -13,19 +13,6 @@ export const site = {
   copyright: "Copyright © {{year}} Jennifer Haggerty.",
   font: "https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap",
   description: "Interface and front end developer.",
-  homepageHeader: (
-    <div className="p">
-      <p>
-        I enjoy creating and maintaining user-centric, ADA compliant web
-        applications. My favorite tools are React, TypeScript, MongoDB, Next.js,
-        TailwindCSS, and <a href="https://github.com/JennHaggerty">Github.</a>
-      </p>
-      <p>
-        When not at the computer I'm in the garden or at the
-        park with my dogs.
-      </p>
-    </div>
-  ),
   menus: [
     {
       id: "portfolio",
@@ -40,8 +27,8 @@ export const site = {
           content: "Portfolio",
         },
         {
-          href: "/connect",
-          content: "Connect",
+          href: "/contact",
+          content: "Contact",
         },
       ]
     },
@@ -119,29 +106,13 @@ export const site = {
   ],
   skills: [
     {
-      title: "Front End",
-      content: "HTML, CSS, JavaScript, React, Webpack, Material UI, Bootstrap",
-    },
-    {
-      title: "Back End",
-      content: "Node, Java, ASP.NET, C#",
-    },
-    {
-      title: "Database",
-      content: "MySQL, MongoDB, GraphQL",
-    },
-    {
-      title: "Mobile",
-      content: "React Native, Ionic, Java, SDK, Swift",
-    },
-    {
       title: "Languages",
-      content: "HTML, CSS/SCSS, JavaScript, TypeScript, Java, C#, PHP",
+      content: "HTML, CSS/SCSS, JavaScript, TypeScript, Java, ASP.NET, C#, PHP",
     },
     {
       title: "Frameworks",
       content:
-        "Next.js, Node.js, React, Vue, Angular, Bootstrap, HeroUI, MaterialUI",
+        "Next.js, Node.js, React, Vue, Angular, Bootstrap, Flexbox, MaterialUI",
     },
     {
       title: "Platforms",
@@ -149,11 +120,7 @@ export const site = {
     },
     {
       title: "Databases",
-      content: "MySQL, MariaDB, PostgreSQL, MongoDB",
-    },
-    {
-      title: "Testing",
-      content: "Puppeteer, Jest",
+      content: "MySQL, MariaDB, PostgreSQL, MongoDB, GraphQL",
     },
     {
       title: "Version Control",
