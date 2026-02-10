@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://studiovonjenn.com/connect",
+      url: "https://studiovonjenn.com/contact",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.8,
