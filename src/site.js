@@ -8,11 +8,11 @@ export const site = {
   maxWidthClassname: "max-w-[1299px] mx-auto",
   adminEmail: "thejenniferhaggerty@gmail.com",
   name: "Jennifer Haggerty",
-  tagline: "Full-stack Developer",
+  title: "Senior Remote React Developer",
+  description: "React • TypeScript • Next.js • API Architecture • Cloud Systems • SEO Optimization",
   location: "Augusta, GA",
   copyright: "Copyright © {{year}} Jennifer Haggerty.",
   font: "https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap",
-  description: "Interface and front end developer.",
   menus: [
     {
       id: "portfolio",
@@ -106,30 +106,35 @@ export const site = {
   ],
   skills: [
     {
-      title: "Languages",
-      content: "HTML, CSS/SCSS, JavaScript, TypeScript, Java, ASP.NET, C#, PHP",
+      title: "Primary Expertise (React Stack)",
+      content: "React, TypeScript, JavaScript (ES6+), Next.js, Component Libraries, Hooks, Context API, State Management, Reusable UI Systems, Design Systems, Headless CMS, Micro-Frontend Concepts",
     },
     {
-      title: "Frameworks",
+      title: "Frontend Engineering",
       content:
-        "Next.js, Node.js, React, Vue, Angular, Bootstrap, Flexbox, MaterialUI",
+        "HTML5, CSS3, TailwindCSS, Bootstrap, Material UI, Responsive Design, Mobile-First Design, Progressive Web Apps (PWA), Accessibility (WCAG/ADA), Performance Optimization",
     },
     {
-      title: "Platforms",
-      content: "SFCC, Shopify, Wordpress",
+      title: "Backend & APIs",
+      content: "Node.js, REST APIs, GraphQL, PHP (Symfony), C#, .NET MVC, Web API, Microservices ArchitectureNode.js, REST APIs, GraphQL, PHP (Symfony), C#, .NET MVC, Web API, Microservices Architecture",
+    },
+    {
+      title: "Cloud & DevOps",
+      content: "AWS (S3, Lambda), Docker, CI/CD Pipelines, Azure DevOps, GitHub Actions, GitLab CI",
     },
     {
       title: "Databases",
-      content: "MySQL, MariaDB, PostgreSQL, MongoDB, GraphQL",
+      content: "MySQL, MSSQL, MongoDB, MariaDB, SQL Optimization",
     },
     {
-      title: "Version Control",
-      content: "Github, Gitlab, Bitbucket, Azure Devops, Jira",
-    },
-    {
-      title: "Other",
+      title: "Remote Collaboration Tools",
       content:
-        "Docker, Vercel, Sketch, AWS, Figma, Adobe Creative Suite, VSCode, iTerm with Tmux",
+        "GitHub, GitLab, Azure DevOps, Jira, Confluence, Slack, Zoom, Figma, Notion",
+    },
+    {
+      title: "SEO & Performance",
+      content:
+        "Technical SEO, Core Web Vitals, Page Speed Optimization, Indexing Optimization, Schema Markup, Structured Data, Analytics Integration, Conversion Optimization",
     },
   ],
   portfolio: [
@@ -449,4 +454,92 @@ export const site = {
       isPersonalProject: true,
     },
   ],
+  experience: [
+    {
+      role: "Senior Remote React Developer / Full Stack Engineer",
+      client: "Freelance",
+      date: "January 2024 – Present",
+      location: "Remote",
+      content: `Architect and deliver React and Next.js applications for
+                distributed teams using modern component-based architectures.
+                Build scalable, SEO-optimized frontend platforms with
+                performance-first engineering principles. Design reusable UI
+                libraries and shared component systems for multi-project
+                environments. Integrate REST and GraphQL APIs for real-time
+                data-driven applications. Implement analytics, monitoring, and
+                performance tracking systems for remote product teams. Lead
+                accessibility compliance (WCAG/ADA) initiatives across
+                enterprise platforms. Produce system documentation and developer
+                standards for remote engineering teams.`
+    },
+    {
+      role: "Interface Developer",
+      client: "CQL Corp",
+      date: "January 2023 – December 2024",
+      location: "Remote",
+      content: `Developed enterprise React + TypeScript platforms in a headless
+                CMS environment. Built reusable component libraries and scalable
+                UI architectures for large distributed teams. Integrated
+                Salesforce and analytics systems supporting global user
+                platforms. Implemented accessibility-first frontend engineering
+                standards. Delivered modular frontend systems supporting
+                enterprise scalability and maintainability.`
+    },
+    {
+      role: "Front End Engineer",
+      client: "TaxSlayer",
+      date: "September 2021 – December 2022",
+      location: "Hybrid",
+      content: ` Built production-grade React applications integrated with .NET
+                MVC backends. Developed high-performance UI systems for
+                enterprise financial platforms. Collaborated with remote
+                cross-functional teams using Agile/Scrum methodologies.
+                Delivered secure, scalable, and maintainable frontend solutions.`
+    },
+    {
+      role: "Platform Specialist",
+      client: "GoCollect LLC",
+      date: "March 2019 – April 2020",
+      location: "Charlotte, NC",
+      content: `Built React + Node.js applications for internal platforms.
+                Designed API-driven systems using GraphQL and REST
+                architectures. Deployed cloud services using AWS (S3, Lambda).
+                Automated infrastructure with Docker and Ansible for distributed
+                teams.`
+    },
+    {
+      role: "Software Engineer",
+      client: "Fast Growing Trees",
+      date: "January 2018 – February 2019",
+      location: "Fort Mills, SC",
+      content: `Migrated legacy systems to React + TypeScript modern
+                architectures. Built SQL-driven data platforms and reporting
+                dashboards. Modernized frontend systems for performance and
+                scalability.`
+    },
+    {
+      role: "Web Design & Systems Administration",
+      client: "Digital Derm Inc.",
+      date: "November 2015 – December 2017",
+      location: "Remote",
+      content: `Migrated platforms to AWS cloud infrastructure. Built
+                SEO-optimized WordPress and React-based frontend systems.
+                Delivered responsive, mobile-first, performance-optimized web
+                platforms.`
+    },
+  ],
+  meta: {
+    metaTitle: "Jennifer Haggerty | Senior Remote React Developer",
+    metaDescription: "Senior Remote React Developer specializing in React, TypeScript, Next.js, scalable frontend architecture, cloud systems, and SEO-optimized web platforms for distributed teams.",
+    name: "Jennifer Haggerty",
+    title: "Senior Remote React Developer",
+    secondaryTitles: ["Frontend Architect", "Full Stack Engineer (React-first)", "Enterprise UI Engineer"],
+    brandStatement: "Senior Remote React Developer specializing in scalable frontend architecture, enterprise-grade UI systems, and API-driven platforms for distributed teams.",
+    valueProposition: "I help remote-first companies build scalable, high-performance React platforms that are fast, accessible, search-optimized, and built to scale globally.",
+    description: "Senior Full Stack React Developer specializing in scalable web applications, SEO optimization, enterprise platforms, React, TypeScript, .NET, cloud infrastructure, and high-performance digital systems. Expert in technical SEO, accessibility compliance, and modern web architecture.",
+    primaryKeywords: "Senior Full Stack Developer, React Developer, SEO Developer, Technical SEO Engineer, Enterprise Web Developer, Cloud Developer, API Developer, Performance Engineer",
+    technologyKeywords: "React, TypeScript, JavaScript, Next.js, C#, .NET MVC, Node.js, PHP, REST APIs, GraphQL, AWS, Docker, CI/CD, Microservices, Headless CMS",
+    seoKeywords: "Technical SEO, On-Page SEO, Core Web Vitals, Page Speed Optimization, Structured Data, Schema Markup, Indexing Optimization, Crawlability, Mobile SEO, Accessibility SEO",
+    atsSeoKeywords: "Remote React Developer, Senior React Engineer, Frontend Engineer, Full Stack Developer, JavaScript Developer, TypeScript Developer, Next.js Developer, React Architect, Remote Software Engineer, Cloud Developer, API Engineer, Enterprise Web Developer, SEO Developer, Technical SEO Engineer, Performance Engineer, Headless CMS Developer, Distributed Teams, Remote Engineering"
+  }
 };

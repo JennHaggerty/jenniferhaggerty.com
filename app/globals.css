@@ -191,8 +191,8 @@
   --p-color: var(--black);
   --p-bg-color: var(--white);
   --p-border: none;
-  --p-border-radius: var(--border-md);
-  --p-width: fit-content;
+  --p-border-radius: 0;
+  --p-width: full;
   --p-margin: unset;
   --p-padding: var(--lg);
   --p-position: inherit;

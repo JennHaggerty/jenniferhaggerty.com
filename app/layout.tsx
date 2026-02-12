@@ -11,8 +11,9 @@ const exo2 = Exo_2({
 });
 
 export const metadata: Metadata = {
-  title: site.name,
-  description: site.description,
+  title: site.meta.metaTitle,
+  description: site.meta.metaDescription,
+  keywords: site.meta.atsSeoKeywords,
 };
 
 export default function RootLayout({

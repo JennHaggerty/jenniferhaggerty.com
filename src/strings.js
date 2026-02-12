@@ -4,5 +4,8 @@ export const strings = {
   portfolio: "Portfolio",
   personProject: "Personal project",
   copyright: "Copyright",
-  links: "Links"
+  links: "Links",
+  about: "About me",
+  skills: "Skills & Tools",
+  experience: "Experience"
 };

@@ -35,7 +35,7 @@
     "*/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "app/portfolio/sitemap.tsx"  ],
   "exclude": [
     "node_modules"
   ]
