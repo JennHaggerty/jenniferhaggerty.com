@@ -4,21 +4,6 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "http://jenniferhaggerty.com/",
-        destination: "https://www.jenniferhaggerty.com/",
-        permanent: true,
-      },
-      {
-        source: "https://jenniferhaggerty.com/",
-        destination: "https://www.jenniferhaggerty.com/",
-        permanent: true,
-      },
-      {
-        source: "http://www.jenniferhaggerty.com/",
-        destination: "https://www.jenniferhaggerty.com/",
-        permanent: true,
-      },
-      {
         source: "/about/",
         destination: "/",
         permanent: true,
