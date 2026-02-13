@@ -4,7 +4,7 @@ import "./styles.css";
 import { Metadata } from "next";
 import { Exo_2 } from "next/font/google";
 import Nav from "./components/Nav";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const exo2 = Exo_2({
   variable: "--font-sans",
@@ -47,7 +47,8 @@ export default function RootLayout({
           )}
         </footer>
       </body>
-      <GoogleTagManager gtmId="G-7CWF8DMRPZ" />
+      <GoogleTagManager gtmId="GTM-N4K289BV" />
+      <GoogleAnalytics gaId="G-7CWF8DMRPZ" />
     </html>
   );
 }
