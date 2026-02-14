@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { Exo_2 } from "next/font/google";
 import Nav from "./components/Nav";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { strings } from "@/src/strings";
 
 const exo2 = Exo_2({
   variable: "--font-sans",
@@ -36,7 +37,7 @@ export default function RootLayout({
         </main>
 
         <footer className="mt-[60px]">
-          <h2 className="w-full!">Learn More</h2>
+          <h2 className="w-full!">{strings.learnMore}</h2>
 
           {iconMenu && (
             <Nav

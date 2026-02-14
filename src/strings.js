@@ -7,5 +7,6 @@ export const strings = {
   links: "Links",
   about: "About me",
   skills: "Skills & Tools",
-  experience: "Experience"
+  experience: "Experience",
+  learnMore: "Learn more"
 };

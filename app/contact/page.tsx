@@ -2,6 +2,12 @@ import { site } from "../../src/site";
 import Section from "../components/Section";
 import { getSlugFromTitle } from "../../src/function";
 import { strings } from "../../src/strings";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: site.meta.title + " | Contact",
+  description: site.meta.valueProposition,
+};
 
 export default function Page() {
   const textMenu = site.menus.find((x) => x.id === "links");
