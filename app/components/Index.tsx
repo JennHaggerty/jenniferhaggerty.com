@@ -5,22 +5,14 @@ import Portfolio from "./Portfolio";
 import Nav from "./Nav";
 import { strings } from "@/src/strings";
 
-const tagline =
-  "React • TypeScript • Next.js • API Architecture • Cloud Systems • SEO Optimization";
-
-const about = `
-              I’m Jennifer Haggerty, a Senior Remote React Developer with 9+
-              years of experience building scalable, enterprise-grade web
-              platforms. I specialize in React-first architecture, API-driven
-              systems, and performance-optimized frontend engineering for
-              remote-first organizations.`;
+const tagline = site.description;
+const about = site.meta.metaAbout;
+const iconMenu = site.menus.find((x) => x.id === "links-with-icons");
+const horizontalPadding = "px-3! lg:px-8!";
+const verticalPadding = "py-5 md:py-12!";
+const padding = horizontalPadding + " " + verticalPadding;
 
 const Index = () => {
-  const iconMenu = site.menus.find((x) => x.id === "links-with-icons");
-  const horizontalPadding = "px-3! lg:px-8!";
-  const verticalPadding = "py-5 md:py-12!";
-  const padding = horizontalPadding + " " + verticalPadding;
-
   const headings = () => (
     <>
       <h1>{site.name}</h1>

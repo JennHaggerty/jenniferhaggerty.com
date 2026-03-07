@@ -233,6 +233,39 @@ footer {
 .card {
   height: 100%;
 
+  &:hover::before {
+    background-color: var(--primary);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover::after {
+    background-color: var(--secondary);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:hover {
+    & .card-image {
+      filter: none;
+    }
+    .card-title.h1 {
+      background: var(--black);
+      color: var(--primary);
+    }
+  }
+
   &,
   .card-content {
     position: relative;
@@ -250,8 +283,8 @@ footer {
   }
 
   .card-image {
-    filter: grayscale(1);
     object-fit: cover;
+    filter: grayscale(1);
   }
 
   .card-footer {
@@ -265,7 +298,6 @@ footer {
 
   @media (min-width: 769px) {
     .card-image {
-      transition: filter 0.4s;
       z-index: 1;
       border: var(--sm) solid var(--light-000);
       outline: var(--sm) solid var(--dark-000);
@@ -281,10 +313,6 @@ footer {
     &:hover .card-footer {
       opacity: 1;
       transition: opacity 0.4s;
-    }
-    &:hover .card-image {
-      filter: none;
-      transition: filter 0.4s;
     }
   }
 }

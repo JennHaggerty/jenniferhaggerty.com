@@ -63,8 +63,8 @@
   --h1-font-weight: 400;
   --h1-text-size: 1.25em;
   --h1-text-transform: none;
-  --h1-color: var(--primary);
-  --h1-bg-color: var(--dark-000);
+  --h1-color: var(--dark-000);
+  --h1-bg-color: var(--primary);
   --h1-border: var(--border-sm) solid var(--light-000);
   --h1-border-radius: 0;
   --h1-width: fit-content;
