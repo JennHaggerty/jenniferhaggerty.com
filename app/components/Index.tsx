@@ -37,7 +37,7 @@ const Index = () => {
           <img
             className="h-full object-cover"
             src={`/images/featured.jpg`}
-            alt="Portrait of Jennifer Haggerty"
+            alt=""
           />
           <div className="mobile-title mt-[-13%]">{headings()}</div>
         </div>
