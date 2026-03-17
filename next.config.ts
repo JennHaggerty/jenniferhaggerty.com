@@ -43,6 +43,41 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/shop",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/connect",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/product-category/costumes-and-accessories",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/product-category/other",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/product-tag/thank-you",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/2015",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/2018",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };
