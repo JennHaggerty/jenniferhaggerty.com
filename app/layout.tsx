@@ -6,6 +6,7 @@ import { Exo_2 } from "next/font/google";
 import Nav from "./components/Nav";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { strings } from "@/src/strings";
+import { Analytics } from "@vercel/analytics/next";
 
 const exo2 = Exo_2({
   variable: "--font-sans",
@@ -47,6 +48,7 @@ export default function RootLayout({
             />
           )}
         </footer>
+        <Analytics />
       </body>
       <GoogleTagManager gtmId="GTM-N4K289BV" />
       <GoogleAnalytics gaId="G-7CWF8DMRPZ" />
