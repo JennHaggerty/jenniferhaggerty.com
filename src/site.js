@@ -143,8 +143,8 @@ export const site = {
   ],
   portfolio: [
     {
-      thumbnailImg: "images/thumbnails/paulaschoice.png",
-      featuredImg: "images/featured/paulas-choice-featured.png",
+      thumbnailImg: "images/thumbnails/paulaschoice.jpg",
+      featuredImg: "images/featured/paulas-choice-featured.jpg",
       imageAlt: "",
       href: "https://www.paulaschoice.com",
       rel: "external",
@@ -241,8 +241,8 @@ export const site = {
       location: "Remote",
     },
     {
-      thumbnailImg: "images/thumbnails/denon.png",
-      featuredImg: "images/featured/denon.webp",
+      thumbnailImg: "images/thumbnails/denon.jpg",
+      featuredImg: "images/featured/denon.jpg",
       imageAlt: "",
       href: "https://www.denon.com/en-us/",
       rel: "external",
@@ -318,8 +318,8 @@ export const site = {
       location: "Remote",
     },
     {
-      thumbnailImg: "images/thumbnails/masimo.png",
-      featuredImg: "images/featured/masimo.png",
+      thumbnailImg: "images/thumbnails/masimo.jpg",
+      featuredImg: "images/featured/masimo.jpg",
       imageAlt: "",
       href: "https://www.masimo.com",
       rel: "external",
@@ -358,8 +358,8 @@ export const site = {
       location: "Remote",
     },
     {
-      thumbnailImg: "images/thumbnails/onesource.png",
-      featuredImg: "images/featured/onesource.webp",
+      thumbnailImg: "images/thumbnails/onesource.jpg",
+      featuredImg: "images/featured/onesource.jpg",
       imageAlt: "",
       href: "https://www.onesourcesupplyco.com",
       rel: "external",
@@ -401,8 +401,8 @@ export const site = {
       location: "Remote",
     },
     {
-      thumbnailImg: "images/thumbnails/taxslayer.png",
-      featuredImg: "images/featured/taxslayer.png",
+      thumbnailImg: "images/thumbnails/taxslayer.jpg",
+      featuredImg: "images/featured/taxslayer.jpg",
       imageAlt: "",
       href: "https://www.taxslayer.com",
       rel: "external",
@@ -458,8 +458,8 @@ export const site = {
       location: "Augusta, GA",
     },
     {
-      thumbnailImg: "images/thumbnails/psychedelicart.png",
-      featuredImg: "images/featured/concertpostergallery.webp",
+      thumbnailImg: "images/thumbnails/psychedelicart.jpg",
+      featuredImg: "images/featured/concertpostergallery.jpg",
       imageAlt: "",
       href: "https://www.concertpostergallery.com",
       rel: "external",
@@ -507,7 +507,7 @@ export const site = {
       location: "Remote",
     },
     {
-      thumbnailImg: "images/thumbnails/gocollect.png",
+      thumbnailImg: "images/thumbnails/gocollect.jpg",
       featuredImg: "images/featured/gocollect.jpg",
       imageAlt: "",
       href: "https://www.gocollect.com",
@@ -570,7 +570,7 @@ export const site = {
       location: "Charlotte, NC",
     },
     {
-      thumbnailImg: "images/thumbnails/fastgrowingtrees.png",
+      thumbnailImg: "images/thumbnails/fastgrowingtrees.jpg",
       featuredImg: "images/featured/fgt.jpg",
       imageAlt: "",
       href: "https://www.fast-growing-trees.com",
@@ -618,8 +618,8 @@ export const site = {
       location: "Fort Mill, SC",
     },
     {
-      thumbnailImg: "images/thumbnails/studiovonjenn.png",
-      featuredImg: "images/featured/studiovonjenn.png",
+      thumbnailImg: "images/thumbnails/studiovonjenn.jpg",
+      featuredImg: "images/featured/studiovonjenn.jpg",
       imageAlt: "",
       href: "https://www.studiovonjenn.com",
       rel: "external",
