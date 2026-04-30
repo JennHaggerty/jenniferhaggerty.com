@@ -1,0 +1,34 @@
+import { Montserrat, Cormorant_Garamond } from "next/font/google";
+import "./globals.css";
+import { settings } from "./site/site";
+import Footer from "./components/footer";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+const montserratSans = Montserrat({
+  variable: "--font-sans",
+});
+
+const cormorantSerif = Cormorant_Garamond({
+  variable: "--font-serif",
+});
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${montserratSans.variable} ${cormorantSerif.variable} antialiased`}
+      >
+        <main>{children}</main>
+        <Footer />
+      </body>
+      <GoogleTagManager gtmId={settings.googleTagManagerId} />
+      <GoogleAnalytics gaId={settings.googleAnalyticsId} />
+      <SpeedInsights />
+    </html>
+  );
+}
