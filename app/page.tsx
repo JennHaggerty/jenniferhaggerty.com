@@ -5,28 +5,38 @@ import "./globals.css";
 const App = () => {
   return (
     <html lang="en">
-      <body>
-        <div className="text-center">
-          <h1>Jennifer Haggerty</h1>
-          <h2>About me</h2>
+      <body className="">
+        <div className="text-center pt-5">
+          <h1 className="text-[40px] lg:text-[50px] font-bold">
+            Jennifer Haggerty
+          </h1>
+          <h2 className="text-[16px] capitalize">About me</h2>
+          <p className="text-[18px]">
+            I am a freelance web developer and photographic artist in Augusta,
+            GA.{" "}
+          </p>
           <p>
-            I am a freelance web developer and fine art photographer working out
-            of Augusta, GA. Click on a link below to view work examples,
-            portfolios, and client stories.
+            {" "}
+            Click on a link below to view work examples, portfolios, and client
+            stories.
           </p>
         </div>
         <div className="flex max-sm:flex-col w-full gap-5 p-5">
           <a
             href="/web-development"
-            className="h-[250px] w-full bg-[red] content-center text-center"
+            className=" h-[250px] md:h-[350px] lg:h-[550px] xl:h-[800px] text-[22px] w-full bg-center bg-cover transform transition duration-500 hover:scale-125 bg-[url(/images/featured-in-tech.jpg)]  rounded-xl"
           >
-            <span className="">Web Development</span>
+            <div className="h-full bg-black/50 text-center content-center text-[32px] lg:text-[40px] font-bold text-[#fff] rounded-xl capitalize">
+              Web development
+            </div>
           </a>
           <a
             href="/photography"
-            className="h-[250px] w-full bg-[red] content-center text-center"
+            className="h-[250px] md:h-[350px] lg:h-[550px] xl:h-[800px] text-[22px] w-full bg-center bg-cover transform transition duration-500 hover:scale-125 bg-[url(/images/winter-queen-2.jpg)]  rounded-xl"
           >
-            <span className="">Photography & Art</span>
+            <div className="h-full bg-black/50 text-center content-center text-[32px] lg:text-[40px] font-bold text-[#fff] rounded-xl capitalize">
+              Photography & art
+            </div>
           </a>
         </div>
       </body>

@@ -49,27 +49,6 @@ const Index = () => {
           </div>
 
           <div className="mb-5">
-            <h3>{strings.skills}</h3>
-            <div className="p w-full! grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {site.skills.map((skill, i) => (
-                <div
-                  key={`skill-${i}`}
-                  className="w-full border-2 p-3 rounded-sm"
-                >
-                  <span className="font-bold">{skill.title}</span>
-                  <ul>
-                    {skill.content.split(",").map((skillItem, j) => (
-                      <li key={`skill-item-${j}`} className="leading-none">
-                        {skillItem}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-5">
             <h3>{strings.experience}</h3>
             <div>
               {site.experience.map((item, i) => (
