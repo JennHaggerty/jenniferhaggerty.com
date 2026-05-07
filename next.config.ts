@@ -4,13 +4,33 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/about/",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/contact/",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/portfolio/",
         destination: "/web-development/portfolio",
         permanent: true,
       },
       {
-        source: "/contact/",
-        destination: "/web-development/contact",
+        source: "/gallery",
+        destination: "/photography/gallery",
+        permanent: true,
+      },
+      {
+        source: "/about",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/prices",
+        destination: "/photography/prices",
         permanent: true,
       },
       {
@@ -58,27 +78,6 @@ const nextConfig: NextConfig = {
         destination: "/web-development/portfolio/studiovonjenn",
         permanent: true,
       },
-
-      {
-        source: "/gallery",
-        destination: "/photography/gallery",
-        permanent: true,
-      },
-      {
-        source: "/about",
-        destination: "/photography/about",
-        permanent: true,
-      },
-      {
-        source: "/prices",
-        destination: "/photography/prices",
-        permanent: true,
-      },
-      {
-        source: "/contact",
-        destination: "/photography/contact",
-        permanent: true,
-      },
       {
         source: "/gallery/atmos0426",
         destination: "/photography/gallery/atmos0426",
@@ -117,11 +116,6 @@ const nextConfig: NextConfig = {
       {
         source: "/gallery/atmos0925",
         destination: "/photography/gallery/atmos0925",
-        permanent: true,
-      },
-      {
-        source: "/about/",
-        destination: "/",
         permanent: true,
       },
       {

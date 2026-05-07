@@ -21,7 +21,7 @@ const App = () => {
               Jennifer Haggerty
             </h1>
             <h2 className="text-[16px] capitalize mt-5">About me</h2>
-            <p className="text-[18px]">
+            <p className="text-[18px] mb-[20px]">
               I am a freelance web developer and photographic artist living and
               working in Augusta, GA.{" "}
             </p>
@@ -34,7 +34,7 @@ const App = () => {
           <div className="flex max-sm:flex-col w-full gap-5 p-5 mt-5">
             <a
               href="/photography"
-              className="h-[250px] md:h-[350px] lg:h-[550px] xl:h-[800px] text-[22px] w-full bg-center bg-cover transform transition duration-500 hover:scale-125 bg-[url(/images/winter-queen-2.jpg)]  rounded-xl"
+              className="h-[350px] lg:h-[550px] xl:h-[800px] text-[22px] w-full bg-center bg-cover transform transition duration-500 hover:scale-125 bg-[url(/images/winter-queen-2.jpg)]  rounded-xl"
             >
               <div className="h-full bg-black/50 text-center content-center text-[32px] lg:text-[40px] font-bold text-[#fff] rounded-xl capitalize">
                 <h3>Art & photography</h3>
@@ -42,7 +42,7 @@ const App = () => {
             </a>
             <a
               href="/web-development"
-              className=" h-[250px] md:h-[350px] lg:h-[550px] xl:h-[800px] text-[22px] w-full bg-center bg-cover transform transition duration-500 hover:scale-125 bg-[url(/images/featured-in-tech.jpg)]  rounded-xl"
+              className="h-[350px] lg:h-[550px] xl:h-[800px] text-[22px] w-full bg-center bg-cover transform transition duration-500 hover:scale-125 bg-[url(/images/featured-in-tech.jpg)]  rounded-xl"
             >
               <div className="h-full bg-black/50 text-center content-center text-[32px] lg:text-[40px] font-bold text-[#fff] rounded-xl capitalize">
                 <h3>Web development</h3>
