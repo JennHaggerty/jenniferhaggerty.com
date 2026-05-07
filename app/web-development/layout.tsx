@@ -4,7 +4,6 @@ import "./styles.css";
 import { Metadata } from "next";
 import { Exo_2 } from "next/font/google";
 import Nav from "./components/Nav";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { strings } from "./src/strings";
 
 const exo2 = Exo_2({
@@ -48,8 +47,6 @@ export default function RootLayout({
           )}
         </footer>
       </body>
-      <GoogleTagManager gtmId="GTM-N4K289BV" />
-      <GoogleAnalytics gaId="G-7CWF8DMRPZ" />
     </html>
   );
 }
