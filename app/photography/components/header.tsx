@@ -14,12 +14,6 @@ const HeaderElement = (props: Props) => {
         <div className="flex flex-col m-auto align-middle gap-3">
           <h1 className="">{settings.siteName}</h1>
           <Nav customClass="flex gap-5 m-auto align-middle" id="main" />
-          <a
-            href={`mailto:${settings.email}`}
-            className="capitalize p-3 w-full bg-[var(--accent-000)] hover:text-black! rounded-sm hover:bg-[var(--accent-100)] text-white!"
-          >
-            Book your portrait
-          </a>
         </div>
       </div>
     </div>

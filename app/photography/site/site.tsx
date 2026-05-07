@@ -11,7 +11,7 @@ export const settings = {
       ? "http://localhost:3000"
       : "https://jenniferhaggerty.com/photographer",
   name: "Jennifer Haggerty",
-  siteName: "Jennifer Haggerty",
+  siteName: "Studio von Jennifer",
   description: "Fine art portrait photographer in Augusta, Georgia.",
   note: "Specializing in Gothic Renaissance and the painterly style. Available for events and private sessions.",
   email: "thejenniferhaggerty@gmail.com",
