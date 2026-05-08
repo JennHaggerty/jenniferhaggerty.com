@@ -20,11 +20,11 @@ export default async function Page({
       <HeaderElement title={strings.prices} />
 
       <div className="primary-bg">
-        <div className="text-center pt-[2em]">
-          <h1>Pricing</h1>
-        </div>
         <div className="flex flex-col gap-3 m-auto p-[2em] max-w-[var(--max-width)]">
-          <h2>Packages</h2>
+          <div className="flex max-sm:flex-col gap-3 center">
+            <h1>Pricing</h1>
+            <h2>Packages</h2>
+          </div>
           {recipes.map((recipe, i) => (
             <div key={`pricing-${i}`}>
               {i !== 0 && <hr />}

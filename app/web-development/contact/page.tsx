@@ -1,7 +1,6 @@
 import { site } from "../src/site";
 import Section from "../components/Section";
 import { getSlugFromTitle } from "../src/function";
-import { strings } from "../src/strings";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,7 +15,8 @@ export default function Page() {
 
   return (
     <Section>
-      <h1 className="h2 w-full! mb-5!">{strings.links}</h1>
+      <h1>Contact me</h1>
+      <h2>Links</h2>
       <ul>
         {textMenu.items.map((item, i) => (
           <li

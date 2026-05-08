@@ -12,7 +12,7 @@ const HeaderElement = (props: Props) => {
     <div className="header">
       <div className="outline w-full">
         <div className="flex flex-col m-auto align-middle gap-3">
-          <h1 className="">{settings.siteName}</h1>
+          <div className="h1">{settings.siteName}</div>
           <Nav customClass="flex gap-5 m-auto align-middle" id="main" />
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { strings } from "../site/site";
+import { settings, strings } from "../site/site";
 import HeaderElement from "../components/header";
 import { Metadata } from "next";
 import Contact from "../components/contact";
@@ -23,8 +23,15 @@ export default async function Page({
         <div className=" max-w-[var(--max-width)] mx-auto">
           <div className="col-2-img-right lg:h-screen ">
             <div className="col col-text">
-              <h2>Contact</h2>
-              <Contact />
+              <div className="flex max-sm:flex-col gap-3 center">
+                <h1>Contact</h1>
+                <h2>Shoot me an email</h2>
+              </div>
+              <p>
+                Email me at{" "}
+                <a href={`mailto:${settings.email}`}>{settings.email}</a> with
+                questions and to schedule your portrait session.
+              </p>
             </div>
             <div className="col col-image">
               <img

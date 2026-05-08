@@ -14,7 +14,11 @@ export default function Home() {
     <>
       <HeaderElement />
       <div className="p-[2em] primary-bg">
-        <div className=" max-w-[var(--max-width)] center">
+        <div className=" max-w-[var(--max-width)] center flex flex-col">
+          <div className="flex max-sma:flex-col gap-3 center">
+            <h1>Photography</h1>
+            <h2>Portfolio</h2>
+          </div>
           {settings.description + " " + settings.note}
         </div>
       </div>

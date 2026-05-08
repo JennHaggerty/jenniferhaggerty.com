@@ -54,12 +54,11 @@ export default async function Page({ params }: Props) {
   return (
     <div>
       <div className="gallery-page">
-        <HeaderElement
-          title={gallery.title ? gallery.title : "Photo Gallery"}
-        />
+        <HeaderElement />
         <div className="p-[2em] primary-bg">
-          <div className="text-center">
-            <h2>Welcome to the Gallery</h2>
+          <div className="flex max-sm:flex-col gap-3 center">
+            <h1>Gallery</h1>
+            <h2>{gallery.title}</h2>
           </div>
           <div className=" max-w-[var(--max-width)] m-auto">
             {gallery.description

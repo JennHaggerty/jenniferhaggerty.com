@@ -39,7 +39,7 @@ const Index = () => {
             src={`/images/featured-in-tech.jpg`}
             alt=""
           />
-          <div className="mobile-title mt-[-13%]">{headings()}</div>
+          <div className="mobile-title">{headings()}</div>
         </div>
 
         <div className={padding}>

@@ -17,12 +17,15 @@ export default async function Page({
 }) {
   return (
     <>
-      <HeaderElement title={strings.about} />
+      <HeaderElement />
       <div className="primary-bg">
         <div className=" max-w-[var(--max-width)] mx-auto">
           <div className="col-2-img-right">
             <div className="col col-text flex flex-col gap-2">
-              <h2>About the Photographer</h2>
+              <div className="flex max-sma:flex-col gap-3 center">
+                <h1>About</h1>
+                <h2>the Photographer</h2>
+              </div>
               {cv.map((item, i) => (
                 <div key={`cv-item-${i}`}>
                   {item.title}

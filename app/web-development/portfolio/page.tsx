@@ -10,6 +10,9 @@ export const metadata: Metadata = {
 
 export default function Page(props: PageProps<"/">) {
   return (
-    <Portfolio heading={<h1 className="h2 title">{strings.portfolio}</h1>} />
+    <>
+      <h1>{strings.portfolio}</h1>
+      <Portfolio heading={<h2 className="title">Clients</h2>} />
+    </>
   );
 }
