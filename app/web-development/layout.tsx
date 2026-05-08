@@ -36,7 +36,7 @@ export default function RootLayout({
         </main>
 
         <footer className="mt-[60px]">
-          <h2 className="w-full!">{strings.learnMore}</h2>
+          <div className="h2 w-full!">{strings.learnMore}</div>
 
           {iconMenu && (
             <Nav
