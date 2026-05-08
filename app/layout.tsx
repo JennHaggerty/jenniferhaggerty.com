@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { Exo_2 } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const exo2 = Exo_2({
   variable: "--font-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-N4K289BV" />
       <GoogleAnalytics gaId="G-7CWF8DMRPZ" />
       <SpeedInsights />
+      <Analytics />
     </html>
   );
 }
