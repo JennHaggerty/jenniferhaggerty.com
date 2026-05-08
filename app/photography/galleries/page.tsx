@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Collections and galleries of fine art photography and studio artworks.",
   alternates: {
-    canonical: settings.domain + "/gallery",
+    canonical: settings.domain + "/galleries",
   },
 };
 
@@ -26,7 +26,7 @@ export default async function Page() {
           {items.map((item, i) => (
             <a
               key={`galleries-${i}`}
-              href={`/photography/gallery/${item.slug}`}
+              href={`/photography/galleries/${item.slug}`}
               className="relative border-1"
             >
               <div className="bg-[var(--black-000)] absolute z-1 w-full p-2 text-center">

@@ -256,7 +256,7 @@ export const navigation = [
     customClass: "flex w-full justify-center gap-3",
     items: [
       <a href="/photography/">{strings.portfolio}</a>,
-      <a href="/photography/gallery">{strings.galleries}</a>,
+      <a href="/photography/galleries">{strings.galleries}</a>,
       <a href="/photography/about">{strings.about}</a>,
       <a href={settings.pricelist}>{strings.prices}</a>,
       <a href="/photography/contact">{strings.contact}</a>,
@@ -476,7 +476,10 @@ export const cv = [
       <ul>
         {galleries.map((gallery) => (
           <li key={gallery.slug}>
-            <Link rel="internal" href={`/photography/gallery/${gallery.slug}`}>
+            <Link
+              rel="internal"
+              href={`/photography/galleries/${gallery.slug}`}
+            >
               {gallery.title}
             </Link>
           </li>

@@ -3,7 +3,7 @@ import { galleries } from "../site/site";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return galleries.map((item) => ({
-    url: `${process.env["HOST"]}/photography/gallery/${item.slug}`,
+    url: `${process.env["HOST"]}/photography/galleries/${item.slug}`,
     lastModified: new Date(),
   }));
 }
