@@ -7,9 +7,6 @@ export const metadata: Metadata = {
   title: settings.meta.title,
   description: settings.meta.description,
   keywords: settings.meta.keywords,
-  alternates: {
-    canonical: settings.domain,
-  },
 };
 
 export default function Home() {

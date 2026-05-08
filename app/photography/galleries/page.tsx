@@ -6,9 +6,6 @@ export const metadata: Metadata = {
   title: "Fine Art Portraiture Galleries | 30901",
   description:
     "Collections and galleries of fine art photography and studio artworks.",
-  alternates: {
-    canonical: settings.domain + "/galleries",
-  },
 };
 
 export default async function Page() {

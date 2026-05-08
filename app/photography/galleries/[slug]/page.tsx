@@ -26,9 +26,6 @@ export async function generateMetadata(
   return {
     title: gallery ? gallery.title : "Gallery",
     description: gallery ? String(gallery.description) : " ",
-    alternates: {
-      canonical: new URL(slug, settings.domain),
-    },
   };
 }
 
