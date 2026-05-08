@@ -1,7 +1,6 @@
 import { settings, strings } from "../site/site";
 import HeaderElement from "../components/header";
 import { Metadata } from "next";
-import Contact from "../components/contact";
 
 export const metadata: Metadata = {
   title: "Book your portrait session with Jennifer | 30901",
