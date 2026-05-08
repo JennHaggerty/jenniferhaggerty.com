@@ -80,42 +80,42 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/gallery/atmos0426",
-        destination: "/photography/gallery/atmos0426",
+        destination: "/photography/galleries/atmos0426",
         permanent: true,
       },
       {
         source: "/gallery/no-kings-protest-march-28-2026",
-        destination: "/photography/gallery/no-kings-protest-march-28-2026",
+        destination: "/photography/galleries/no-kings-protest-march-28-2026",
         permanent: true,
       },
       {
         source: "/gallery/atmos0226",
-        destination: "/photography/gallery/atmos0226",
+        destination: "/photography/galleries/atmos0226",
         permanent: true,
       },
       {
         source: "/gallery/atmos0126",
-        destination: "/photography/atmos0126",
+        destination: "/photography/galleries/atmos0126",
         permanent: true,
       },
       {
         source: "/gallery/pirateparty112025",
-        destination: "/photography/gallery/pirateparty112025",
+        destination: "/photography/galleries/pirateparty112025",
         permanent: true,
       },
       {
         source: "/gallery/atmos1125",
-        destination: "/photography/gallery/atmos1125",
+        destination: "/photography/galleries/atmos1125",
         permanent: true,
       },
       {
         source: "/gallery/atmos1025",
-        destination: "/photography/gallery/atmos1025",
+        destination: "/photography/galleries/atmos1025",
         permanent: true,
       },
       {
         source: "/gallery/atmos0925",
-        destination: "/photography/gallery/atmos0925",
+        destination: "/photography/galleries/atmos0925",
         permanent: true,
       },
       {
