@@ -118,7 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
     },
     {
-      url: "https://jenniferhaggerty.com/photography/gallery",
+      url: "https://jenniferhaggerty.com/photography/galleries",
       lastModified: new Date(),
       changeFrequency: "monthly",
     },
