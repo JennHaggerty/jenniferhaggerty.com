@@ -2,18 +2,12 @@ import { getSlugFromTitle } from "@/app/web-development/src/function";
 import { site } from "../../src/site";
 import CTA from "@/app/web-development/components/CTA";
 import Arrow from "@/app/components/svgs/Arrow";
-import { Metadata } from "next";
 
 export async function generateStaticParams() {
   return site.portfolio.map((item) => ({
     slug: getSlugFromTitle(item.title),
   }));
 }
-
-export const metadata: Metadata = {
-  title: site.name,
-  description: "A case study on web development",
-};
 
 export default async function Page({
   params,
