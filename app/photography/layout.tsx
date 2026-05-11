@@ -16,13 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${montserratSans.variable} ${cormorantSerif.variable} antialiased`}
-      >
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <div
+      className={`${montserratSans.variable} ${cormorantSerif.variable} antialiased`}
+    >
+      {children}
+      <Footer />
+    </div>
   );
 }

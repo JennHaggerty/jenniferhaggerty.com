@@ -25,28 +25,26 @@ export default function RootLayout({
   const iconMenu = site.menus.find((x) => x.id === "links-with-icons");
 
   return (
-    <html lang="en">
-      <body className={`${exo2.variable} antialiased`}>
-        {menu && <Nav items={menu.items} />}
+    <div className={`${exo2.variable} antialiased`}>
+      {menu && <Nav items={menu.items} />}
 
-        <main
-          className={`${site.maxWidthClassname} w-full m-auto px-3 md:px-0 min-h-screen align-center`}
-        >
-          {children}
-        </main>
+      <main
+        className={`${site.maxWidthClassname} w-full m-auto px-3 md:px-0 min-h-screen align-center`}
+      >
+        {children}
+      </main>
 
-        <footer className="mt-[60px]">
-          <div className="h2 w-full!">{strings.learnMore}</div>
+      <footer className="mt-[60px]">
+        <div className="h2 w-full!">{strings.learnMore}</div>
 
-          {iconMenu && (
-            <Nav
-              id={iconMenu.id}
-              items={iconMenu.items}
-              customClassname={`${iconMenu.customClass}`}
-            />
-          )}
-        </footer>
-      </body>
-    </html>
+        {iconMenu && (
+          <Nav
+            id={iconMenu.id}
+            items={iconMenu.items}
+            customClassname={`${iconMenu.customClass}`}
+          />
+        )}
+      </footer>
+    </div>
   );
 }
