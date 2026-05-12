@@ -87,7 +87,7 @@ export default async function Page({
         <div className={`more-stories`}>
           {previousItem && (
             <a
-              href={`/portfolio/${getSlugFromTitle(previousItem.title)}`}
+              href={`/web-development/portfolio/${getSlugFromTitle(previousItem.title)}`}
               rel={previousItem.rel}
               className={nextItem ? "w-1/2" : "w-full"}
             >
@@ -106,7 +106,7 @@ export default async function Page({
           )}
           {nextItem && (
             <a
-              href={`/portfolio/${getSlugFromTitle(nextItem.title)}`}
+              href={`/web-development/portfolio/${getSlugFromTitle(nextItem.title)}`}
               rel={nextItem.rel}
               className={previousItem ? "w-1/2" : "w-full"}
             >

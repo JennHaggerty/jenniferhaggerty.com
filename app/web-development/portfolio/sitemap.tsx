@@ -4,7 +4,7 @@ import { getSlugFromTitle } from "../src/function";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return site.portfolio.map((item) => ({
-    url: `${process.env["HOST"]}/portfolio/${getSlugFromTitle(item.title)}`,
+    url: `${process.env["HOST"]}/web-development/portfolio/${getSlugFromTitle(item.title)}`,
     lastModified: new Date(),
   }));
 }
