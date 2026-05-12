@@ -55,7 +55,7 @@ export default async function Page({
                 <>
                   <dt className="font-bold">Website</dt>
                   <dd className="break-all">
-                    <a href={item.href} target="_blank">
+                    <a href={item.href} target="_blank" rel="noopener">
                       {item.href}
                     </a>
                   </dd>
