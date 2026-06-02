@@ -19,7 +19,7 @@ export default async function Page({
     <>
       <HeaderElement title={strings.prices} />
 
-      <div className="primary-bg">
+      <div className="primary-bg min-h-screen">
         <div className="flex flex-col gap-3 m-auto p-[2em] max-w-[var(--max-width)]">
           <div className="flex max-sm:flex-col gap-3 center">
             <h1>Pricing</h1>

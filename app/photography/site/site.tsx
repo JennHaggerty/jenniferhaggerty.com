@@ -12,7 +12,7 @@ export const settings = {
       : "https://jenniferhaggerty.com/photographer",
   name: "Jennifer Haggerty",
   siteName: "Studio von Jennifer",
-  description: "Fine art portrait photographer in Augusta, Georgia.",
+  description: "Artist and photographer in Augusta, Georgia.",
   note: "Specializing in Gothic Renaissance and the painterly style. Available for events and private sessions.",
   email: "thejenniferhaggerty@gmail.com",
   discord: "https://discord.gg/gh9TMHQsdB",
@@ -22,12 +22,8 @@ export const settings = {
   googleAnalyticsId: "G-E56J5RYR35",
   copyright: (
     <>
-      Copyright © {new Date().getFullYear().toString()} all rights reserved.
-      Website by{" "}
-      <a href="/web-development" target="_blank" rel="noopener">
-        Jennifer
-      </a>
-      .
+      Copyright © 2004-{new Date().getFullYear().toString()} all rights
+      reserved.
     </>
   ),
   defaultFeaturedImage: "/images/jennifer-3.jpg",

@@ -67,8 +67,8 @@ export default async function Page({ params }: Props) {
           </div>
         </div>
 
-        <div className="bg-[var(--black-000)]">
-          <div className="m-auto gallery py-[2em]">
+        <div>
+          <div className="m-auto gallery">
             {images.map((image, i) => (
               <img
                 key={`${gallery.slug}-${i}`}

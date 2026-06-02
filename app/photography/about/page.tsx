@@ -18,7 +18,7 @@ export default async function Page({
   return (
     <>
       <HeaderElement />
-      <div className="primary-bg">
+      <div className="primary-bg min-h-screen">
         <div className=" max-w-[var(--max-width)] mx-auto">
           <div className="col-2-img-right">
             <div className="col col-text flex flex-col gap-2">
