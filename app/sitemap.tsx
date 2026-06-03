@@ -3,13 +3,13 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://jenniferhaggerty.com/",
+      url: "https://jenniferhaggerty.com",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,
     },
     {
-      url: "https://jenniferhaggerty.com/web-development/",
+      url: "https://jenniferhaggerty.com/web-development",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://jenniferhaggerty.com/photography/",
+      url: "https://jenniferhaggerty.com/photography",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,

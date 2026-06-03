@@ -20,7 +20,7 @@ export const site = {
       customClass: "text-nav",
       items: [
         {
-          href: "/web-development/",
+          href: "/web-development",
           content: "Home",
         },
         {
@@ -147,7 +147,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/paulas-choice-featured.jpg",
       imageAlt: "",
       href: "https://www.paulaschoice.com",
-      rel: "noopener",
+      rel: "nofollow",
       target: "_blank",
       title: "Paula's Choice",
       date: "2023-2024",
@@ -161,7 +161,7 @@ export const site = {
         <a
           href="https://www.salesforce.com/commerce/"
           target="_blank"
-          rel="noopener"
+          rel="nofollow"
         >
           Salesforce Commerce Cloud
         </a>,
@@ -204,7 +204,7 @@ export const site = {
             <a
               href="https://www.salesforce.com/commerce/"
               target="_blank"
-              rel="noopener"
+              rel="nofollow"
             >
               Salesforce Commerce Cloud
             </a>{" "}
@@ -245,7 +245,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/denon.jpg",
       imageAlt: "",
       href: "https://www.denon.com/en-us/",
-      rel: "noopener",
+      rel: "nofollow",
       target: "_blank",
       title: "Denon",
       date: "2023",
@@ -254,7 +254,7 @@ export const site = {
         <a
           href="https://www.salesforce.com/commerce/"
           target="_blank"
-          rel="noopener"
+          rel="nofollow"
         >
           Salesforce Commerce Cloud
         </a>,
@@ -322,7 +322,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/masimo.jpg",
       imageAlt: "",
       href: "https://www.masimo.com",
-      rel: "noopener",
+      rel: "nofollow",
       target: "_blank",
       title: "Masimo",
       date: "2023",
@@ -362,7 +362,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/onesource.jpg",
       imageAlt: "",
       href: "https://www.onesourcesupplyco.com",
-      rel: "noopenerv",
+      rel: "nofollowv",
       target: "_blank",
       title: "OneSource",
       date: "2024",
@@ -405,7 +405,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/taxslayer.jpg",
       imageAlt: "",
       href: "https://www.taxslayer.com",
-      rel: "noopenerv",
+      rel: "nofollowv",
       target: "_blank",
       title: "TaxSlayer",
       date: "2021-2022",
@@ -449,7 +449,7 @@ export const site = {
             department and our neighboring department,{" "}
             <a
               target="_blank"
-              rel="noopener"
+              rel="nofollow"
               href="https://www.taxslayerpro.com/"
             >
               the Pro team
@@ -466,7 +466,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/concertpostergallery.jpg",
       imageAlt: "",
       href: "https://www.concertpostergallery.com",
-      rel: "noopener",
+      rel: "nofollow",
       target: "_blank",
       title: "Psychedelic Art",
       date: "'19-'20",
@@ -490,7 +490,7 @@ export const site = {
           <h3>The Work</h3>
           <p>
             While I was with{" "}
-            <a target="_blank" rel="noopener" href="https://www.gocollect.com">
+            <a target="_blank" rel="nofollow" href="https://www.gocollect.com">
               GoCollect in Charlotte, NC
             </a>{" "}
             I developed inventory import and management apps within Shopify for
@@ -500,7 +500,7 @@ export const site = {
             and things they'd like to avoid within the new. Working with the
             senior developer, directly under the CEO, PHP and Liquid I
             spearheaded PAE's transition from a static HTML/CSS website into a{" "}
-            <a target="_blank" rel="noopener" href="https://www.shopify.com">
+            <a target="_blank" rel="nofollow" href="https://www.shopify.com">
               Shopify
             </a>{" "}
             store with an inventory import app that interacted with PAE's
@@ -515,7 +515,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/gocollect.jpg",
       imageAlt: "",
       href: "https://www.gocollect.com",
-      rel: "noopener",
+      rel: "nofollow",
       target: "_blank",
       title: "GoCollect",
       date: "'19-'20",
@@ -578,7 +578,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/fgt.jpg",
       imageAlt: "",
       href: "https://www.fast-growing-trees.com",
-      rel: "noopener",
+      rel: "nofollow",
       target: "_blank",
       title: "Fast Growing Trees",
       date: "2018-2019",
@@ -626,7 +626,7 @@ export const site = {
       featuredImg: "images/featured-in-tech/studiovonjenn.jpg",
       imageAlt: "",
       href: "/photography",
-      rel: "noopener",
+      rel: "nofollow",
       target: "_blank",
       title: "Studio von Jenn",
       date: "'25",
@@ -655,7 +655,7 @@ export const site = {
             and maintaining the website rather than generating content. My love
             for photography remains very much alive and is reflected in a
             self-developed website,
-            <a href="/photography" target="_blank" rel="noopener">
+            <a href="/photography" target="_blank" rel="nofollow">
               Studio von Jenn
             </a>
             .

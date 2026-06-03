@@ -387,7 +387,7 @@ export const cv = [
         <li>
           <a
             target="_blank"
-            rel="noopener"
+            rel="nofollow"
             href="https://gothesquemagazine.com/"
           >
             Gothesque Magazine
@@ -396,7 +396,7 @@ export const cv = [
         </li>
         <li>Gothesque Magazine August issue Austin, TX 2016</li>
         <li>
-          <a target="_blank" rel="noopener" href="https://tenebrousmag.com/">
+          <a target="_blank" rel="nofollow" href="https://tenebrousmag.com/">
             Tenebrous Mag
           </a>{" "}
           issue #8 New York, NY 2014
@@ -404,7 +404,7 @@ export const cv = [
         <li>
           <a
             target="_blank"
-            rel="noopener"
+            rel="nofollow"
             href="https://beautifulbizarre.net/"
           >
             Beautiful Bizarre Magazine
@@ -419,7 +419,7 @@ export const cv = [
         <li>
           <a
             target="_blank"
-            rel="noopener"
+            rel="nofollow"
             href="https://www.instagram.com/darkbeautymag/?hl=en"
           >
             Dark Beauty Magazine
@@ -430,7 +430,7 @@ export const cv = [
         <li>Strange Beauty Magazine premier issue New York, NY 2013</li>
         <li>Dark Beauty Magazine issue #19 New York, NY 2013</li>
         <li>
-          <a target="_blank" rel="noopener" href="https://www.pfmagazine.net/">
+          <a target="_blank" rel="nofollow" href="https://www.pfmagazine.net/">
             Photographer’s Forum Magazine
           </a>{" "}
           Columbia, SC 2011
@@ -447,7 +447,7 @@ export const cv = [
         <li>
           <a
             target="_blank"
-            rel="noopener"
+            rel="nofollow"
             href="https://www.cityartonline.com/"
           >
             City Art

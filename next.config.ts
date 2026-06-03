@@ -149,7 +149,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/gallery-category/photography/",
+        source: "/gallery-category/photography",
         destination: "/photography",
         permanent: true,
       },
