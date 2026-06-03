@@ -55,11 +55,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
     },
     {
-      url: "https://jenniferhaggerty.com/photography/contact",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://jenniferhaggerty.com/photography/galleries",
       lastModified: new Date(),
       changeFrequency: "monthly",

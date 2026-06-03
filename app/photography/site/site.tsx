@@ -9,7 +9,7 @@ export const settings = {
   domain:
     env === "development"
       ? "http://localhost:3000"
-      : "https://jenniferhaggerty.com/photographer",
+      : "https://jenniferhaggerty.com/photography",
   name: "Jennifer Haggerty",
   siteName: "Studio von Jennifer",
   description: "Artist and photographer in Augusta, Georgia.",
@@ -46,11 +46,13 @@ export const defaultGalleryDescription = (
         Atmosphere
       </a>
       , Augusta Georgia's premiere dark electronic night hosted by{" "}
-      <a href="https://www.instagram.com/lcnaugusta/">Le Chat Noir</a> on the
-      first Saturday of the month. Images are for personal use only and may not
-      be used commercially; selling prints, advertisements, representing goods
-      and services, and editing/retouching/alterations/manipulations to the
-      images are prohibited –
+      <a href="https://www.instagram.com/lcnaugusta/" rel="nofollow">
+        Le Chat Noir
+      </a>{" "}
+      on the first Saturday of the month. Images are for personal use only and
+      may not be used commercially; selling prints, advertisements, representing
+      goods and services, and editing/retouching/alterations/manipulations to
+      the images are prohibited –
       <a href="https://www.instagram.com/studiovonjenn/">Instagram</a> is the
       exception, you may add a filter for personal posting/viewing. Inquires to
       request commercial licenses, prints, and personal printing licenses may be
@@ -255,7 +257,7 @@ export const navigation = [
       <a href="/photography/galleries">{strings.galleries}</a>,
       <a href="/photography/about">{strings.about}</a>,
       <a href={settings.pricelist}>{strings.prices}</a>,
-      <a href="/photography/contact">{strings.contact}</a>,
+      <a href={`mailto:${settings.email}`}>{strings.contact}</a>,
     ],
   },
   {
@@ -270,6 +272,54 @@ export const navigation = [
 ];
 
 export const portfolioImages = [
+  {
+    src: "/images/karinA.jpg",
+    alt: "A black raven mask with red eyes adorns Jennifer in this Raven in Flight portrait",
+  },
+  {
+    src: "/images/ophelia-1.jpg",
+    alt: "A black raven mask with red eyes adorns Jennifer in this Raven in Flight portrait",
+  },
+  {
+    src: "/images/lavender-dreams-1.jpg",
+    alt: "A black raven mask with red eyes adorns Jennifer in this Raven in Flight portrait",
+  },
+  {
+    src: "/images/tiffany-rae-knight-3.jpg",
+    alt: "Portrait of Tiffay featured in Dark Beauty Magazine",
+  },
+  {
+    src: "/images/tiffany-rae-knight-2.jpg",
+    alt: "Steampunk portrait of Tiffay in warm tones looking into your eyes",
+  },
+  {
+    src: "/images/tiffany-rae-knight-1.jpg",
+    alt: "Victorian portrait of Tiffay in purple holding a mirror",
+  },
+  {
+    src: "/images/jennifer-3.jpg",
+    alt: "Jennifer is the burgundy Queen with an iron crown.",
+  },
+  {
+    src: "/images/jennifer-2.jpg",
+    alt: "A lady must always smile is painted in blood above Jennifer's head in this Joker portrait",
+  },
+  {
+    src: "/images/jennifer-1.jpg",
+    alt: "Jennifer wears a warm floral crown against her long teal hair, her dress and lips are a bold red",
+  },
+  {
+    src: "/images/rozi-1.jpg",
+    alt: "Editorial portrait of Rozi",
+  },
+  {
+    src: "/images/rozi-paige-1.jpg",
+    alt: "Editorial portrait of Paige and Rozi together",
+  },
+  {
+    src: "/images/paige-1.jpg",
+    alt: "Editorial portrait of Paige",
+  },
   {
     src: "/images/birds-1.jpg",
     alt: "A black raven mask with red eyes adorns Jennifer in this Raven in Flight portrait",
@@ -295,54 +345,6 @@ export const portfolioImages = [
     alt: "Safara's portrait in a dark realm with lace.",
   },
   {
-    src: "/images/jennifer-3.jpg",
-    alt: "Jennifer is the burgundy Queen with an iron crown.",
-  },
-  {
-    src: "/images/jennifer-2.jpg",
-    alt: "A lady must always smile is painted in blood above Jennifer's head in this Joker portrait",
-  },
-  {
-    src: "/images/jennifer-1.jpg",
-    alt: "Jennifer wears a warm floral crown against her long teal hair, her dress and lips are a bold red",
-  },
-  {
-    src: "/images/winter-queen-1.jpg",
-    alt: "Melanie wears a brilliant silver crown of twigs with intense makeup.",
-  },
-  {
-    src: "/images/winter-queen-2.jpg",
-    alt: "Melanie is the ice queen with her crown of sparkling twigs and silver corset gown.",
-  },
-  {
-    src: "/images/winter-queen-3.jpg",
-    alt: "Her crown and scepter of silver twigs, Melanie stands against a winter backdrop in falling snow",
-  },
-  {
-    src: "/images/tiffany-rae-knight-3.jpg",
-    alt: "Portrait of Tiffay featured in Dark Beauty Magazine",
-  },
-  {
-    src: "/images/tiffany-rae-knight-2.jpg",
-    alt: "Steampunk portrait of Tiffay in warm tones looking into your eyes",
-  },
-  {
-    src: "/images/tiffany-rae-knight-1.jpg",
-    alt: "Victorian portrait of Tiffay in purple holding a mirror",
-  },
-  {
-    src: "/images/rozi-1.jpg",
-    alt: "Editorial portrait of Rozi",
-  },
-  {
-    src: "/images/rozi-paige-1.jpg",
-    alt: "Editorial portrait of Paige and Rozi together",
-  },
-  {
-    src: "/images/paige-1.jpg",
-    alt: "Editorial portrait of Paige",
-  },
-  {
     src: "/images/demons-1.jpg",
     alt: "Manzin wearing horns against a green background",
   },
@@ -365,6 +367,18 @@ export const portfolioImages = [
   {
     src: "/images/egan-1.jpg",
     alt: "Egan in a gothic editorial for Gothesque Magazine",
+  },
+  {
+    src: "/images/winter-queen-1.jpg",
+    alt: "Melanie wears a brilliant silver crown of twigs with intense makeup.",
+  },
+  {
+    src: "/images/winter-queen-2.jpg",
+    alt: "Melanie is the ice queen with her crown of sparkling twigs and silver corset gown.",
+  },
+  {
+    src: "/images/winter-queen-3.jpg",
+    alt: "Her crown and scepter of silver twigs, Melanie stands against a winter backdrop in falling snow",
   },
 ];
 

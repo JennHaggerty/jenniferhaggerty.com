@@ -174,6 +174,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/photography/contact",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/connect",
         destination: "/contact",
         permanent: true,

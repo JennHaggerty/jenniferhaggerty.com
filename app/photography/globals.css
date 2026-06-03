@@ -452,7 +452,6 @@ a .icon:hover {
 }
 
 @media (min-width: 768px) {
-  .gallery,
   .portfolio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
