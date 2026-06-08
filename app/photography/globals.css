@@ -490,7 +490,6 @@ a .icon:hover {
 }
 .col-2-img-right .col-image {
   overflow: hidden;
-  object-fit: cover;
 }
 .col-image img {
   max-width: unset;
