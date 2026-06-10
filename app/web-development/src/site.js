@@ -2,7 +2,6 @@ import EmailIcon from "../../components/svgs/email";
 import ResumeIcon from "../../components/svgs/resume";
 import GithubIcon from "../../components/svgs/github";
 import RssIcon from "../../components/svgs/rss";
-import LinkedInIcon from "../../components/svgs/linkedin";
 
 export const site = {
   maxWidthClassname: "max-w-[1299px] mx-auto",
@@ -55,12 +54,6 @@ export const site = {
         {
           href: "https://jennhaggerty.github.io",
           content: "Blog",
-          rel: "rel",
-          target: "_blank",
-        },
-        {
-          href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
-          content: "LinkedIn",
           rel: "rel",
           target: "_blank",
         },
@@ -181,7 +174,10 @@ export const site = {
             Paula's Choice has been dominating the skincare space since 1995. I
             found out about the company in 2010 on a Reddit forum raving about
             their
-            <a href="https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201.html">
+            <a
+              href="https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201.html"
+              rel="nofollow"
+            >
               BHA Liquid Exfoliant
             </a>
             . It was a lovely surprise to find them a client of CQL and a dream
@@ -224,7 +220,10 @@ export const site = {
             </p>
           </blockquote>
           <p>
-            <a href="https://www.cqlcorp.com/work/paulas-choice/">
+            <a
+              href="https://www.cqlcorp.com/work/paulas-choice/"
+              rel="nofollow"
+            >
               —CQL,{" "}
               <cite>Salesforce Commerce Cloud Case Study: Paula's Choice</cite>
             </a>
@@ -251,7 +250,10 @@ export const site = {
         >
           Salesforce Commerce Cloud
         </a>,
-        <a href="https://www.salesforce.com/artificial-intelligence/">
+        <a
+          href="https://www.salesforce.com/artificial-intelligence/"
+          rel="nofollow"
+        >
           Einstein AI
         </a>,
         "Klaviyo",
@@ -302,7 +304,7 @@ export const site = {
             </p>
           </blockquote>
           <p>
-            <a href="https://www.cqlcorp.com/work/denon/">
+            <a href="https://www.cqlcorp.com/work/denon/" rel="nofollow">
               —CQL, <cite>Salesforce Commerce Cloud Case Study: Denon</cite>
             </a>
           </p>
@@ -320,7 +322,13 @@ export const site = {
       title: "Masimo",
       date: "2023",
       tagline: "Front End Developer",
-      tools: [<a href="https://www.shopify.com">Shopify</a>, "Liquid", "PHP"],
+      tools: [
+        <a href="https://www.shopify.com" rel="nofollow">
+          Shopify
+        </a>,
+        "Liquid",
+        "PHP",
+      ],
       content: (
         <div>
           <h3>About the client</h3>
@@ -360,7 +368,13 @@ export const site = {
       title: "OneSource",
       date: "2024",
       tagline: "Shopify Developer",
-      tools: [<a href="https://www.shopify.com">Shopify</a>, "Liquid", "PHP"],
+      tools: [
+        <a href="https://www.shopify.com" rel="nofollow">
+          Shopify
+        </a>,
+        "Liquid",
+        "PHP",
+      ],
       content: (
         <div>
           <h3>About the client</h3>
@@ -380,8 +394,11 @@ export const site = {
 
           <h3>About the work</h3>
           <p>
-            While at <a href="https://www.cqlcorp.com/">CQL Corp</a>, we
-            established a Shopify presence for OneSource. Overall site was
+            While at{" "}
+            <a href="https://www.cqlcorp.com/" rel="nofollow">
+              CQL Corp
+            </a>
+            , we established a Shopify presence for OneSource. Overall site was
             themed to adhere to brand guidelines and restricted CSS inline
             injections to maintain site cohesiveness. The product display page
             saw larger featured, gallery, and thumbnails images with an intense
@@ -404,7 +421,10 @@ export const site = {
       date: "2021-2022",
       tagline: "Frontend Developer",
       tools: [
-        <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc">
+        <a
+          href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc"
+          rel="nofollow"
+        >
           ASP.NET MVC
         </a>,
         "C#",
@@ -546,9 +566,11 @@ export const site = {
             GoCollect then stepped into the Shopify space with a company swag
             shop and began building the foundation for our team to develop in
             the app store. Working with clients like{" "}
-            <a href="https://noblenostalgia.com/">Noble Nostalgia</a> --a comics
-            and collectibles shop in Simpsonville, SC, and{" "}
-            <a href="https://www.concertpostergallery.com">
+            <a href="https://noblenostalgia.com/" rel="nofollow">
+              Noble Nostalgia
+            </a>{" "}
+            --a comics and collectibles shop in Simpsonville, SC, and{" "}
+            <a href="https://www.concertpostergallery.com" rel="nofollow">
               Psychedelic Art Exchange
             </a>{" "}
             --concert posters in auction and ready to purchase formats, the
@@ -634,15 +656,20 @@ export const site = {
             2006. My education began with a year at Carolina Technical College
             in 2007 where I learned how to developed websites and newsletters
             with
-            <a href="https://www.adobe.com/products/dreamweaver.html">
+            <a
+              href="https://www.adobe.com/products/dreamweaver.html"
+              rel="nofollow"
+            >
               Adobe Dreamweaver
             </a>{" "}
             and content/contact management with Microsoft Access and MySQL. In
             2008 I was accepted at the{" "}
-            <a href="https://sc.edu/">University of South Carolina</a> into the
-            Studio Arts program. I knew I would need an online portfolio and
-            built a LAMP stack hosting WordPress to support my artwork and
-            create an online voice with a blog and found my name,
+            <a href="https://sc.edu/" rel="nofollow">
+              University of South Carolina
+            </a>{" "}
+            into the Studio Arts program. I knew I would need an online
+            portfolio and built a LAMP stack hosting WordPress to support my
+            artwork and create an online voice with a blog and found my name,
             www.jenniferhaggerty.com, to be available as a domain. It used to
             host my artworks until I realized that my passion was in building
             and maintaining the website rather than generating content. My love

@@ -42,7 +42,10 @@ export const defaultGalleryDescription = (
   <div className="flex flex-col gap-2">
     <p>
       Ready to share images from{" "}
-      <a href="https://www.facebook.com/p/Atmosphere-Augusta-100088686398685/">
+      <a
+        href="https://www.facebook.com/p/Atmosphere-Augusta-100088686398685/"
+        rel="nofollow"
+      >
         Atmosphere
       </a>
       , Augusta Georgia's premiere dark electronic night hosted by{" "}
@@ -53,11 +56,16 @@ export const defaultGalleryDescription = (
       may not be used commercially; selling prints, advertisements, representing
       goods and services, and editing/retouching/alterations/manipulations to
       the images are prohibited –
-      <a href="https://www.instagram.com/studiovonjenn/">Instagram</a> is the
-      exception, you may add a filter for personal posting/viewing. Inquires to
-      request commercial licenses, prints, and personal printing licenses may be
-      sent to{" "}
-      <a href={`mailto:${settings.email}`}>thejenniferhaggerty@gmail.com</a>.
+      <a href="https://www.instagram.com/studiovonjenn/" rel="nofollow">
+        Instagram
+      </a>{" "}
+      is the exception, you may add a filter for personal posting/viewing.
+      Inquires to request commercial licenses, prints, and personal printing
+      licenses may be sent to{" "}
+      <a href={`mailto:${settings.email}`} rel="nofollow">
+        thejenniferhaggerty@gmail.com
+      </a>
+      .
     </p>
   </div>
 );
@@ -110,7 +118,9 @@ export const galleries: GalleryInterface[] = [
           editing/retouching/alterations/manipulations to the images are
           prohibited. Inquires to request commercial licenses, prints, and
           personal printing licenses may be sent to{" "}
-          <a href={`mailto:${settings.email}`}>thejenniferhaggerty@gmail.com</a>
+          <a href={`mailto:${settings.email}`} rel="nofollow">
+            thejenniferhaggerty@gmail.com
+          </a>
           .
         </p>
       </div>
@@ -257,16 +267,24 @@ export const navigation = [
       <a href="/photography/galleries">{strings.galleries}</a>,
       <a href="/photography/about">{strings.about}</a>,
       <a href={settings.pricelist}>{strings.prices}</a>,
-      <a href={`mailto:${settings.email}`}>{strings.contact}</a>,
+      <a href={`mailto:${settings.email}`} rel="nofollow">
+        {strings.contact}
+      </a>,
     ],
   },
   {
     id: "socials",
     customClass: "flex w-full justify-center gap-3",
     items: [
-      <a href={`mailto:${settings.email}`}>{strings.email}</a>,
-      <a href={settings.discord}>{strings.discord}</a>,
-      <a href={settings.instagram}>{strings.instagram}</a>,
+      <a href={`mailto:${settings.email}`} rel="nofollow">
+        {strings.email}
+      </a>,
+      <a href={settings.discord} rel="nofollow">
+        {strings.discord}
+      </a>,
+      <a href={settings.instagram} rel="nofollow">
+        {strings.instagram}
+      </a>,
     ],
   },
 ];
