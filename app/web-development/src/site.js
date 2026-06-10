@@ -82,7 +82,7 @@ export const site = {
           target: "_blank",
         },
         {
-          ariaLabel: "Check out her Github.",
+          ariaLabel: "Check my Github.",
           href: "https://github.com/JennHaggerty",
           content: <GithubIcon className="icon-link" />,
           rel: "rel",
@@ -92,13 +92,6 @@ export const site = {
           ariaLabel: "Follow the blog",
           href: "https://jennhaggerty.github.io",
           content: <RssIcon className="icon-link" />,
-          rel: "rel",
-          target: "_blank",
-        },
-        {
-          ariaLabel: "LinkedIn.",
-          href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
-          content: <LinkedInIcon className="icon-link" />,
           rel: "rel",
           target: "_blank",
         },
