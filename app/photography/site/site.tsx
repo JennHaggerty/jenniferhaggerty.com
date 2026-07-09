@@ -79,12 +79,6 @@ export const galleries: GalleryInterface[] = [
       "/images/galleries/atmos/0526/jennifer-haggerty-atmosphere-052614.jpg",
   },
   {
-    slug: atmosSlug.replace("{date}", "0426"),
-    directory: atmosDirectory.replace("{date}", "0426"),
-    title: "Atmosphere April 2026",
-    featuredImg: "/images/galleries/atmos/0426/atmos04261.jpg",
-  },
-  {
     slug: "no-kings-protest-march-28-2026",
     directory: "/images/galleries/no-kings-march-28-2026/",
     title: "No Kings Protest March 28, 2026",
@@ -94,55 +88,10 @@ export const galleries: GalleryInterface[] = [
       "/images/galleries/no-kings-march-28-2026/No Kings 3-28-2026 (82).jpg",
   },
   {
-    slug: atmosSlug.replace("{date}", "0226"),
-    directory: atmosDirectory.replace("{date}", "0226"),
-    title: "Atmosphere February 2026",
-    featuredImg: "/images/galleries/atmos/0226/atmos02266.jpg",
-  },
-  {
-    slug: atmosSlug.replace("{date}", "0126"),
-    directory: atmosDirectory.replace("{date}", "0126"),
-    title: "Atmosphere January 2026",
-    featuredImg: "/images/galleries/atmos/0126/atmos012610.jpg",
-  },
-  {
-    slug: "pirateparty112025",
-    directory: "/images/galleries/pirate-party-1125/",
-    title: "Annual Buccaneer's Party",
-    featuredImg: "/images/galleries/pirate-party-1125/pirateparty11202537.jpg",
-    description: (
-      <div className="flex flex-col gap-2">
-        <p>
-          Images are for personal use only and may not be used commercially;
-          selling prints, advertisements, representing goods and services, and
-          editing/retouching/alterations/manipulations to the images are
-          prohibited. Inquires to request commercial licenses, prints, and
-          personal printing licenses may be sent to{" "}
-          <a href={`mailto:${settings.email}`} rel="nofollow">
-            thejenniferhaggerty@gmail.com
-          </a>
-          .
-        </p>
-      </div>
-    ),
-  },
-  {
-    slug: atmosSlug.replace("{date}", "1125"),
-    directory: atmosDirectory.replace("{date}", "1125"),
-    title: "Atmosphere November 2025",
-    featuredImg: "/images/galleries/atmos/1125/atmos11254.jpg",
-  },
-  {
-    slug: atmosSlug.replace("{date}", "1025"),
-    directory: atmosDirectory.replace("{date}", "1025"),
-    title: "Atmosphere October 2025",
-    featuredImg: "/images/galleries/atmos/1025/atmos10255.jpg",
-  },
-  {
-    slug: atmosSlug.replace("{date}", "0925"),
-    directory: atmosDirectory.replace("{date}", "0925"),
-    title: "Atmosphere September 2025",
-    featuredImg: "/images/galleries/atmos/0925/atmos09258.jpg",
+    slug: "events",
+    directory: "/images/galleries/events/",
+    title: "Past Event Portraits",
+    featuredImg: "/images/galleries/events/atmos012610.jpg",
   },
 ];
 
