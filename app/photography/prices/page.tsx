@@ -29,7 +29,7 @@ export default async function Page({
             <div key={`pricing-${i}`}>
               {i !== 0 && <hr />}
 
-              <div className="flex justify-between">
+              <div className="flex justify-between mb-2">
                 <div>
                   <h3 className="h2 text-4xl!">{recipe.name}</h3>
 
@@ -47,7 +47,7 @@ export default async function Page({
                 </div>
 
                 {recipe.price && (
-                  <p>
+                  <p className="text-lg">
                     {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: "USD",
@@ -57,8 +57,8 @@ export default async function Page({
               </div>
 
               {(recipe.addons || recipe.includes || recipe.image) && (
-                <div className="flex mx-0! max-sm:flex-col justify-between gap-5 outline">
-                  <div className="w-full lg:w-1/2 mx-0! flex flex-col gap-5">
+                <div className="flex max-sm:flex-col justify-between gap-5">
+                  <div className="w-full flex flex-col gap-5">
                     {recipe.includes && (
                       <div>
                         <h4 className="h3">{strings.includes}</h4>
@@ -81,6 +81,7 @@ export default async function Page({
                             >
                               <span>{item.name}</span>
                               <span>
+                                +
                                 {new Intl.NumberFormat("en-US", {
                                   style: "currency",
                                   currency: "USD",
@@ -108,16 +109,6 @@ export default async function Page({
                       </div>
                     )}
                   </div>
-
-                  {recipe.image && (
-                    <div className="w-full lg:w-1/2 mx-0!">
-                      <img
-                        className="h-full w-full object-cover"
-                        src={recipe.image}
-                        alt=" "
-                      />
-                    </div>
-                  )}
                 </div>
               )}
 
@@ -129,7 +120,7 @@ export default async function Page({
                       className="flex justify-between gap-3"
                     >
                       <span>{item.name}</span>
-                      <span>
+                      <span className="text-lg">
                         {new Intl.NumberFormat("en-US", {
                           style: "currency",
                           currency: "USD",
@@ -141,6 +132,13 @@ export default async function Page({
               )}
             </div>
           ))}
+
+          <div>
+            <p>
+              All pricing is for personal use only, for commercial projects and
+              licensing <a href={settings.email}>email me directly</a>.
+            </p>
+          </div>
         </div>
 
         <p className="color-white text-center italic pb-2">
