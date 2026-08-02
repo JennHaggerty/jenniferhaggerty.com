@@ -2,7 +2,6 @@ import EmailIcon from "../../components/svgs/email";
 import ResumeIcon from "../../components/svgs/resume";
 import GithubIcon from "../../components/svgs/github";
 import RssIcon from "../../components/svgs/rss";
-import LinkedInIcon from "../../components/svgs/linkedin";
 
 export const site = {
   maxWidthClassname: "max-w-[1299px] mx-auto",
@@ -58,12 +57,6 @@ export const site = {
           rel: "rel",
           target: "_blank",
         },
-        {
-          href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
-          content: "LinkedIn",
-          rel: "rel",
-          target: "_blank",
-        },
       ],
     },
     {
@@ -85,20 +78,6 @@ export const site = {
           ariaLabel: "Check out her Github.",
           href: "https://github.com/JennHaggerty",
           content: <GithubIcon className="icon-link" />,
-          rel: "rel",
-          target: "_blank",
-        },
-        {
-          ariaLabel: "Follow the blog",
-          href: "https://jennhaggerty.github.io",
-          content: <RssIcon className="icon-link" />,
-          rel: "rel",
-          target: "_blank",
-        },
-        {
-          ariaLabel: "LinkedIn.",
-          href: "https://www.linkedin.com/in/jennifer-haggerty-01915556",
-          content: <LinkedInIcon className="icon-link" />,
           rel: "rel",
           target: "_blank",
         },

@@ -1,6 +1,5 @@
 import { getSlugFromTitle } from "@/app/web-development/src/function";
 import { site } from "../../src/site";
-import CTA from "@/app/web-development/components/CTA";
 import Arrow from "@/app/components/svgs/Arrow";
 
 export async function generateStaticParams() {
@@ -76,10 +75,6 @@ export default async function Page({
             </dl>
           </div>
         </div>
-      </div>
-
-      <div className={padding}>
-        <CTA />
       </div>
 
       <div className="footer">
