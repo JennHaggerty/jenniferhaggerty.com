@@ -4,7 +4,7 @@ const CTA = () => {
   return (
     <div className="cta h2">
       <span>Ready to get connected?</span>
-      <a href={`mailto:${site.adminEmail}`}>
+      <a href={`mailto:${site.adminEmail}`} rel="nofollow">
         <span>Let's go!</span>
       </a>
     </div>

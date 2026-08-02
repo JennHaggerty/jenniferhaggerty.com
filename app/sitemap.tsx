@@ -39,11 +39,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://jenniferhaggerty.com/photography/portfolio",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-    },
-    {
       url: "https://jenniferhaggerty.com/photography/about",
       lastModified: new Date(),
       changeFrequency: "yearly",
@@ -52,11 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://jenniferhaggerty.com/photography/prices",
       lastModified: "2025-12-18T14:47:22+00:00",
-      changeFrequency: "yearly",
-    },
-    {
-      url: "https://jenniferhaggerty.com/photography/contact",
-      lastModified: new Date(),
       changeFrequency: "yearly",
     },
     {

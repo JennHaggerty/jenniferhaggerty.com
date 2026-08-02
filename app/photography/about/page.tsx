@@ -34,7 +34,7 @@ export default async function Page({
               ))}
             </div>
             <div className="col col-image">
-              <img src={`/images/ophelia-1.jpg`} alt="Ophelia in the waters" />
+              <img src={`/images/jennifer-3.jpg`} alt="Ophelia in the waters" />
             </div>
           </div>
         </div>
