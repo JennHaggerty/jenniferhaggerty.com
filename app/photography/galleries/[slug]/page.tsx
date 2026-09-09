@@ -69,7 +69,7 @@ export default async function Page({ params }: Props) {
 
         <div>
           <div
-            className={`m-auto gallery grid! ${images.length > 1 && "grid-cols-3"}`}
+            className={`m-auto gallery grid! ${images.length > 1 && "lg:grid-cols-3"}`}
           >
             {images.map((image, i) => (
               <img

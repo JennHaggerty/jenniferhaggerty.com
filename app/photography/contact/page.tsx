@@ -21,16 +21,18 @@ export default async function Page({
       <div className="primary-bg min-h-screen">
         <div className=" max-w-[var(--max-width)] mx-auto">
           <div className="col-2-img-right lg:h-screen ">
-            <div className="col col-text">
+            <div className="col col-text sm:pt-3! md:pt-25!">
               <div className="flex max-sm:flex-col gap-3 center">
                 <h1>Contact</h1>
                 <h2>Shoot me an email</h2>
               </div>
-              <p>
-                Email me at{" "}
-                <a href={`mailto:${settings.email}`}>{settings.email}</a> with
-                questions and to schedule your portrait session.
-              </p>
+              <div>
+                <p>
+                  Email me at{" "}
+                  <a href={`mailto:${settings.email}`}>{settings.email}</a> with
+                  questions and to schedule your portrait session.
+                </p>
+              </div>
             </div>
             <div className="col col-image">
               <img

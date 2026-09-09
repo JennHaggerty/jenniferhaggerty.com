@@ -483,23 +483,30 @@ a .icon:hover {
 .col-2-img-right {
   max-width: 1200px;
   margin: auto;
-}
-.col-2-img-right .col-text {
-  padding: 2em;
-  margin: auto;
-}
-.col-2-img-right .col-image {
-  overflow: hidden;
-}
-.col-image img {
-  max-width: unset;
+
+  & .col-text {
+    padding: 2em;
+    margin: auto;
+  }
+
+  & .col-image {
+    overflow: hidden;
+
+    & img {
+      max-width: unset;
+    }
+  }
 }
 @media (max-width: 1185px) {
   .col-2-img-right .col-text {
     width: fit-content;
   }
   .col-2-img-right .col-image {
-    display: none;
+    width: 100%;
+
+    & img {
+      margin: auto;
+    }
   }
 }
 @media (min-width: 1185px) {

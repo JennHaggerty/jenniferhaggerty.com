@@ -5,7 +5,7 @@ import RssIcon from "../../components/svgs/rss";
 
 export const site = {
   maxWidthClassname: "max-w-[1299px] mx-auto",
-  adminEmail: "thejenniferhaggerty@gmail.com",
+  adminEmail: "jenniferhaggerty@protonmail.com",
   name: "Jennifer Haggerty",
   title: "Senior Remote JavaScript Developer",
   description:
@@ -37,7 +37,7 @@ export const site = {
       customClass: "text-nav",
       items: [
         {
-          href: "mailto:thejenniferhaggerty@gmail.com",
+          href: "mailto:jenniferhaggerty@protonmail.com",
           content: "Email",
         },
         {
@@ -65,7 +65,7 @@ export const site = {
       items: [
         {
           ariaLabel: "Email.",
-          href: "mailto:thejenniferhaggerty@gmail.com",
+          href: "mailto:jenniferhaggerty@protonmail.com",
           content: <EmailIcon className="icon-link" />,
         },
         {

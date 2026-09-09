@@ -14,7 +14,7 @@ export const settings = {
   siteName: "Studio von Jennifer",
   description: "Artist and photographer in Augusta, Georgia.",
   note: "Specializing in Gothic Renaissance and the painterly style. Available for events and private sessions.",
-  email: "thejenniferhaggerty@gmail.com",
+  email: "jenniferhaggerty@protonmail.com",
   discord: "https://discord.gg/gh9TMHQsdB",
   instagram: "https://www.instagram.com/studiovonjenn/",
   pricelist: "/photography/prices",
@@ -55,12 +55,19 @@ export const defaultGalleryDescription = (
       exception, you may add a filter for personal posting/viewing. Inquires to
       request commercial licenses, prints, and personal printing licenses may be
       sent to{" "}
-      <a href={`mailto:${settings.email}`}>thejenniferhaggerty@gmail.com</a>.
+      <a href={`mailto:${settings.email}`}>jenniferhaggerty@protonmail.com</a>.
     </p>
   </div>
 );
 
 export const galleries: GalleryInterface[] = [
+  {
+    slug: atmosSlug.replace("{date}", "0926"),
+    directory: atmosDirectory.replace("{date}", "0926"),
+    title: "Atmosphere September 2026",
+    featuredImg:
+      "/images/galleries/atmos/0926/jennifer-haggerty-portrait-photography-atmosphere-09-2026-2.jpg",
+  },
   {
     slug: atmosSlug.replace("{date}", "0526"),
     directory: atmosDirectory.replace("{date}", "0526"),
@@ -108,7 +115,9 @@ export const galleries: GalleryInterface[] = [
           editing/retouching/alterations/manipulations to the images are
           prohibited. Inquires to request commercial licenses, prints, and
           personal printing licenses may be sent to{" "}
-          <a href={`mailto:${settings.email}`}>thejenniferhaggerty@gmail.com</a>
+          <a href={`mailto:${settings.email}`}>
+            jenniferhaggerty@protonmail.com
+          </a>
           .
         </p>
       </div>
