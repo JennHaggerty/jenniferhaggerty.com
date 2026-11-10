@@ -145,21 +145,6 @@ export const galleries: GalleryInterface[] = [
 
 export const prices = [
   {
-    name: "Le Chat Noir Photo Booth",
-    image: "/images/galleries/atmos/0126/atmos012610.jpg",
-    time: "8:30pm - 1:30am",
-    delivery: "1-3 days",
-    price: 25,
-    includes: [
-      "1 digital image, light and color corrected, sized  for social media. Includes watermark.",
-      "Posing and direction.",
-    ],
-    tips: [
-      "There's no obligation to purchase a photo. Come in, we’ll take a few and if you don’t want to keep them they get deleted.",
-      "Bring cash for the $10 door fee and tips for the staff and performers.",
-    ],
-  },
-  {
     name: "Fine Art Portraiture",
     image: "/images/egan-1.jpg",
     time: "45 - 90 minutes",
@@ -195,6 +180,22 @@ export const prices = [
       "Make sure an electrical outlet is available nearby and is free of water, debris, and rust.",
       "If you have furniture and fabrics that fit the vibe you can send me a photo or set them to the side.",
       "Send me the vibes/dress code, I love immersion and will dress to blend in!",
+    ],
+  },
+  {
+    name: "Le Chat Noir Photo Booth",
+    image: "/images/galleries/atmos/0126/atmos012610.jpg",
+    time: "8:30pm - 1:30am",
+    delivery: "1-3 days",
+    price: 25,
+    type: 0,
+    includes: [
+      "1 digital image, light and color corrected, sized  for social media. Includes watermark.",
+      "Posing and direction.",
+    ],
+    tips: [
+      "There's no obligation to purchase a photo. Come in, we’ll take a few and if you don’t want to keep them they get deleted.",
+      "Bring cash for the $10 door fee and tips for the staff and performers.",
     ],
   },
   {
@@ -280,42 +281,6 @@ export const navigation = [
 
 export const portfolioImages = [
   {
-    src: "/images/birds-1.jpg",
-    alt: "A black raven mask with red eyes adorns Jennifer in this Raven in Flight portrait",
-  },
-  {
-    src: "/images/birds-2.jpg",
-    alt: "Blood red crystal adorn the white plague doctor mask Jana is wearing in this Gothesque editorial",
-  },
-  {
-    src: "/images/birds-3.jpg",
-    alt: "The Raven wearing a black cape and a black plague doctor mask with red eyes.",
-  },
-  {
-    src: "/images/safara-1.jpg",
-    alt: "Safara's portrait in a dark realm",
-  },
-  {
-    src: "/images/sarah-2.jpg",
-    alt: "A black spiral shell crown sits atop Sarah's head.",
-  },
-  {
-    src: "/images/safara-2.jpg",
-    alt: "Safara's portrait in a dark realm with lace.",
-  },
-  {
-    src: "/images/jennifer-3.jpg",
-    alt: "Jennifer is the burgundy Queen with an iron crown.",
-  },
-  {
-    src: "/images/jennifer-2.jpg",
-    alt: "A lady must always smile is painted in blood above Jennifer's head in this Joker portrait",
-  },
-  {
-    src: "/images/jennifer-1.jpg",
-    alt: "Jennifer wears a warm floral crown against her long teal hair, her dress and lips are a bold red",
-  },
-  {
     src: "/images/winter-queen-1.jpg",
     alt: "Melanie wears a brilliant silver crown of twigs with intense makeup.",
   },
@@ -326,6 +291,18 @@ export const portfolioImages = [
   {
     src: "/images/winter-queen-3.jpg",
     alt: "Her crown and scepter of silver twigs, Melanie stands against a winter backdrop in falling snow",
+  },
+  {
+    src: "/images/birds-1.jpg",
+    alt: "A black raven mask with red eyes adorns Jennifer in this Raven in Flight portrait",
+  },
+  {
+    src: "/images/safara-1.jpg",
+    alt: "Safara's portrait in a dark realm",
+  },
+  {
+    src: "/images/birds-3.jpg",
+    alt: "The Raven wearing a black cape and a black plague doctor mask with red eyes.",
   },
   {
     src: "/images/tiffany-rae-knight-3.jpg",
@@ -350,6 +327,18 @@ export const portfolioImages = [
   {
     src: "/images/paige-1.jpg",
     alt: "Editorial portrait of Paige",
+  },
+  {
+    src: "/images/jennifer-3.jpg",
+    alt: "Jennifer is the burgundy Queen with an iron crown.",
+  },
+  {
+    src: "/images/jennifer-2.jpg",
+    alt: "A lady must always smile is painted in blood above Jennifer's head in this Joker portrait",
+  },
+  {
+    src: "/images/jennifer-1.jpg",
+    alt: "Jennifer wears a warm floral crown against her long teal hair, her dress and lips are a bold red",
   },
   {
     src: "/images/demons-1.jpg",
@@ -385,7 +374,7 @@ export const cv = [
         Jennifer has been obsessed with light, color, and painting since 1997.
         She began photographing portraits in 2003. When she's not at the
         computer she's working on something creative or is out in the garden
-        with her partner and their dogs.
+        with her dogs.
       </p>
     ),
   },

@@ -33,7 +33,7 @@ export default async function Page({
                 </div>
               ))}
             </div>
-            <div className="col col-image">
+            <div className="col col-image max-md:hidden">
               <img src={`/images/jennifer-3.jpg`} alt="Ophelia in the waters" />
             </div>
           </div>

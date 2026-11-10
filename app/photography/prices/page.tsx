@@ -57,55 +57,63 @@ export default async function Page({
               </div>
 
               {(recipe.addons || recipe.includes || recipe.image) && (
-                <div className="flex mx-0! max-sm:flex-col justify-between gap-5 outline">
-                  <div className="w-full lg:w-1/2 mx-0! flex flex-col gap-5">
-                    {recipe.includes && (
-                      <div>
-                        <h4 className="h3">{strings.includes}</h4>
-                        <ul className="flex flex-col gap-2">
-                          {recipe.includes.map((item, i) => (
-                            <li key={`includes-${i}`}>{item}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
+                <div className="flex mx-0! max-sm:flex-col gap-5 outline">
+                  <div className="w-full lg:w-1/2 mx-0! flex flex-col justify-between">
+                    <div className="flex flex-col gap-5">
+                      {recipe.includes && (
+                        <div>
+                          <h4 className="h3">{strings.includes}</h4>
+                          <ul className="flex flex-col gap-2">
+                            {recipe.includes.map((item, i) => (
+                              <li key={`includes-${i}`}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
 
-                    {recipe.addons && (
-                      <div>
-                        <h4 className="h3">{strings.addons}</h4>
-                        <ul className="flex flex-col gap-2">
-                          {recipe.addons.map((item, i) => (
-                            <li
-                              key={`addons-${i}`}
-                              className="flex justify-between gap-3"
-                            >
-                              <span>{item.name}</span>
-                              <span>
-                                {new Intl.NumberFormat("en-US", {
-                                  style: "currency",
-                                  currency: "USD",
-                                }).format(item.price)}
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
+                      {recipe.addons && (
+                        <div>
+                          <h4 className="h3">{strings.addons}</h4>
+                          <ul className="flex flex-col gap-2">
+                            {recipe.addons.map((item, i) => (
+                              <li
+                                key={`addons-${i}`}
+                                className="flex justify-between gap-3"
+                              >
+                                <span>{item.name}</span>
+                                <span>
+                                  {new Intl.NumberFormat("en-US", {
+                                    style: "currency",
+                                    currency: "USD",
+                                  }).format(item.price)}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
 
-                    {recipe.tips && (
-                      <div>
-                        <h4 className="h3">{strings.tips}</h4>
-                        <ul className="flex flex-col gap-2 list-disc">
-                          {recipe.tips.map((item, i) => (
-                            <li
-                              key={`tips-${i}`}
-                              className="flex justify-between gap-3"
-                            >
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      {recipe.tips && (
+                        <div>
+                          <h4 className="h3">{strings.tips}</h4>
+                          <ul className="flex flex-col gap-2 list-disc">
+                            {recipe.tips.map((item, i) => (
+                              <li
+                                key={`tips-${i}`}
+                                className="flex justify-between gap-3"
+                              >
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+
+                    {recipe.type != 0 && (
+                      <a className="button" href={`mailto:${settings.email}`}>
+                        Book your session
+                      </a>
                     )}
                   </div>
 
